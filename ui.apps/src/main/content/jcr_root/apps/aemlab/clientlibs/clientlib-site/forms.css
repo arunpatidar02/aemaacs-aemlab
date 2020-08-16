@@ -1,0 +1,50 @@
+.cmp-form {
+    margin:2rem auto;
+    padding:3rem 5rem;
+    border:2px solid #745cf9
+
+}
+
+.cmp-form-button {
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border: 2px solid #745cf9;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #745cf9;
+    color: #fff;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    padding: 0.5rem 1rem;
+    border-radius:5px;
+}
+
+.cmp-form-button:last-child,.cmp-form-button:last-of-type {
+    margin-right: 0
+}
+
+.cmp-form-button:hover {
+    background: #fff;
+    color: #745cf9
+}
+
+.cmp-form label, .cmp-form legend{
+    font-size:1rem;
+    color:#745cf9;
+    font-weight:600;
+}
+
+.cmp-form p{
+    color:#b6b3b3;
+    font-style:italic;
+    margin-left:2rem;
+    display:inline;
+}
+.cmp-form-text input{
+    display:block;
+    margin-top:1rem;
+}

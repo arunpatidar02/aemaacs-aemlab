@@ -1,0 +1,48 @@
+h1,h2,h3,h4{
+	color: #745cf9;
+}
+
+.cmp-text p{
+	font-size:1rem;
+}
+
+.cmp-text--lead .cmp-text p{
+	font-size: 1.2rem;
+    line-height: 28px;
+}
+
+.cmp-text table{
+    font-size:1rem;
+    border-color:#745cf9;
+}
+
+.cmp-text table th{
+    background:#745cf9;
+    color:#fff;
+    padding:1rem;
+}
+
+.cmp-text table td{
+    padding:0.5rem;
+}
+
+.cmp-text a:after{
+    content: ">";
+    margin-left:5px;
+    font-size: 20px;
+    padding-top:10px;
+}
+
+.cmp-container--main-content ul li{
+    line-height:2rem;
+    list-style:none;
+}
+.cmp-container--main-content ul li::before {
+  content: "\2022";
+  color: #745cf9;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+  font-size:1.2rem;
+}

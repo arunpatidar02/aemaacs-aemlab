@@ -1,0 +1,40 @@
+.cmp-container--main-content>.cmp-container>.aem-Grid>.aem-GridColumn.aem-GridColumn--default--12{
+    margin:0 5rem;
+    max-width:85rem;
+    background:#fff;
+    padding: 1rem;
+}
+
+.cmp-container--main-content .cmp-container--full-width.aem-GridColumn.aem-GridColumn--default--12 {
+    margin:0;
+    max-width:100rem;
+	padding: 1rem 0;
+}
+
+
+.cmp-container--font-white{
+    color:#fff;
+}
+
+
+.cmp-container>.text{
+ 	padding: 1rem;
+}
+
+.cmp-container--main-content ul li{
+    line-height:2rem;
+    list-style:none;
+}
+.cmp-container--main-content ul li::before {
+  content: "\2022";
+  color: #745cf9;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+  font-size:1.2rem;
+}
+
+.cmp-container--font-white ul li::before {
+    color:#fff;
+}

@@ -1,0 +1,77 @@
+header.experiencefragment {
+	padding:0 6rem;
+	background : #f0f0f0;
+	margin-bottom: 2rem;
+}
+
+header .cmp-container>.text{
+    padding:0;
+}
+
+header .cmp-experiencefragment--header .cmp-container{
+    flex: 1 1 auto;
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: stretch;
+    overflow:hidden;
+}
+
+header .cmp-experiencefragment--header .cmp-containera:after{
+	content:'';
+}
+
+header .cmp-experiencefragment--header #header-logo{
+    flex: 1 1 auto;
+    position: relative;
+    width: auto;
+    display: flex;
+    margin:1rem 1rem 0 0;
+}
+
+header .cmp-experiencefragment--header #header-logo p, header .cmp-experiencefragment--header #header-logo p a{
+    font-size:2rem;
+    color:#745cf9;
+    font-family:Luminari, fantasy;
+}
+
+header .cmp-experiencefragment--header #header-logo p+p, header .cmp-experiencefragment--header #header-logo p+p a{
+    color:#000;
+}
+
+
+#header-search .cmp-search__form {
+    width: 15rem;
+    margin: 0.5rem 1rem;
+    padding-top: .5rem;
+}
+
+#header-search  .cmp-search__input {
+    padding: 1rem 1rem 1rem 2.5rem;
+}
+
+#header-search .cmp-search__results {
+    padding: .5rem;
+    margin-top: 1rem;
+    background: #f5f5f5;
+    min-width: 15rem;
+    max-height: 20rem;
+    box-shadow: 0 0.3125rem 0.9375rem 0 rgb(231 68 68 / 25%);
+}
+
+header .cmp-experiencefragment--header #header-navigation ul {
+    position: relative;
+    display: flex;
+    margin: 1rem 2rem 0 30rem;
+    overflow: hidden;
+}
+
+header .cmp-experiencefragment--header #header-navigation ul li{
+    list-style:none;
+    padding:0 0.75rem;
+    font-size:1rem;
+}
+
+header .cmp-experiencefragment--header a:after{
+	content:'';
+}

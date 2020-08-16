@@ -1,0 +1,44 @@
+.cmp-teaser {
+    display: flex;
+    padding: 1rem 5rem;
+}
+
+.cmp-teaser__image {
+    width: 40%;
+    height: auto;
+}
+
+.cmp-teaser__image .cmp-image__image {
+    height: 20rem;
+}
+
+.cmp-teaser__content {
+    width: 60%
+}
+
+.cmp-teaser__content p {
+    font-size: 1rem;
+}
+
+a.cmp-teaser__action-link {
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border: 2px solid #745cf9;
+    line-height: 36px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #745cf9;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+a.cmp-teaser__action-link:hover {
+    background: #745cf9;
+    color: #fff
+}

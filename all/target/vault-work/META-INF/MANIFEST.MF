@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: arun.patidar
+Build-Jdk: 11.0.6
+Implementation-Title: AEM Lab - All
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.community.aemlab
+Content-Package-Roots: /apps/aemlab-packages,/apps/aemlab-vendor-package
+ s
+Content-Package-Description: All content package for AEM Lab
+Content-Package-Id: com.community.aemlab:aemlab.all:1.0-SNAPSHOT
+Content-Package-Type: application
+

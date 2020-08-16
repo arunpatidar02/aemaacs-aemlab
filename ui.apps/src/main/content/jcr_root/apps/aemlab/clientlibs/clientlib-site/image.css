@@ -1,0 +1,13 @@
+.cmp-image{
+	margin: 1rem auto;
+	max-width: 70em;
+}
+
+.cmp-image__image{
+	max-height: 488px;
+}
+
+.cmp-image__title{
+    text-align:center;
+    display: block;
+}

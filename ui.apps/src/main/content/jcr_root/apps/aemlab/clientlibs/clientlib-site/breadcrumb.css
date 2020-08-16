@@ -1,0 +1,19 @@
+.cmp-breadcrumb__list{
+    margin:0;
+
+}
+.cmp-breadcrumb__item {
+    margin-bottom: 24px;
+}
+
+.cmp-breadcrumb__item a {
+    font-weight: 600;
+    font-size:0.8rem;
+}
+
+.cmp-breadcrumb .cmp-breadcrumb__list .cmp-breadcrumb__item:not(:last-child):after {
+    content: '\002F';
+    margin: auto .2rem auto .1rem;
+    color: #5e5e64;
+    font-weight: 600;
+}

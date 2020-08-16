@@ -1,0 +1,21 @@
+.cmp-tabs__tablist{
+    margin:1rem 0;
+}
+
+.cmp-tabs__tab{
+	color: #745cf9;
+	padding:0.5rem 2rem;
+	background:#745cf917;
+	font-size:1.2rem;
+}
+
+.cmp-tabs__tab.cmp-tabs__tab--active{
+	background: #745cf9;
+    color: #fff;
+    border-color: #745cf9;
+    font-weight: 600;
+}
+
+.cmp-tabs__tabpanel{
+    padding: 1rem 2rem;
+}

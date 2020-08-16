@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="aemlab.ui.apps">
+        <wb-resource deploy-path="/" source-path="/src/main/resources" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/content/jcr_root"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/htl"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <property name="context-root" value="/"/>
+        <property name="java-output-path" value="/aemlab.ui.apps/target/classes"/>
+    </wb-module>
+</project-modules>

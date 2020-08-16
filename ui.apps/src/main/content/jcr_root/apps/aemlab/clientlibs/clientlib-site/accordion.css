@@ -1,0 +1,28 @@
+.cmp-accordion__button{
+	background: #ececec;
+    color: #745cf9;
+    font-size:1.2rem;
+    border: none;
+    border-top: solid 1px #745cf9;
+    border-color: #745cf9;
+    padding:1rem 2rem;
+}
+
+.cmp-accordion__button.cmp-accordion__button--expanded .cmp-accordion__title{
+    color: #745cf9;
+    font-weight:600;
+}
+
+.cmp-accordion .cmp-accordion__item .cmp-accordion__icon:before {
+    content: '\25bc';
+    float: right;
+    font-size:1rem;
+}
+
+.cmp-accordion__button.cmp-accordion__button--expanded .cmp-accordion__icon:before {
+    content: '\25b2';
+}
+
+.cmp-accordion__panel{
+    padding: 1rem 2rem;
+}

@@ -1,0 +1,19 @@
+
+.cmp-carousel__indicators{
+	margin: 1rem auto;
+}
+
+.cmp-carousel__indicator{
+	width: 3rem;
+	height: .2rem;
+	border-radius:0;
+	background: #745cf969;
+}
+
+.cmp-carousel__indicator--active{
+	background: #745cf9;
+}
+
+.cmp-carousel__actions{
+	display: none;
+}

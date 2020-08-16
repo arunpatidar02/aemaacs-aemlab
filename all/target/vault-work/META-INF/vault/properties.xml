@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM Lab - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="createdBy">arun.patidar</entry>
+<entry key="created">2020-08-16T21:14:15.918+02:00</entry>
+<entry key="groupId">com.community.aemlab</entry>
+<entry key="name">aemlab.all</entry>
+<entry key="description">All content package for AEM Lab</entry>
+<entry key="artifactId">aemlab.all</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="packageType">application</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.community.aemlab</entry>
+</properties>

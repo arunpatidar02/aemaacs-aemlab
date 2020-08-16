@@ -1,0 +1,31 @@
+footer.experiencefragment{
+	background:#745cf9;
+	color:#fff;
+	padding:0 6rem;
+}
+
+footer.experiencefragment a, footer.experiencefragment h3, footer.experiencefragment h4{
+	color:#fff;
+}
+
+footer.experiencefragment a{
+	border-bottom:1px solid #988de5;
+	padding-bottom:2px;
+}
+
+
+footer.experiencefragment a:after{
+	content:'';
+}
+
+footer.experiencefragment ul{
+    margin-left:0;
+}
+
+footer.experiencefragment ul li{
+	list-style:none;
+}
+
+footer.experiencefragment .text{
+    padding: 0 2rem;
+}

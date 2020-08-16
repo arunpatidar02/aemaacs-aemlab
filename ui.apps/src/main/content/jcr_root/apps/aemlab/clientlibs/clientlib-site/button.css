@@ -1,0 +1,90 @@
+.button{
+    padding: 0 26px;
+    min-width: 150px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.cmp-button {
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border: 2px solid #745cf9;
+    line-height: 36px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #745cf9;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.cmp-button:last-child,.cmp-button:last-of-type {
+    margin-right: 0
+}
+
+.cmp-button:hover {
+    background: #745cf9;
+    color: #fff
+}
+
+.button.cmp-button--lg .cmp-button{
+    height: 50px;
+    line-height: 46px;
+    min-width: 200px;
+    font-size:1.2rem;
+    padding:1.2rem;
+    border-radius: 3rem;
+}
+
+.button.cmp-button--sm .cmp-button{
+    height: 30px;
+    font-size: 11px;
+    line-height: 27px;
+    min-width: 0;
+    font-size:0.6rem;
+    padding:0.8rem;
+}
+
+.cmp-button--alt .cmp-button {
+    background: #745cf9;
+    color: #fff;
+    border-color: #745cf9
+}
+
+
+.cmp-button--alt .cmp-button:visited {
+    color: #fff
+}
+
+
+.cmp-button--alt .cmp-button:hover,.cmp-button:visited:hover {
+    background: #5d47d7;
+    border-color: #5d47d7
+}
+
+.cmp-button:visited {
+    color: #745cf9
+}
+
+
+.cmp-button--alt:visited {
+    color: #fff
+}
+
+input[type="submit"]:hover {
+    background-color: #5d47d7;
+    color: #fff
+}
+
+.cmp-button--left{
+    text-align:left;
+}
+
+.cmp-button--right{
+    text-align:right;
+}
