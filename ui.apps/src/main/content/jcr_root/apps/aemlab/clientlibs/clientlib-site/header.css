@@ -1,6 +1,6 @@
 header.experiencefragment {
 	padding:0 6rem;
-	background : #1c1c1c;
+	background : #3D4750;
 	margin-bottom: 2rem;
 }
 
@@ -36,7 +36,7 @@ header .cmp-experiencefragment--header #header-logo p, header .cmp-experiencefra
 }
 
 header .cmp-experiencefragment--header #header-logo p+p, header .cmp-experiencefragment--header #header-logo p+p a{
-    color:#9d9b9b;
+    color:#E5710B;
 }
 
 
@@ -80,11 +80,7 @@ header .cmp-experiencefragment--header a:after{
     color: #faf3f3;
 }
 
-#header-navigation li:hover{
-    background: #0174a9;
-    padding: 0.5rem 1rem;
-}
 
 #header-navigation a:hover{
-    color: #faf3f3;
+    color: #E5710B;
 }
