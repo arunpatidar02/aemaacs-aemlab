@@ -356,7 +356,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Container Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    allowedColorSwatches="[#A7C8F2,#048ABF,#027368,#025951,#F25116]"
+                    allowedColorSwatches="[#F5F0E0,#C3D8D4,#CAD4DE,#F3E5DF,#F5F5F5]"
                     backgroundColorEnabled="true">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">

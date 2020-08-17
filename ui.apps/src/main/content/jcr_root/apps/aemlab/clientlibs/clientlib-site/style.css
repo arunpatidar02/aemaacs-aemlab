@@ -990,12 +990,12 @@ a, a:visited, a:focus, a:active, a:hover {
 
 a {
     font-weight: 600;
-    color: #745cf9;
+    color: #0174a9;
     cursor: pointer;
 }
 
 a:visited {
-    color: #745cf9;
+    color: #0174a9;
 }
 
 .image-bg a {
@@ -1008,7 +1008,7 @@ a:visited {
 }
 
 a:hover {
-    color: #5d47d7;
+    color: #45addd;
     text-decoration: none;
 }
 
@@ -1046,7 +1046,7 @@ th, td {
 /*!---------- 4. COLOURS ----------*/
 
 .bg-primary {
-    background: #745cf9 !important;
+    background: #0174a9 !important;
 }
 
 .bg-secondary {
@@ -1132,7 +1132,7 @@ footer {
 
 .btn, .button {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border: 2px solid #745cf9;
+    border: 2px solid #0174a9;
     padding: 0 26px;
     min-width: 150px;
     line-height: 36px;
@@ -1141,7 +1141,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 0;
-    color: #745cf9;
+    color: #0174a9;
     text-align: center;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -1155,7 +1155,7 @@ footer {
 }
 
 .btn:hover, .button:hover {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
 }
 
@@ -1173,7 +1173,7 @@ footer {
 }
 
 .btn-filled, .button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
 }
 
@@ -1187,9 +1187,9 @@ footer {
 }
 
 .image-bg .btn.btn-filled {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
-    border-color: #745cf9;
+    border-color: #0174a9;
 }
 
 .btn-white:hover, .image-bg .btn:hover, .image-bg .btn:visited:hover {
@@ -1199,13 +1199,13 @@ footer {
 }
 
 .image-bg .btn.btn-filled:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
-    background: #5d47d7;
-    border-color: #5d47d7;
+    background: #45addd;
+    border-color: #45addd;
     color: #fff;
 }
 
 .btn:visited {
-    color: #745cf9;
+    color: #0174a9;
 }
 
 .btn-white:visited, .btn:visited:hover {
@@ -1230,12 +1230,12 @@ footer {
 }
 
 .btn-filled:hover, .btn:visited:hover {
-    background: #5d47d7;
-    border-color: #5d47d7;
+    background: #45addd;
+    border-color: #45addd;
 }
 
 input[type="submit"]:hover {
-    background-color: #5d47d7;
+    background-color: #45addd;
     color: #fff;
 }
 
@@ -1245,7 +1245,7 @@ input[type="submit"]:hover {
 }
 
 .widget input[type="submit"]:hover {
-    color: #5d47d7;
+    color: #45addd;
     background-color: #fff;
 }
 
@@ -1610,7 +1610,7 @@ nav.fixed.scrolled {
 }
 
 .btn.searchsubmit:hover {
-    background-color: #5d47d7;
+    background-color: #45addd;
     color: #fff;
 }
 
@@ -1653,7 +1653,7 @@ nav.fixed.scrolled {
 }
 
 .menu > li > ul li a:hover, .dropdown-menu > .active > a:hover {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
 }
 
@@ -1883,9 +1883,9 @@ input.transparent:-ms-input-placeholder, button.transparent:-ms-input-placeholde
 }
 
 input[type="submit"] {
-    background: #745cf9;
+    background: #0174a9;
     border-radius: 0 !important;
-    border: 2px solid #745cf9;
+    border: 2px solid #0174a9;
     color: #fff;
     font-size: 11px;
     font-weight: bold;
@@ -1900,7 +1900,7 @@ input[type="submit"] {
 
 .bg-primary input[type="submit"] {
     background: #fff;
-    color: #745cf9;
+    color: #0174a9;
 }
 
 input[type="submit"]:focus {
@@ -1951,15 +1951,15 @@ input[type="submit"]:focus {
 }
 
 .pagination span {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
-    border-color: #745cf9;
+    border-color: #0174a9;
 }
 
 .pagination a:hover, .pagination .active a, .pagination .active:hover a {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
-    border-color: #745cf9;
+    border-color: #0174a9;
 }
 
 /*!---------- 11. ICON FEATURES ----------*/
@@ -1975,7 +1975,7 @@ input[type="submit"]:focus {
 .feature-1 i {
     display: inline-block;
     margin-bottom: 16px;
-    color: #745cf9;
+    color: #0174a9;
 }
 
 .page-title {
@@ -2032,7 +2032,7 @@ input[type="submit"]:focus {
 }
 
 .jetpack_subscription_widget form {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
     padding: 24px;
 }
@@ -2063,7 +2063,7 @@ input[type="submit"]:focus {
 
 .jetpack_subscription_widget #subscribe-submit input {
     background: #fff;
-    color: #745cf9;
+    color: #0174a9;
     padding: 0;
 }
 
@@ -2394,7 +2394,7 @@ iframe {
 }
 
 .masonry-item blockquote:hover {
-    background: #745cf9;
+    background: #0174a9;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -2445,7 +2445,7 @@ iframe {
 .spinner {
     width: 50px;
     height: 50px;
-    background-color: #745cf9;
+    background-color: #0174a9;
     margin: 0 auto;
     display: inline-block;
     transition: all 0.3s ease;
@@ -2567,7 +2567,7 @@ iframe {
     font-size: 1.2em;
     line-height: 155%;
     font-weight: 700;
-    color: #745cf9;
+    color: #0174a9;
 }
 
 .content blockquote {
@@ -2595,7 +2595,7 @@ iframe {
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: #745cf9;
+    color: #0174a9;
     position: absolute;
     top: 31px;
     left: 0px;
@@ -2951,7 +2951,7 @@ footer.bg-dark a {
 }
 
 .image-bg a {
-    color: #745cf9;
+    color: #0174a9;
 }
 
 .widget-area section {
@@ -3116,7 +3116,7 @@ footer.bg-dark a {
 }
 
 .video-widget .video-controls button {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
     border: none;
     outline: none;
@@ -3283,7 +3283,7 @@ blockquote {
       color: #001c28;
       display: block; }
       .widget.widget_rss ul li .rsswidget:hover, .widget.widget_rss ul li .rsswidget:focus {
-        color: #745cf9; }
+        color: #0174a9; }
     .widget.widget_rss ul li .rss-date {
       font-size: 12px;
       display: inline-block;
@@ -3313,7 +3313,7 @@ blockquote {
     text-transform: initial;
     font-weight: 400; }
     .widget.widget_search .search-form > input#s:hover, .widget.widget_search .search-form > input#s:focus {
-      border-color: #745cf9;
+      border-color: #0174a9;
       box-shadow: none;
       outline: none; }
   .widget.widget_search .search-form > .searchsubmit {
@@ -3377,7 +3377,7 @@ blockquote {
         display: block;
         content: '';
         height: 1px;
-        background: #745cf9;
+        background: #0174a9;
         position: absolute;
         bottom: -1px;
         left: 50%;
@@ -3388,15 +3388,15 @@ blockquote {
         -o-transform: translateX(-50%);
         transform: translateX(-50%); }
     .widget.widget_calendar #wp-calendar thead {
-      color: #745cf9; }
+      color: #0174a9; }
     .widget.widget_calendar #wp-calendar td:not(.pad):not(#next):not(#prev) {
       width: 44px;
       height: 44px;
       border: 1px solid #ebebeb; }
     .widget.widget_calendar #wp-calendar td:not(.pad):not(#next):not(#prev)#today {
-      border-color: #745cf9; }
+      border-color: #0174a9; }
       .widget.widget_calendar #wp-calendar td:not(.pad):not(#next):not(#prev)#today:hover {
-        background: #745cf9;
+        background: #0174a9;
         color: #fff; }
         .widget.widget_calendar #wp-calendar td:not(.pad):not(#next):not(#prev)#today:hover a {
           color: #fff; }
@@ -3405,7 +3405,7 @@ blockquote {
       color: #001c28;
       text-align: center; }
       .widget.widget_calendar #wp-calendar td a, .widget.widget_calendar #wp-calendar th a {
-        color: #745cf9;
+        color: #0174a9;
         text-decoration: none; }
         .widget.widget_calendar #wp-calendar td a:hover, .widget.widget_calendar #wp-calendar td a:focus, .widget.widget_calendar #wp-calendar th a:hover, .widget.widget_calendar #wp-calendar th a:focus {
           text-decoration: none; }
@@ -3499,7 +3499,7 @@ blockquote {
     .post-content .post-meta li {
       position: relative; }
       .post-content .post-meta li a {
-        color: #745cf9;
+        color: #0174a9;
         font-weight: 400; }
         .post-content .post-meta li a:hover, .post-content .post-meta li a:focus {
           color: #5234f9; }
@@ -3567,7 +3567,7 @@ blockquote {
     width: 140px;
     margin-top: 20px;
     text-align: center;
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
     padding: 10px 20px; }
     .post-content .more-link:hover, .post-content .more-link:focus {
@@ -3670,7 +3670,7 @@ blockquote {
   height: 120px; }
   .comment-form textarea:focus, .comment-form textarea:active {
     outline: none;
-    border-bottom: 1px solid #745cf9; }
+    border-bottom: 1px solid #0174a9; }
 .comment-form input[type="text"],
 .comment-form input[type="url"],
 .comment-form input[type="email"] {
@@ -3689,7 +3689,7 @@ blockquote {
   .comment-form input[type="email"]:focus,
   .comment-form input[type="email"]:active {
     outline: none;
-    border-bottom: 1px solid #745cf9; }
+    border-bottom: 1px solid #0174a9; }
 .comment-form .form-submit {
   display: inline-block;
   width: 100%;

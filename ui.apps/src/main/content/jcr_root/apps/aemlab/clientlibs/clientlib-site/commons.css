@@ -5,10 +5,16 @@
     padding: 1rem;
 }
 
-.cmp-container--main-content .cmp-container--full-width.aem-GridColumn.aem-GridColumn--default--12 {
-    margin:0;
-    max-width:100rem;
-	padding: 1rem 0;
+.cmp-container--main-content>.cmp-container>.aem-Grid>.cmp-container--full-width.aem-GridColumn.aem-GridColumn--default--12 {
+    margin: 0;
+    max-width: 100rem;
+    padding: 1rem 0;
+}
+
+.cmp-container--main-content>.cmp-container>.aem-Grid>.cmp-container--full-width.aem-GridColumn.aem-GridColumn--default--12 .cmp-container>* {
+    margin: 0 5rem;
+    max-width: 85rem;
+    padding: 1rem;
 }
 
 
@@ -27,7 +33,7 @@
 }
 .cmp-container--main-content ul li::before {
   content: "\2022";
-  color: #745cf9;
+  color: #0174a9;
   font-weight: bold;
   display: inline-block;
   width: 1rem;

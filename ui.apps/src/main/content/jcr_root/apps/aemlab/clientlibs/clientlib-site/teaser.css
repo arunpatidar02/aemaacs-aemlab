@@ -22,23 +22,26 @@
 
 a.cmp-teaser__action-link {
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    border: 2px solid #745cf9;
+    border: 2px solid #0174a9;
     line-height: 36px;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #745cf9;
+    color: #0174a9;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     margin-right: 8px;
     margin-bottom: 24px;
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    min-width: 10rem;
+    text-align: center;
 }
 
 a.cmp-teaser__action-link:hover {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff
 }

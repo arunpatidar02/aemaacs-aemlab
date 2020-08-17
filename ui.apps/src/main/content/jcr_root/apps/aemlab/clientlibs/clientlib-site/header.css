@@ -1,6 +1,6 @@
 header.experiencefragment {
 	padding:0 6rem;
-	background : #f0f0f0;
+	background : #1c1c1c;
 	margin-bottom: 2rem;
 }
 
@@ -31,12 +31,12 @@ header .cmp-experiencefragment--header #header-logo{
 
 header .cmp-experiencefragment--header #header-logo p, header .cmp-experiencefragment--header #header-logo p a{
     font-size:2rem;
-    color:#745cf9;
+    color:#0174a9;
     font-family:Luminari, fantasy;
 }
 
 header .cmp-experiencefragment--header #header-logo p+p, header .cmp-experiencefragment--header #header-logo p+p a{
-    color:#000;
+    color:#9d9b9b;
 }
 
 
@@ -74,4 +74,17 @@ header .cmp-experiencefragment--header #header-navigation ul li{
 
 header .cmp-experiencefragment--header a:after{
 	content:'';
+}
+
+#header-navigation a{
+    color: #faf3f3;
+}
+
+#header-navigation li:hover{
+    background: #0174a9;
+    padding: 0.5rem 1rem;
+}
+
+#header-navigation a:hover{
+    color: #faf3f3;
 }

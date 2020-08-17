@@ -1,18 +1,18 @@
 .cmp-form {
     margin:2rem auto;
     padding:3rem 5rem;
-    border:2px solid #745cf9
+    border:2px solid #0174a9
 
 }
 
 .cmp-form-button {
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    border: 2px solid #745cf9;
+    border: 2px solid #0174a9;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -29,12 +29,12 @@
 
 .cmp-form-button:hover {
     background: #fff;
-    color: #745cf9
+    color: #0174a9
 }
 
 .cmp-form label, .cmp-form legend{
     font-size:1rem;
-    color:#745cf9;
+    color:#0174a9;
     font-weight:600;
 }
 

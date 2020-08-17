@@ -1,15 +1,15 @@
 .cmp-accordion__button{
 	background: #ececec;
-    color: #745cf9;
+    color: #0174a9;
     font-size:1.2rem;
     border: none;
-    border-top: solid 1px #745cf9;
-    border-color: #745cf9;
+    border-top: solid 1px #0174a9;
+    border-color: #0174a9;
     padding:1rem 2rem;
 }
 
 .cmp-accordion__button.cmp-accordion__button--expanded .cmp-accordion__title{
-    color: #745cf9;
+    color: #0174a9;
     font-weight:600;
 }
 

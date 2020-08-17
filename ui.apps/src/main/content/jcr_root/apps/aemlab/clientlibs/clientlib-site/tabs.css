@@ -1,18 +1,21 @@
 .cmp-tabs__tablist{
     margin:1rem 0;
+    justify-content: center;
+    border-bottom: solid 1px #0174a9;
+    background: #0174a912;
 }
 
 .cmp-tabs__tab{
-	color: #745cf9;
-	padding:0.5rem 2rem;
-	background:#745cf917;
+	color: #0174a9;
+	padding:0.75rem 2rem;
+	background:#0174a917;
 	font-size:1.2rem;
 }
 
 .cmp-tabs__tab.cmp-tabs__tab--active{
-	background: #745cf9;
+	background: #0174a9;
     color: #fff;
-    border-color: #745cf9;
+    border-color: #0174a9;
     font-weight: 600;
 }
 

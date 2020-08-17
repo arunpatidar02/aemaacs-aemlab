@@ -3,7 +3,7 @@
 <properties>
 <comment>AEM Lab - Repository Structure Package</comment>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2020-08-16T21:13:59.183+02:00</entry>
+<entry key="created">2020-08-17T23:40:23.560+02:00</entry>
 <entry key="groupId">com.community.aemlab</entry>
 <entry key="description">Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.</entry>

@@ -1,5 +1,5 @@
 h1,h2,h3,h4{
-	color: #745cf9;
+	color: #0174a9;
 }
 
 .cmp-text p{
@@ -13,11 +13,11 @@ h1,h2,h3,h4{
 
 .cmp-text table{
     font-size:1rem;
-    border-color:#745cf9;
+    border-color:#0174a9;
 }
 
 .cmp-text table th{
-    background:#745cf9;
+    background:#0174a9;
     color:#fff;
     padding:1rem;
 }

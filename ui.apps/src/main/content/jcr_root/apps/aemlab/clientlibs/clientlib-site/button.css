@@ -7,13 +7,13 @@
 
 .cmp-button {
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    border: 2px solid #745cf9;
+    border: 2px solid #0174a9;
     line-height: 36px;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #745cf9;
+    color: #0174a9;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -28,7 +28,7 @@
 }
 
 .cmp-button:hover {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff
 }
 
@@ -51,9 +51,9 @@
 }
 
 .cmp-button--alt .cmp-button {
-    background: #745cf9;
+    background: #0174a9;
     color: #fff;
-    border-color: #745cf9
+    border-color: #0174a9
 }
 
 
@@ -63,12 +63,12 @@
 
 
 .cmp-button--alt .cmp-button:hover,.cmp-button:visited:hover {
-    background: #5d47d7;
-    border-color: #5d47d7
+    background: #45addd;
+    border-color: #45addd
 }
 
 .cmp-button:visited {
-    color: #745cf9
+    color: #0174a9
 }
 
 
@@ -77,7 +77,7 @@
 }
 
 input[type="submit"]:hover {
-    background-color: #5d47d7;
+    background-color: #45addd;
     color: #fff
 }
 
