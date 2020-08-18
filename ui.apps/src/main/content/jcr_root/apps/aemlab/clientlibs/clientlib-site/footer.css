@@ -36,6 +36,7 @@ footer.experiencefragment .text{
     background:transparent;
     max-width:20rem;
     max-height:2rem;
+    float: right;
 }
 
 #footer-social .image{

@@ -25,13 +25,13 @@
                     <default
                         jcr:primaryType="nt:unstructured"
                         offset="0"
-                        width="5"/>
+                        width="6"/>
                 </cq:responsive>
             </text_659803192_copy>
             <text_507536413_copy
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemlab/components/text"
-                text="&lt;div>&amp;nbsp;&lt;/div>&#xd;&#xa;&lt;h4>Lorel Ipsum&lt;/h4>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Nullam et erat sempe&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>In ac&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Vestibulum&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Maecenas&lt;/a>&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                text="&lt;h4>Lorel Ipsum&lt;/h4>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Nullam et erat sempe&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>In ac&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Vestibulum&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Maecenas&lt;/a>&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
                 textIsRich="true">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
@@ -43,7 +43,7 @@
             <text_507536413_copy_
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemlab/components/text"
-                text="&lt;div>&amp;nbsp;&lt;/div>&#xd;&#xa;&lt;h4>Follow us on&lt;/h4>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Nullam et erat sempe&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>In ac&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Vestibulum&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Maecenas&lt;/a>&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                text="&lt;h4>Follow us on&lt;/h4>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Nullam et erat sempe&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>In ac&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Vestibulum&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Maecenas&lt;/a>&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
                 textIsRich="true">
                 <cq:responsive jcr:primaryType="nt:unstructured">
                     <default
