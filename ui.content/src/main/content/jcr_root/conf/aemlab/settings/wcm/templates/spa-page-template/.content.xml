@@ -4,8 +4,10 @@
     <jcr:content
         cq:created="{Date}2018-10-22T17:08:28.689+05:30"
         cq:createdBy="admin"
-        jcr:primaryType="cq:PageContent"
         cq:templateType="/libs/settings/wcm/template-types/html5page"
-        jcr:title="AEM Lab Page Template"
+        jcr:description="AEM Lab  - Home Page Template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="AEM Lab  -  Home Page"
+        fileReference="/content/dam/aemlab/system/home.png"
         status="enabled"/>
 </jcr:root>

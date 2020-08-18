@@ -29,3 +29,26 @@ footer.experiencefragment ul li{
 footer.experiencefragment .text{
     padding: 0 2rem;
 }
+
+#footer-social{
+    display:flex;
+    position: relative;
+    background:transparent;
+    max-width:20rem;
+    max-height:2rem;
+}
+
+#footer-social .image{
+ max-width:2rem;
+ max-height:2rem;
+ margin:0 .25rem;
+ padding: 0.25rem;
+}
+
+#footer-social .image .cmp-image{
+    margin:0;
+}
+
+#footer-social a{
+    border:0;
+}

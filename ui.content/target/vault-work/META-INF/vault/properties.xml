@@ -4,7 +4,7 @@
 <comment>AEM Lab - UI content</comment>
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="acHandling">merge</entry>
-<entry key="created">2020-08-17T23:40:38.432+02:00</entry>
+<entry key="created">2020-08-18T23:15:37.294+02:00</entry>
 <entry key="groupId">com.community.aemlab</entry>
 <entry key="description">UI content package for AEM Lab</entry>
 <entry key="version">1.0-SNAPSHOT</entry>

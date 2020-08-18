@@ -415,8 +415,9 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Generic Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[aemlab.dependencies,aemlab.site]"
-                    clientlibsJsHead="aemlab.dependencies">
+                    appResourcesClientlib="aemlab.site"
+                    clientlibs="[aemlab.head,aemlab.site]"
+                    clientlibsJsHead="aemlab.head">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>

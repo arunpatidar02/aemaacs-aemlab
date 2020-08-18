@@ -3,8 +3,9 @@
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:templateType="/conf/aemlab/settings/wcm/template-types/xf"
-        jcr:description="My Site Experience Fragment Template"
+        jcr:description="AEM Lab  Experience Fragment Template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Web Variation"
+        jcr:title="XF Web Variation"
+        fileReference="/content/dam/aemlab/system/xf.png"
         status="enabled"/>
 </jcr:root>

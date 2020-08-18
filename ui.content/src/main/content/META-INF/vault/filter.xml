@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/aemlab" mode="merge"/>
+    <filter root="/conf/aemlab"/>
     <filter root="/content/aemlab" mode="merge"/>
     <filter root="/content/dam/aemlab" mode="merge"/>
     <filter root="/content/experience-fragments/aemlab" mode="merge"/>
