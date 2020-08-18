@@ -1,1 +1,0 @@
-com.adobe.cq.sightly;version="[3.2.1,4.0.0)",com.community.aemlab.core.models;version="[1.0.0,2.0.0)",org.apache.sling.scripting.sightly;version="[2.0.0,3.0.0)",org.apache.sling.scripting.sightly.pojo;version="[1.0.1,2.0.0)",org.apache.sling.scripting.sightly.render;version="[3.0.0,4.0.0)"
