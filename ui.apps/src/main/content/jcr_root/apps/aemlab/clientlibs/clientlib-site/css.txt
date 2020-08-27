@@ -13,7 +13,3 @@ footer.css
 header.css
 separator.css
 title.css
-
-#chunk.css
-
-#style.css

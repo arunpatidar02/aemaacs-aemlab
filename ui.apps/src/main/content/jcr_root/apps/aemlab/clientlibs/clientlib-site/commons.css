@@ -23,24 +23,39 @@
 }
 
 
-.cmp-container>.text{
+.cmp-container>.text,
+.cmp-container>.title{
  	padding: 1rem;
 }
 
-.cmp-container--main-content ul li{
+.cmp-container--main-content ul li,
+.cmp-container--main-content ol li{
     line-height:2rem;
     list-style:none;
+    counter-increment: list-counter;
 }
-.cmp-container--main-content ul li::before {
-  content: "\2022";
+.cmp-container--main-content ul li::before,
+.cmp-container--main-content ol li::before {
   color: #0174a9;
   font-weight: bold;
   display: inline-block;
   width: 1rem;
   margin-left: -1rem;
   font-size:1.2rem;
+  margin-right:0.5rem
 }
 
-.cmp-container--font-white ul li::before {
+.cmp-container--main-content ul li::before{
+  content: "\2022";
+}
+
+.cmp-container--main-content ol li::before{
+  content: counter(list-counter) ".";
+}
+
+.cmp-container--font-white ul li::before,
+.cmp-container--font-white ol li::before {
     color:#fff;
 }
+
+
