@@ -6,6 +6,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="AEM Lab">
         <folderThumbnail/>
+        <manualThumbnail.jpg/>
     </jcr:content>
     <asset.jpg/>
 </jcr:root>

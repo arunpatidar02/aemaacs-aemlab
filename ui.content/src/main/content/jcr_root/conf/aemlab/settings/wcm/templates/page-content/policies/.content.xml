@@ -63,6 +63,10 @@
                                 cq:policy="aemlab/components/container/policy_179887140652100"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <embed
+                                cq:policy="aemlab/components/embed/policy_1598562378281"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
                         </components>
                     </aemlab>
                 </container>

@@ -357,7 +357,8 @@
                     jcr:title="Container Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedColorSwatches="[#F5F0E0,#C3D8D4,#CAD4DE,#F3E5DF,#F5F5F5]"
-                    backgroundColorEnabled="true">
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0
@@ -474,6 +475,18 @@
                     </cq:styleGroups>
                 </policy_1597597732762>
             </button>
+            <embed jcr:primaryType="nt:unstructured">
+                <policy_1598562378281
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Embed"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedEmbeddables="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                    embeddablesDisabled="false"
+                    htmlDisabled="false"
+                    urlDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1598562378281>
+            </embed>
         </components>
     </aemlab>
 </jcr:root>
