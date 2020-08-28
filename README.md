@@ -1,4 +1,5 @@
 
+
 # aemaacs-aemlab
 
 This is the code for the demo, forum contribution . The project has been designed for  **AEM as a Cloud Service**.
@@ -161,3 +162,9 @@ To run Dispatcher Tools against an Experience Manager project's Dispatcher confi
 ## Reference Content
 
 This contains core components(v2.10.0) and basic styling to demonstrate how to use CSS and AEM style system to setup a basic site.
+Sample pages are at [https://github.com/arunpatidar02/aemaacs-aemlab/tree/master/ui.content/src/main/content/jcr_root/content/aemlab/reference-content](https://github.com/arunpatidar02/aemaacs-aemlab/tree/master/ui.content/src/main/content/jcr_root/content/aemlab/reference-content)
+
+Example
+[https://github.com/arunpatidar02/aemaacs-aemlab/tree/master/ui.content/src/main/content/jcr_root/content/aemlab/reference-content/embed](https://github.com/arunpatidar02/aemaacs-aemlab/tree/master/ui.content/src/main/content/jcr_root/content/aemlab/reference-content/embed)
+
+![enter image description here](https://github.com/arunpatidar02/aemaacs-aemlab/blob/master/embed.png)
