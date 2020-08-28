@@ -5,3 +5,21 @@
 #
 
 $include "./default_rules.any"
+
+
+/0101
+  {
+  /glob "*.html"
+  /type "allow"
+  }
+/0102
+  {
+  /glob "*.json"
+  /type "allow"
+  }
+/0103
+  {
+  /glob "*.pdf"
+  /type "allow"
+  }
+
