@@ -4,4 +4,5 @@
     <filter root="/content/aemlab" mode="merge"/>
     <filter root="/content/dam/aemlab" mode="merge"/>
     <filter root="/content/experience-fragments/aemlab" mode="merge"/>
+	<filter root="/home/users/system/aemlab"/>
 </workspaceFilter>
