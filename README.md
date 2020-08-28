@@ -161,7 +161,7 @@ To run Dispatcher Tools against an Experience Manager project's Dispatcher confi
 
 ## Reference Content
 
-This contains core components(v2.10.0) and basic styling to demonstrate how to use CSS and AEM style system to setup a basic site.
+This contains pages created using core components(v2.10.0) and basic styling to demonstrate how to use CSS and AEM style system to setup a basic site using core components.
 Sample pages are at [https://github.com/arunpatidar02/aemaacs-aemlab/tree/master/ui.content/src/main/content/jcr_root/content/aemlab/reference-content](https://github.com/arunpatidar02/aemaacs-aemlab/tree/master/ui.content/src/main/content/jcr_root/content/aemlab/reference-content)
 
 Example
