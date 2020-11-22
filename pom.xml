@@ -31,7 +31,7 @@
         <bnd.version>5.0.0</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aem.sdk.api>2020.6.3800.20200626T210738Z-200604</aem.sdk.api>
+        <aem.sdk.api>2020.11.4506.20201112T235200Z-201028</aem.sdk.api>
     </properties>
 
     <build>
