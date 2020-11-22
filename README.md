@@ -94,11 +94,10 @@ There are three levels of testing contained in the project:
     
 ## Dispatcher Setup
 
-To Setup dispatcher in local you need to follow the detail document at https://docs.adobe.com/content/help/en/experience-manager-learn/cloudservice/
-local-development-environment-set-up/dispatcher-tools.html 
+To Setup dispatcher in local you need to follow the detail document at https://docs.adobe.com/content/help/en/experience-manager-learn/cloudservice/local-development-environment-set-up/dispatcher-tools.html 
 
 ### Download Docker Desktop
-Download docker desktop from https://www.docker.com/products/dockerdesktop
+Download docker desktop from https://www.docker.com/get-started
 Install Docker Desktop with Hyper -V feature enable(Hyper-V feature is required for windows only, you need to restart Windows after installing docker). 
 
 > **Caution**: When you enabled the Hyper-V feature in windows it will
