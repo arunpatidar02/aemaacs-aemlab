@@ -140,7 +140,7 @@
                             </goals>
                             <configuration>
                                 <bnd><![CDATA[
-Bundle-Category: ${componentGroupName}
+Bundle-Category: ${aemlab}
 
 # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
 -exportcontents: ${removeall;${packages;VERSIONED};${packages;CONDITIONAL}}
