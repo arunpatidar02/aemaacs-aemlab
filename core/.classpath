@@ -1,88 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
-  <classpathentry kind="output" path="target/classes"/>
-  <classpathentry kind="var" path="M2_REPO/javax/jcr/jcr/2.0/jcr-2.0.jar" sourcepath="M2_REPO/javax/jcr/jcr/2.0/jcr-2.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" sourcepath="M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-  <classpathentry kind="var" path="M2_REPO/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1.jar" sourcepath="M2_REPO/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
-  <classpathentry kind="var" path="M2_REPO/uk/org/lidalia/lidalia-lang/1.0.0/lidalia-lang-1.0.0.jar" sourcepath="M2_REPO/uk/org/lidalia/lidalia-lang/1.0.0/lidalia-lang-1.0.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/14.0.1/guava-14.0.1.jar" sourcepath="M2_REPO/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/uk/org/lidalia/lidalia-slf4j-ext/1.0.0/lidalia-slf4j-ext-1.0.0.jar" sourcepath="M2_REPO/uk/org/lidalia/lidalia-slf4j-ext/1.0.0/lidalia-slf4j-ext-1.0.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.2/joda-time-2.2.jar" sourcepath="M2_REPO/joda-time/joda-time/2.2/joda-time-2.2-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/adobe/aem/aem-sdk-api/2020.11.4506.20201112T235200Z-201028/aem-sdk-api-2020.11.4506.20201112T235200Z-201028.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/osgi.core/7.0.0/osgi.core-7.0.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.0/org.osgi.annotation.versioning-1.1.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.0.0/org.osgi.annotation.bundle-1.0.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.0/org.osgi.service.metatype.annotations-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component/1.4.0/org.osgi.service.component-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.4.0/org.osgi.service.component.annotations-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.4/org.apache.sling.servlets.annotations-1.2.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter/5.4.1/junit-jupiter-5.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter-api/5.4.1/junit-jupiter-api-5.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/junit/platform/junit-platform-commons/1.4.1/junit-platform-commons-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter-params/5.4.1/junit-jupiter-params-5.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter-engine/5.4.1/junit-jupiter-engine-5.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/junit/platform/junit-platform-engine/1.4.1/junit-platform-engine-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-core/2.25.1/mockito-core-2.25.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/bytebuddy/byte-buddy-agent/1.9.7/byte-buddy-agent-1.9.7.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/objenesis/objenesis/2.6/objenesis-2.6.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-junit-jupiter/2.25.1/mockito-junit-jupiter-2.25.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/junit-addons/junit-addons/1.4/junit-addons-1.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar" sourcepath="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar"/>
-  <classpathentry kind="var" path="M2_REPO/io/wcm/io.wcm.testing.aem-mock.junit5/2.5.2/io.wcm.testing.aem-mock.junit5-2.5.2.jar"/>
-  <classpathentry kind="var" path="M2_REPO/io/wcm/io.wcm.testing.aem-mock.core/2.5.2/io.wcm.testing.aem-mock.core-2.5.2.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.api/2.11.0/org.apache.sling.api-2.11.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.api/2.11.0/org.apache.sling.api-2.11.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/jackrabbit-jcr-commons/2.12.1/jackrabbit-jcr-commons-2.12.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.osgi/2.4.0/org.apache.sling.commons.osgi-2.4.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.commons.osgi/2.4.0/org.apache.sling.commons.osgi-2.4.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.resourceresolver/1.4.8/org.apache.sling.resourceresolver-1.4.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.resourceresolver/1.4.8/org.apache.sling.resourceresolver-1.4.8-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.serviceusermapper/1.2.2/org.apache.sling.serviceusermapper-1.2.2.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.api/2.3.0/org.apache.sling.jcr.api-2.3.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.jcr.api/2.3.0/org.apache.sling.jcr.api-2.3.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.resource/2.7.4/org.apache.sling.jcr.resource-2.7.4.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.jcr.resource/2.7.4/org.apache.sling.jcr.resource-2.7.4-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.mime/2.1.8/org.apache.sling.commons.mime-2.1.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.commons.mime/2.1.8/org.apache.sling.commons.mime-2.1.8-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.json/2.0.16/org.apache.sling.commons.json-2.0.16.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.classloader/1.3.2/org.apache.sling.commons.classloader-1.3.2.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.commons.classloader/1.3.2/org.apache.sling.commons.classloader-1.3.2-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.settings/1.3.8/org.apache.sling.settings-1.3.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.settings/1.3.8/org.apache.sling.settings-1.3.8-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.i18n/2.4.4/org.apache.sling.i18n-2.4.4.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.i18n/2.4.4/org.apache.sling.i18n-2.4.4-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.models.impl/1.2.2/org.apache.sling.models.impl-1.2.2.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.models.impl/1.2.2/org.apache.sling.models.impl-1.2.2-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar" sourcepath="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-jcr/1.4.1/oak-jcr-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-core/1.4.1/oak-core-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-commons/1.4.1/oak-commons-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar" sourcepath="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-blob/1.4.1/oak-blob-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.5/commons-codec-1.5.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/jackrabbit-api/2.12.1/jackrabbit-api-2.12.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-segment/1.4.1/oak-segment-1.4.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.jcr-mock/1.4.4/org.apache.sling.testing.jcr-mock-1.4.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.osgi-mock.core/2.4.8/org.apache.sling.testing.osgi-mock.core-2.4.8.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/reflections/reflections/0.9.9/reflections-0.9.9.jar" sourcepath="M2_REPO/org/reflections/reflections/0.9.9/reflections-0.9.9-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar" sourcepath="M2_REPO/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.sling-mock.core/2.3.14/org.apache.sling.testing.sling-mock.core-2.3.14.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.resourceresolver-mock/1.1.24/org.apache.sling.testing.resourceresolver-mock-1.1.24.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlet-helpers/1.2.0/org.apache.sling.servlet-helpers-1.2.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.scripting.api/2.1.8/org.apache.sling.scripting.api-2.1.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.scripting.api/2.1.8/org.apache.sling.scripting.api-2.1.8-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.scripting.core/2.0.36/org.apache.sling.scripting.core-2.0.36.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.scripting.core/2.0.36/org.apache.sling.scripting.core-2.0.36-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.contentparser/1.2.6/org.apache.sling.jcr.contentparser-1.2.6.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/vault/org.apache.jackrabbit.vault/3.1.18/org.apache.jackrabbit.vault-3.1.18.jar" sourcepath="M2_REPO/org/apache/jackrabbit/vault/org.apache.jackrabbit.vault/3.1.18/org.apache.jackrabbit.vault-3.1.18-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/johnzon/johnzon-core/1.0.0/johnzon-core-1.0.0.jar" sourcepath="M2_REPO/org/apache/johnzon/johnzon-core/1.0.0/johnzon-core-1.0.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.adapter/2.1.6/org.apache.sling.adapter-2.1.6.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.adapter/2.1.6/org.apache.sling.adapter-2.1.6-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.resourcebuilder/1.0.4/org.apache.sling.resourcebuilder-1.0.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" sourcepath="M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-atinject_1.0_spec/1.0/geronimo-atinject_1.0_spec-1.0.jar" sourcepath="M2_REPO/org/apache/geronimo/specs/geronimo-atinject_1.0_spec/1.0/geronimo-atinject_1.0_spec-1.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-json_1.1_spec/1.0/geronimo-json_1.1_spec-1.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-imaging/1.0-R1534292/commons-imaging-1.0-R1534292.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/day/commons/day-commons-gfx/2.1.28/day-commons-gfx-2.1.28.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/day/commons/day-commons-any/2.0.0/day-commons-any-2.0.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/day/commons/day-commons-text/1.1.3/day-commons-text-1.1.3.jar"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/javax/jcr/jcr/2.0/jcr-2.0.jar" sourcepath="M2_REPO/javax/jcr/jcr/2.0/jcr-2.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" sourcepath="M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1.jar" sourcepath="M2_REPO/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/uk/org/lidalia/lidalia-lang/1.0.0/lidalia-lang-1.0.0.jar" sourcepath="M2_REPO/uk/org/lidalia/lidalia-lang/1.0.0/lidalia-lang-1.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/google/guava/guava/14.0.1/guava-14.0.1.jar" sourcepath="M2_REPO/com/google/guava/guava/14.0.1/guava-14.0.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/uk/org/lidalia/lidalia-slf4j-ext/1.0.0/lidalia-slf4j-ext-1.0.0.jar" sourcepath="M2_REPO/uk/org/lidalia/lidalia-slf4j-ext/1.0.0/lidalia-slf4j-ext-1.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.2/joda-time-2.2.jar" sourcepath="M2_REPO/joda-time/joda-time/2.2/joda-time-2.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/adobe/aem/aem-sdk-api/2020.11.4506.20201112T235200Z-201028/aem-sdk-api-2020.11.4506.20201112T235200Z-201028.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/osgi.core/7.0.0/osgi.core-7.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.0/org.osgi.annotation.versioning-1.1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.0.0/org.osgi.annotation.bundle-1.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.0/org.osgi.service.metatype.annotations-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component/1.4.0/org.osgi.service.component-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.4.0/org.osgi.service.component.annotations-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.4/org.apache.sling.servlets.annotations-1.2.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter/5.4.1/junit-jupiter-5.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter-api/5.4.1/junit-jupiter-api-5.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/junit/platform/junit-platform-commons/1.4.1/junit-platform-commons-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter-params/5.4.1/junit-jupiter-params-5.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/junit/jupiter/junit-jupiter-engine/5.4.1/junit-jupiter-engine-5.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/junit/platform/junit-platform-engine/1.4.1/junit-platform-engine-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mockito/mockito-core/2.25.1/mockito-core-2.25.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/bytebuddy/byte-buddy/1.9.7/byte-buddy-1.9.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/bytebuddy/byte-buddy-agent/1.9.7/byte-buddy-agent-1.9.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/objenesis/objenesis/2.6/objenesis-2.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mockito/mockito-junit-jupiter/2.25.1/mockito-junit-jupiter-2.25.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit-addons/junit-addons/1.4/junit-addons-1.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar" sourcepath="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/wcm/io.wcm.testing.aem-mock.junit5/2.5.2/io.wcm.testing.aem-mock.junit5-2.5.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/wcm/io.wcm.testing.aem-mock.core/2.5.2/io.wcm.testing.aem-mock.core-2.5.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.api/2.11.0/org.apache.sling.api-2.11.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.api/2.11.0/org.apache.sling.api-2.11.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/jackrabbit-jcr-commons/2.12.1/jackrabbit-jcr-commons-2.12.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.osgi/2.4.0/org.apache.sling.commons.osgi-2.4.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.commons.osgi/2.4.0/org.apache.sling.commons.osgi-2.4.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.resourceresolver/1.4.8/org.apache.sling.resourceresolver-1.4.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.resourceresolver/1.4.8/org.apache.sling.resourceresolver-1.4.8-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.serviceusermapper/1.2.2/org.apache.sling.serviceusermapper-1.2.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.api/2.3.0/org.apache.sling.jcr.api-2.3.0.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.jcr.api/2.3.0/org.apache.sling.jcr.api-2.3.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.resource/2.7.4/org.apache.sling.jcr.resource-2.7.4.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.jcr.resource/2.7.4/org.apache.sling.jcr.resource-2.7.4-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.mime/2.1.8/org.apache.sling.commons.mime-2.1.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.commons.mime/2.1.8/org.apache.sling.commons.mime-2.1.8-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.json/2.0.16/org.apache.sling.commons.json-2.0.16.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.commons.classloader/1.3.2/org.apache.sling.commons.classloader-1.3.2.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.commons.classloader/1.3.2/org.apache.sling.commons.classloader-1.3.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.settings/1.3.8/org.apache.sling.settings-1.3.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.settings/1.3.8/org.apache.sling.settings-1.3.8-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.i18n/2.4.4/org.apache.sling.i18n-2.4.4.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.i18n/2.4.4/org.apache.sling.i18n-2.4.4-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.models.impl/1.2.2/org.apache.sling.models.impl-1.2.2.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.models.impl/1.2.2/org.apache.sling.models.impl-1.2.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar" sourcepath="M2_REPO/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-jcr/1.4.1/oak-jcr-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-core/1.4.1/oak-core-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-commons/1.4.1/oak-commons-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar" sourcepath="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-blob/1.4.1/oak-blob-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.5/commons-codec-1.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/jackrabbit-api/2.12.1/jackrabbit-api-2.12.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/oak-segment/1.4.1/oak-segment-1.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.jcr-mock/1.4.4/org.apache.sling.testing.jcr-mock-1.4.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.osgi-mock.core/2.4.8/org.apache.sling.testing.osgi-mock.core-2.4.8.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/reflections/reflections/0.9.9/reflections-0.9.9.jar" sourcepath="M2_REPO/org/reflections/reflections/0.9.9/reflections-0.9.9-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar" sourcepath="M2_REPO/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.sling-mock.core/2.3.14/org.apache.sling.testing.sling-mock.core-2.3.14.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.testing.resourceresolver-mock/1.1.24/org.apache.sling.testing.resourceresolver-mock-1.1.24.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlet-helpers/1.2.0/org.apache.sling.servlet-helpers-1.2.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.scripting.api/2.1.8/org.apache.sling.scripting.api-2.1.8.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.scripting.api/2.1.8/org.apache.sling.scripting.api-2.1.8-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.scripting.core/2.0.36/org.apache.sling.scripting.core-2.0.36.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.scripting.core/2.0.36/org.apache.sling.scripting.core-2.0.36-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.jcr.contentparser/1.2.6/org.apache.sling.jcr.contentparser-1.2.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/jackrabbit/vault/org.apache.jackrabbit.vault/3.1.18/org.apache.jackrabbit.vault-3.1.18.jar" sourcepath="M2_REPO/org/apache/jackrabbit/vault/org.apache.jackrabbit.vault/3.1.18/org.apache.jackrabbit.vault-3.1.18-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/johnzon/johnzon-core/1.0.0/johnzon-core-1.0.0.jar" sourcepath="M2_REPO/org/apache/johnzon/johnzon-core/1.0.0/johnzon-core-1.0.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.adapter/2.1.6/org.apache.sling.adapter-2.1.6.jar" sourcepath="M2_REPO/org/apache/sling/org.apache.sling.adapter/2.1.6/org.apache.sling.adapter-2.1.6-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.resourcebuilder/1.0.4/org.apache.sling.resourcebuilder-1.0.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" sourcepath="M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-atinject_1.0_spec/1.0/geronimo-atinject_1.0_spec-1.0.jar" sourcepath="M2_REPO/org/apache/geronimo/specs/geronimo-atinject_1.0_spec/1.0/geronimo-atinject_1.0_spec-1.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-json_1.1_spec/1.0/geronimo-json_1.1_spec-1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-imaging/1.0-R1534292/commons-imaging-1.0-R1534292.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/commons/day-commons-gfx/2.1.28/day-commons-gfx-2.1.28.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/commons/day-commons-any/2.0.0/day-commons-any-2.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/day/commons/day-commons-text/1.1.3/day-commons-text-1.1.3.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
-  <classpathentry kind="output" path="target/classes"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-  <classpathentry kind="src" path="/aemlab.core"/>
-  <classpathentry kind="var" path="M2_REPO/com/adobe/cq/core.wcm.components.core/2.10.0/core.wcm.components.core-2.10.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/adobe/aem/aem-sdk-api/2020.11.4506.20201112T235200Z-201028/aem-sdk-api-2020.11.4506.20201112T235200Z-201028.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/osgi.core/7.0.0/osgi.core-7.0.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.0/org.osgi.annotation.versioning-1.1.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.0.0/org.osgi.annotation.bundle-1.0.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.0/org.osgi.service.metatype.annotations-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component/1.4.0/org.osgi.service.component-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.4.0/org.osgi.service.component.annotations-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.4/org.apache.sling.servlets.annotations-1.2.4.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/aemlab.core"/>
+	<classpathentry kind="var" path="M2_REPO/com/adobe/cq/core.wcm.components.core/2.10.0/core.wcm.components.core-2.10.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/adobe/aem/aem-sdk-api/2020.11.4506.20201112T235200Z-201028/aem-sdk-api-2020.11.4506.20201112T235200Z-201028.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/osgi.core/7.0.0/osgi.core-7.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.versioning/1.1.0/org.osgi.annotation.versioning-1.1.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.annotation.bundle/1.0.0/org.osgi.annotation.bundle-1.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.metatype.annotations/1.4.0/org.osgi.service.metatype.annotations-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component/1.4.0/org.osgi.service.component-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/osgi/org.osgi.service.component.annotations/1.4.0/org.osgi.service.component.annotations-1.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/sling/org.apache.sling.servlets.annotations/1.2.4/org.apache.sling.servlets.annotations-1.2.4.jar"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
