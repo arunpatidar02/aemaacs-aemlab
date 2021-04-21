@@ -5,6 +5,8 @@ import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Modified;
 import org.osgi.service.metatype.annotations.Designate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.services.SampleOsgiService;
 
@@ -12,6 +14,8 @@ import com.community.aemlab.core.services.SampleOsgiService;
 @Designate(ocd = Configuration.class)
 public class SampleOsgiServiceImpl implements SampleOsgiService {
 
+	private static final Logger LOG = LoggerFactory.getLogger(SampleOsgiServiceImpl.class);
+	private static int counter = 0; 
 
 	boolean booleanProp;
 	String stringProp;
@@ -29,7 +33,7 @@ public class SampleOsgiServiceImpl implements SampleOsgiService {
 		sb.append("stringArrayProp: " + ArrayUtils.toString(stringArrayProp) + "\n");
 		sb.append("passwordProp: " + String.valueOf(passwordProp) + "\n");
 		sb.append("longProp: " + longProp + "\n");
-
+		LOG.info("SampleOsgiService#getSettings : {}", counter++);
 		return sb.toString();
 	}
 
