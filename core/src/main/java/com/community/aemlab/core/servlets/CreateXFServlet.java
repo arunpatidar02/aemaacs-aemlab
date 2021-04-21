@@ -39,7 +39,6 @@ public class CreateXFServlet extends SlingSafeMethodsServlet {
 			masterNode.setProperty("cq:xfMasterVariation", true);
 			
 			session.save();
-			resp.getWriter();
 
 			resp.setContentType("text/plain");
 			resp.getWriter().write("Page is created");
