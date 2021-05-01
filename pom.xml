@@ -32,6 +32,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <aem.sdk.api>2021.2.4887.20210204T154817Z-210128</aem.sdk.api>
+        <componentGroupName>aemlab</componentGroupName>
     </properties>
 
     <build>
@@ -140,7 +141,7 @@
                             </goals>
                             <configuration>
                                 <bnd><![CDATA[
-Bundle-Category: ${aemlab}
+Bundle-Category: ${componentGroupName}
 
 # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
 -exportcontents: ${removeall;${packages;VERSIONED};${packages;CONDITIONAL}}
