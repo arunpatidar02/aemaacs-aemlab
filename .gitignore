@@ -15,6 +15,7 @@ local.properties
 .loadpath
 target/
 .history/
+.settings/
 .settings
 .classpath
 .project
