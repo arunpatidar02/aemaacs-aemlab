@@ -128,6 +128,7 @@ To run the Dispatcher locally, the Dispatcher configuration files to be used to 
 -   Usage:
     -   **Windows:**  `bin\validator full -d out src`
     -   **macOS / Linux:**  `./bin/validator full -d ./out ./src`
+         -   relaxed(beta) -> `rm -rf ./out && ./bin/validator full -relaxed ./src`
         
 
 
