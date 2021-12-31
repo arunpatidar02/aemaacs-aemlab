@@ -33,6 +33,7 @@ public class ProductSearchServlet extends SlingSafeMethodsServlet {
         LOGGER.trace("Start");
         response.getWriter().write("Hello");
         LOGGER.trace("Ends");
+        response.setContentType("text/html; charset=UTF-8");
     }
 
 }

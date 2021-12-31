@@ -48,7 +48,7 @@ public class ContentTypeDropdownDSServlet extends SlingSafeMethodsServlet {
             List<Resource> fakeResourceList = new ArrayList<>();
             ValueMap vm = null;
 
-            String[] contentType = { "Page", "Asset", "Experience Fragment"};
+            String[] contentType = { "Page", "Asset", "XF"};
 
             for (int i = 0; i < contentType.length; i++) {
                 vm = new ValueMapDecorator(new HashMap<>());
