@@ -6,9 +6,9 @@
         ${type}
     </h3>
 
-	<h3 class="cmp-dynamic-dropdown__subtype" data-sly-test.subtype="${properties.subtype}">
+	<h4 class="cmp-dynamic-dropdown__subtype" data-sly-test.subtype="${properties.subtype}">
         ${subtype}
-    </h3>
+    </h4>
 </div>
 
-<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-download cq-dd-file'}"></sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-dynamic-dropdown'}"></sly>
