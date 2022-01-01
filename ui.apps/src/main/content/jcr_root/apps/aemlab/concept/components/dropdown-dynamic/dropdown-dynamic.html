@@ -1,0 +1,14 @@
+<div id="${properties.id}"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${properties.type}"
+     class="cmp-dynamic-dropdown">
+    <h3 class="cmp-dynamic-dropdown__type" data-sly-test.type="${properties.type}">
+        ${type}
+    </h3>
+
+	<h4 class="cmp-dynamic-dropdown__subtype" data-sly-test.subtype="${properties.subtype}">
+        ${subtype}
+    </h4>
+</div>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-dynamic-dropdown'}"></sly>
