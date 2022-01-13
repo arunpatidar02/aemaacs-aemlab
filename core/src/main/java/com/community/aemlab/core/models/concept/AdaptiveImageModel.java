@@ -17,6 +17,9 @@ public class AdaptiveImageModel {
 
     @ValueMapValue
     private String file2Reference;
+    
+    @ValueMapValue
+    private String filePath;
 
     public String getTitle() {
         return title;
@@ -24,6 +27,10 @@ public class AdaptiveImageModel {
 
     public String getFileReference2() {
         return file2Reference;
+    }
+    
+    public String getFilePath() {
+        return filePath;
     }
 
     public String getSerset() {

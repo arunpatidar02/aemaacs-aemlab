@@ -26,6 +26,7 @@ import com.adobe.granite.ui.components.ds.DataSource;
 import com.adobe.granite.ui.components.ds.EmptyDataSource;
 import com.adobe.granite.ui.components.ds.SimpleDataSource;
 import com.adobe.granite.ui.components.ds.ValueMapResource;
+import com.day.cq.commons.jcr.JcrConstants;
 
 @Component(service = Servlet.class, immediate = true, property = {
         Constants.SERVICE_DESCRIPTION + "=Populating Coral Dropdown using datasource servlet",
@@ -54,7 +55,7 @@ public class ContentTypeDropdownDSServlet extends SlingSafeMethodsServlet {
                 vm = new ValueMapDecorator(new HashMap<>());
                 vm.put("value", contentType[i].trim().toLowerCase());
                 vm.put("text", contentType[i].trim());
-                fakeResourceList.add(new ValueMapResource(resolver, new ResourceMetadata(), "nt:unstructured", vm));
+                fakeResourceList.add(new ValueMapResource(resolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, vm));
             }
 
             // Create a DataSource that is used to populate the drop-down control
