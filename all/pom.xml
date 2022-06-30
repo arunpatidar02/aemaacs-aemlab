@@ -201,6 +201,7 @@
         <dependency>
             <groupId>com.adobe.acs</groupId>
             <artifactId>acs-aem-commons-content</artifactId>
+            <version>${acs.commons.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>

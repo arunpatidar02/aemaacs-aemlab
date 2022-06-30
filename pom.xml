@@ -609,7 +609,7 @@ Bundle-DocURL:
                 <groupId>com.adobe.acs</groupId>
                 <artifactId>acs-aem-commons-content</artifactId>
                 <version>${acs.commons.version}</version>
-                <type>zip</type>
+                <type>content-package</type>
             </dependency>
             <!-- See: https://github.com/Netcentric/accesscontroltool -->
             <dependency>
