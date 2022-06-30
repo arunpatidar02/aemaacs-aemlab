@@ -61,6 +61,25 @@
                             <type>zip</type>
                             <target>/apps/aemlab-vendor-packages/application/install</target>
                         </embedded>
+                        <!-- Tools -->
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+            				<artifactId>acs-aem-commons-content</artifactId>
+            				<type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                             <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            				 <artifactId>accesscontroltool-package</artifactId>
+            				 <type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.icfolson.aem.groovy.console</groupId>
+            				<artifactId>aem-groovy-console</artifactId>
+            				<type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                     <subPackages>
                     </subPackages>
@@ -175,6 +194,23 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.config</artifactId>
+            <type>zip</type>
+        </dependency>
+        
+        <!-- Tools -->
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            <artifactId>accesscontroltool-package</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.icfolson.aem.groovy.console</groupId>
+            <artifactId>aem-groovy-console</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>
