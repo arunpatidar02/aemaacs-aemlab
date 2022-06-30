@@ -75,8 +75,8 @@
                             <target>/apps/aemlab-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>com.icfolson.aem.groovy.console</groupId>
-            				<artifactId>aem-groovy-console</artifactId>
+                            <groupId>org.cid15.aem.groovy.console</groupId>
+	            			<artifactId>aem-groovy-console-all</artifactId>
             				<type>zip</type>
                             <target>/apps/aemlab-vendor-packages/application/install</target>
                         </embedded>
@@ -210,8 +210,8 @@
             <type>zip</type>
         </dependency>
         <dependency>
-            <groupId>com.icfolson.aem.groovy.console</groupId>
-            <artifactId>aem-groovy-console</artifactId>
+            <groupId>org.cid15.aem.groovy.console</groupId>
+	        <artifactId>aem-groovy-console-all</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>
