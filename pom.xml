@@ -35,7 +35,7 @@
         <componentGroupName>aemlab</componentGroupName>
         <acs.commons.version>5.3.2</acs.commons.version>
         <accesscontroltool.version>3.0.4</accesscontroltool.version>
-        <aem.groovy.console.version>15.1.0</aem.groovy.console.version>
+        <aem.groovy.console.version>17.0.0</aem.groovy.console.version>
     </properties>
 
     <build>
@@ -618,10 +618,10 @@ Bundle-DocURL:
                 <version>${accesscontroltool.version}</version>
                 <type>zip</type>
             </dependency>
-            <!-- See: https://github.com/icfnext/aem-groovy-console -->
+            <!-- See: https://github.com/CID15/aem-groovy-console -->
             <dependency>
-	            <groupId>com.icfolson.aem.groovy.console</groupId>
-	            <artifactId>aem-groovy-console</artifactId>
+	            <groupId>org.cid15.aem.groovy.console</groupId>
+	            <artifactId>aem-groovy-console-all</artifactId>
 	            <type>zip</type>
 	            <version>${aem.groovy.console.version}</version>
 	        </dependency>
