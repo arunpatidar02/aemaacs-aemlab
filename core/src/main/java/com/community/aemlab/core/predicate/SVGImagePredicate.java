@@ -8,6 +8,7 @@ import javax.jcr.RepositoryException;
 import org.apache.commons.collections.Predicate;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.sling.jcr.resource.JcrResourceConstants;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,7 +58,8 @@ public class SVGImagePredicate extends AbstractNodePredicate {
 
     private static boolean isFolder(Node node) {
         try {
-            if (node.isNodeType(DamConstants.NT_SLING_ORDEREDFOLDER) || node.isNodeType("sling:Folder")
+            if (node.isNodeType(JcrResourceConstants.NT_SLING_ORDERED_FOLDER)
+                    || node.isNodeType(JcrResourceConstants.NT_SLING_FOLDER)
                     || node.isNodeType(JcrConstants.NT_FOLDER)) {
                 return true;
             }

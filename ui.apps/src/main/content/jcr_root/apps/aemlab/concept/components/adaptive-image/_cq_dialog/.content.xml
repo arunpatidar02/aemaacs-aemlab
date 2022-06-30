@@ -102,6 +102,15 @@
                                                 crumbRoot="SVG Home"
                                                 name="./filePath"
                                                 fieldLabel="Browse Image3"/>
+                                             <pathfield
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Select an Image"
+                                                rootPath="/content/dam/aemlab"
+                                                predicate="svgpredicate"
+                                                crumbRoot="SVG Home"
+                                                name="./filePathField"
+                                                fieldLabel="Browse Image4"/>
                                         </items>
                                     </column>
                                 </items>
