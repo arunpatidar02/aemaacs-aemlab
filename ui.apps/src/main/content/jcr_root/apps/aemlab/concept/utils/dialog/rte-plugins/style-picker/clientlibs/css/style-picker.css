@@ -1,0 +1,47 @@
+.style-Picker-Dialog .cq-dialog-content .u-coral-padding .coral-Form-fieldwrapper {
+    margin-bottom: 20px;
+}
+
+.style-Picker-Dialog #ADD_STYLE, .style-Picker-Dialog #REMOVE_STYLE {
+    margin: 10px 20px 10px 20px;
+    min-width: 100px;
+    font-size: 16px;
+}
+
+.style-Picker-Dialog #ADD_STYLE {
+    margin-left: 60px;
+}
+
+.style-Picker-Dialog .coral-Dialog-wrapper, .style-Picker-Dialog .coral3-Dialog-wrapper {
+    position: relative !important;
+    left: 0 !important;
+    top: 14px !important;
+    margin: 0.625rem auto !important;
+}
+
+.style-Picker-Dialog {
+    background-color: #f0f0f0;
+    overflow: hidden !important;
+    font-size: 15px;
+}
+
+.style-Picker-Dialog .coral3-Select .coral3-SelectList-item[disabled] {
+    color: #FFF;
+    font-size: 16px;
+    background-color: #77a8d4;
+      padding-left:.625rem;
+}
+
+.style-Picker-Dialog .coral3-Select .coral3-SelectList-item{
+    padding-left:1.5rem;
+}
+
+
+
+.style-Picker-Dialog .coral3-Select .coral3-Select-label {
+    font-size: 14px;
+}
+
+.rte-dialog--stylePickerDialog {
+    transform: scale(0.9) !important;
+}

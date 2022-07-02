@@ -1,0 +1,21 @@
+[
+    {"text": "Background","value": "BTC","heading": "true"},
+    {"text": "White","value": "white"},
+	{"text": "Black","value": "black"},
+    {"text": "Green","value": "green"},
+    {"text": "Orange","value": "orange"},
+    {"text": "Blue","value": "blue"},
+    {"text": "Red","value": "red"},
+    {"text": "Dark Grey","value": "darkgrey-text"},
+    {"text": "Light Grey","value": "lightgrey-text"},
+    {"text": "List Style","value": "LS","heading": "true"},
+    {"text": "Check","value": "list-checked"},
+    {"text": "Cross","value": "list-crossed"},
+    {"text": "Link Style","value": "LS","heading": "true"},
+    {"text": "Primary","value": "btn-primary"},
+    {"text": "Secondary","value": "btn-secondary"},
+    {"text": "Image Style","value": "IS","heading": "true"},
+    {"text": "Responsive","value": "img-responsive"},
+    {"text": "Banner","value": "img-banner"},
+    {"text": "Icon","value": "img-icon"}
+]

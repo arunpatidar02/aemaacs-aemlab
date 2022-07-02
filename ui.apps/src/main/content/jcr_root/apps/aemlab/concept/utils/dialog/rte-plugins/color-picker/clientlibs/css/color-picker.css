@@ -1,0 +1,26 @@
+.color-Picker-Dialog .cq-dialog-content .u-coral-padding .coral-Form-fieldwrapper {
+    margin-bottom: 20px;
+}
+
+.color-Picker-Dialog #CP_ADD_COLOR, .color-Picker-Dialog #CP_REMOVE_COLOR{
+    margin: 10px 20px 10px 20px;
+    min-width: 100px;
+}
+
+.color-Picker-Dialog #CP_ADD_COLOR {
+    margin-left: 60px;
+}
+
+.color-Picker-Dialog  .coral-Dialog-wrapper {
+    position: relative !important;
+    left: 0 !important;
+    top: 14px !important;
+    margin: 0.625rem auto !important;
+}
+
+.color-Picker-Dialog {
+    background-color: #f0f0f0;
+    overflow: hidden !important;
+    font-size: 15px;
+}
+
