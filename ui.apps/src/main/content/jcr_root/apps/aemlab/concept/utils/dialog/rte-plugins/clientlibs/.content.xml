@@ -3,4 +3,4 @@
     jcr:primaryType="cq:ClientLibraryFolder"
     categories="[cq.authoring.dialog.rte-plugin.all]"
     dependencies="[sistinejs.underscore]"
-    embed="[cq.authoring.dialog.rte-plugin.color-picker,cq.authoring.dialog.rte-plugin.style-picker]"/>
+    embed="[cq.authoring.dialog.rte-plugin.color-picker,cq.authoring.dialog.rte-plugin.style-picker,cq.authoring.dialog.rte-plugin.breadcrumb]"/>

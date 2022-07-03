@@ -1,16 +1,18 @@
-(function($, $document) {
+(function ($, $document) {
     "use strict";
 
 
-    $(document).on("dialog-ready", function() {
+    $(document).on("dialog-ready", function () {
         var breadcrumbItem = '<div class="breadcrumb-rte"><p class="placeholder">Selected item breadcrumb will be shown here, and allow to select parents by clicking on breadcrumb</p></div>';
-        setTimeout(function() {
-            $('.coral-RichText[data-showbreadcrumb="true"]').each(function() {
-                $(this).parent().find(".rte-sourceEditor").after(breadcrumbItem);
+        setTimeout(function () {
+            $('.coral-RichText[data-showbreadcrumb="true"]').each(function () {
+                if (!$(this).find('.breadcrumb-rte')) {
+                    $(this).parent().find(".rte-sourceEditor").after(breadcrumbItem);
+                }
             });
 
 
-            $('.coral-RichText[data-showbreadcrumb="true"]').click(function(e) {
+            $('.coral-RichText[data-showbreadcrumb="true"]').click(function (e) {
                 var $target = $(e.target);
                 if (!$target.hasClass("coral-RichText")) {
                     var xpath = getXPath(e.target);
@@ -23,7 +25,7 @@
     });
 
 
-    $(document).on("click", ".item-xpath", function(e) {
+    $(document).on("click", ".item-xpath", function (e) {
         var xpath = $(this).data("xpath");
         setCursor(getElementByXpath(xpath));
     });

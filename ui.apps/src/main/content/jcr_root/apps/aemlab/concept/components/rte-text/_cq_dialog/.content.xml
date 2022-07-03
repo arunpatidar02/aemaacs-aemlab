@@ -29,7 +29,8 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <text jcr:primaryType="nt:unstructured">
+                                            <text jcr:primaryType="nt:unstructured"
+                                                  showbreadcrumb="true">
                                                 <rtePlugins jcr:primaryType="nt:unstructured">
                                                     <colorformat
                                                         jcr:primaryType="nt:unstructured"

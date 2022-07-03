@@ -29,23 +29,3 @@
     color: #989696;
     margin: 0 5px;
 }
-
-.style-Picker-Dialog .cq-dialog-content .u-coral-padding .coral-Form-fieldwrapper {
-    margin-bottom: 20px;
-}
-
-.style-Picker-Dialog #ADD_STYLE, .style-Picker-Dialog #REMOVE_STYLE {
-    margin: 10px 20px 10px 20px;
-    min-width: 100px;
-}
-
-.style-Picker-Dialog #ADD_STYLE {
-    margin-left: 60px;
-}
-
-.style-Picker-Dialog .coral-Dialog-wrapper {
-    position: relative !important;
-    left: 0 !important;
-    top: 0 !important;
-    margin: 0.625rem auto !important;
-}
