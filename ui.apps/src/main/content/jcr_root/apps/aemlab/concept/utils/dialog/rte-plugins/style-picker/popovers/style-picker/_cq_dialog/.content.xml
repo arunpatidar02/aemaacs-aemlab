@@ -2,6 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
     jcr:title="Style Picker"
+    extraClientlibs="[cq.authoring.dialog.rte-plugin.style-picker]"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -19,8 +20,8 @@
                         name="./style">
                         <datasource
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="aemlab/dialog/granite/components/rte/datasource/json"
-                            options="/apps/commons/rte/plugins/popovers/style-picker/options.json"/>
+                            sling:resourceType="aemlab/dialog/granite/components/select/datasource/json"
+                            options="/apps/aemlab/concept/utils/dialog/rte-plugins/style-picker/popovers/style-picker/options.json"/>
                     </dropdown>
                     <add
                         jcr:primaryType="nt:unstructured"

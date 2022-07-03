@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Json Dropdown"
+    jcr:title="RTE Plugins"
     sling:resourceType="cq/gui/components/authoring/dialog"
     extraClientlibs="[cq.authoring.dialog.rte-plugin.all]">
     <content
@@ -29,7 +29,7 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <text>
+                                            <text jcr:primaryType="nt:unstructured">
                                                 <rtePlugins jcr:primaryType="nt:unstructured">
                                                     <colorformat
                                                         jcr:primaryType="nt:unstructured"
@@ -44,13 +44,34 @@
                                                             jcr:primaryType="nt:unstructured"
                                                             toolbar="[format#bold,format#italic,format#underline,#justify,#lists,subsuperscript#subscript,subsuperscript#superscript,links#modifylink,links#unlink,links#anchor,image#imageProps,findreplace#find,findreplace#replace,spellcheck#checktext,misctools#specialchars,misctools#sourceedit,#styles,#paraformat,table#table,colorformat#colorPicker,styleformat#styles]">
                                                             <popovers jcr:primaryType="nt:unstructured">
-                                                                <ACTStylesCommand
-                                                                    jcr:primaryType="nt:unstructured"
-                                                                    items="styles:getStyles:styles-pulldown"
-                                                                    ref="ACTStylesCommand">
-                                                                </ACTStylesCommand>
+                                                                <justify
+                                                                  jcr:primaryType="nt:unstructured"
+                                                                  items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                                  ref="justify"/>
+                                                                <lists
+                                                                  jcr:primaryType="nt:unstructured"
+                                                                  items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                  ref="lists"/>
+                                                                <paraformat
+                                                                  jcr:primaryType="nt:unstructured"
+                                                                  items="paraformat:getFormats:paraformat-pulldown"
+                                                                  ref="paraformat"/>
                                                             </popovers>
                                                         </inline>
+                                                        <dialogFullScreen
+                                                          jcr:primaryType="nt:unstructured"
+                                                          toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps,,colorformat#colorPicker,styleformat#styles]">
+                                                          <popovers jcr:primaryType="nt:unstructured">
+                                                            <paraformat
+                                                              jcr:primaryType="nt:unstructured"
+                                                              items="paraformat:getFormats:paraformat-pulldown"
+                                                              ref="paraformat"/>
+                                                          </popovers>
+                                                        </dialogFullScreen>
+                                                        <tableEditOptions
+                                                          jcr:primaryType="nt:unstructured"
+                                                          toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]">
+                                                        </tableEditOptions>
                                                     </cui>
                                                  </uiSettings>
                                             </text>
