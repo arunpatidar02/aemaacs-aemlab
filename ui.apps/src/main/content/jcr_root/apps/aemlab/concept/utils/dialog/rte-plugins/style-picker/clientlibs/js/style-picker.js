@@ -302,7 +302,7 @@
         $footer.find(".cq-dialog-cancel").click(function (event) {
             event.preventDefault();
             $dialog.remove();
-            sendCancelMessage();
+            sendDataMessage("cancel");
         });
     }
 

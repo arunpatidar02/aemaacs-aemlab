@@ -20,10 +20,6 @@
     font-size: 15px;
 }
 
-.color-Picker-Dialog .cq-dialog-content>.u-coral-padding {
-    padding: 0 !important;
-}
-
 .rte-dialog--colorPickerDialog,
 .color-Picker-Dialog.is-open ~ ._coral-Popover.is-open {
     transform: scale(0.9) !important;
