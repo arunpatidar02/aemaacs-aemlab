@@ -2,6 +2,25 @@ console.log("client multifields....");
 (function (document, $, ns) {
     "use strict";
     $(document).on("click", ".cq-dialog-submit", function (e) {
+
+
+        $('.multifield-save-is-json').each(function () {
+            var $multifield = $(this);
+                   var multifieldname = $multifield.attr('data-granite-coral-multifield-name');
+            
+                 //console.log($multifield.find('coral-multifield-item').length);
+                 $multifield.find('coral-multifield-item').each(function () {
+                   var $multifieldItem = $(this);
+                     console.log($multifieldItem.find('input[name]'));
+               });
+               });
+
+
+
+
+
+
+
         var attributelist = $("input[name='./fname']").attr("data-attribute1").split(",");
 
         console.log("attributelist" + attributelist.size);

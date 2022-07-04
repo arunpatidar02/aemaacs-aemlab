@@ -521,3 +521,10 @@ input[type="submit"] {
 input[type="submit"]:focus {
     outline: none;
 }
+
+@font-face {
+    font-family: 'CustomFont';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CustomFont'), url('../clientlib-site/resources/fonts/Austria.ttf') format('truetype');
+  }
