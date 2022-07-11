@@ -36,6 +36,7 @@
         <acs.commons.version>5.3.2</acs.commons.version>
         <accesscontroltool.version>3.0.4</accesscontroltool.version>
         <aem.groovy.console.version>17.0.0</aem.groovy.console.version>
+        <cac.editor.version>1.12.0</cac.editor.version>
     </properties>
 
     <build>
@@ -625,6 +626,13 @@ Bundle-DocURL:
 	            <type>zip</type>
 	            <version>${aem.groovy.console.version}</version>
 	        </dependency>
+	        <!-- https://github.com/wcm-io/io.wcm.caconfig.editor -->
+	         <dependency>
+		        <groupId>io.wcm</groupId>
+	    		<artifactId>io.wcm.caconfig.editor.package</artifactId>
+	    		<version>${cac.editor.version}</version>
+	    		<type>zip</type>
+    		 </dependency>
         </dependencies>
     </dependencyManagement>
 
