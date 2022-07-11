@@ -32,7 +32,7 @@ header .cmp-experiencefragment--header #header-logo{
 header .cmp-experiencefragment--header #header-logo p, header .cmp-experiencefragment--header #header-logo p a{
     font-size:2rem;
     color:#026491;
-    font-family:Luminari, fantasy;
+    font-family:CustomFont;
 }
 
 header .cmp-experiencefragment--header #header-logo p+p, header .cmp-experiencefragment--header #header-logo p+p a{

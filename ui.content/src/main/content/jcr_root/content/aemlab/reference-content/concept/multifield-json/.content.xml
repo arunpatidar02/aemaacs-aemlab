@@ -21,8 +21,7 @@
                         jcr:title="Multifield with json and composite save"
                         sling:resourceType="aemlab/components/title"/>
                     <multifield-json
-                        label="[Label11, Label12]"	
-                        path="[/content/aemlab/language-masters, /content/aemlab/language-masters/en]"
+                        multijson="[{\"label\":\"ACME CARE\",\"path\":\"/content/acme/de\"},{\"label\":\"AEMLAB\",\"path\":\"/content/aemlab/us\"},{\"label\":\"DAM\",\"path\":\"/content/dam\"}]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemlab/concept/components/multifield-json">
                         <multicomp
