@@ -80,6 +80,12 @@
             				<type>zip</type>
                             <target>/apps/aemlab-vendor-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>io.wcm</groupId>
+	    					<artifactId>io.wcm.caconfig.editor.package</artifactId>
+            				<type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                     <subPackages>
                     </subPackages>
@@ -214,5 +220,10 @@
 	        <artifactId>aem-groovy-console-all</artifactId>
             <type>zip</type>
         </dependency>
+        <dependency>
+		    <groupId>io.wcm</groupId>
+	    	<artifactId>io.wcm.caconfig.editor.package</artifactId>
+	    	<type>zip</type>
+    	</dependency>
     </dependencies>
 </project>
