@@ -50,6 +50,12 @@
                             <target>/apps/aemlab-packages/content/install</target>
                         </embedded>
                         <embedded>
+                            <groupId>com.community.aemlab</groupId>
+                            <artifactId>aemlab.acl</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aemlab-packages/content/install</target>
+                        </embedded>
+                        <embedded>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.content</artifactId>
                             <type>zip</type>
@@ -187,6 +193,12 @@
         <dependency>
             <groupId>com.community.aemlab</groupId>
             <artifactId>aemlab.ui.content</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+         <dependency>
+            <groupId>com.community.aemlab</groupId>
+            <artifactId>aemlab.acl</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
