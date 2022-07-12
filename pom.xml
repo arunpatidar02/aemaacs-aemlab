@@ -15,6 +15,7 @@
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
         <module>ui.content</module>
+        <module>aemlab.acl</module>
         <module>dispatcher.cloud</module>
     </modules>
 
