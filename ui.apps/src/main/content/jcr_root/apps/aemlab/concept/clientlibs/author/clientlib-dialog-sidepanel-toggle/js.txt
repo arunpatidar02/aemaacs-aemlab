@@ -1,0 +1,1 @@
+js/dialog.sidepanel.js

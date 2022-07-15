@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/aemlab"/>
+   
+     <filter root="/conf/aemlab">
+        <exclude pattern="/conf/aemlab/actool"/>
+    </filter>
     <filter root="/content/aemlab">
         <include pattern="/content/aemlab"/>
         <include pattern="/content/aemlab/jcr:content(.*)"/>
