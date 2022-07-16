@@ -91,8 +91,6 @@
 
                 if($input.hasClass('_coral-Checkbox-input')){
                     inputValue = $input.parent().attr('checked') ? inputValue : "";
-                }else if($input.hasClass('_coral-Radio-input') && !radioValue){
-                    inputValue = $input.parent().attr('checked') ? inputValue : "";
                 }
                 jsonObj[key] = inputValue;
                 $input.attr('disabled', true);

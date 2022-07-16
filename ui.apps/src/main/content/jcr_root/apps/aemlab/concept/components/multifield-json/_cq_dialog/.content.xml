@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Multifield Save"
+    jcr:title="Multifield JSON Save"
     sling:resourceType="cq/gui/components/authoring/dialog"
     extraClientlibs="[cq.authoring.dialog.multifield.json]">
     <content
@@ -40,16 +40,197 @@
                                                     name="./multijson"
                                                     sling:resourceType="granite/ui/components/coral/foundation/container">
                                                     <items jcr:primaryType="nt:unstructured">
-                                                        <label
-                                                        jcr:primaryType="nt:unstructured"
-                                                        fieldLabel="Label"
-                                                        name="./label"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-                                                        <path
-                                                        jcr:primaryType="nt:unstructured"
-                                                        fieldLabel="Path"
-                                                        name="./path"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                                                        <textfield
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter Text in color code format e.g. #FFF"
+                                                            fieldLabel="Text - Textfield "
+                                                            name="./text"/>
+                                                        <number
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                            fieldDescription="Enter number, should be multiple of 10"
+                                                            fieldLabel="Text - Number"
+                                                            max="{Long}90"
+                                                            min="{Long}10"
+                                                            name="./number"/>
+                                                        <textarea
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                            cols="{Long}5"
+                                                            fieldDescription="Enter Text "
+                                                            fieldLabel="Text - Textarea"
+                                                            name="./textarea"
+                                                            rows="{Long}5"/>
+                                                        <rte
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                            fieldDescription="Enter Text"
+                                                            fieldLabel="Text - Paragraph"
+                                                            name="./rteText"
+                                                            regex="required"
+                                                            regexText="Please enter paragraph text"
+                                                            useFixedInlineToolbar="{Boolean}true">
+                                                            <rtePlugins jcr:primaryType="nt:unstructured">
+                                                                <format
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    features="*"/>
+                                                                <paraformat
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    features="*">
+                                                                    <formats jcr:primaryType="nt:unstructured">
+                                                                        
+                                                                        <default_h3
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            description="Heading 3"
+                                                                            tag="h3"/>
+                                                                        <default_h4
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            description="Heading 4"
+                                                                            tag="h4"/>
+                                                                        <default_blockquote
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            description="Quote"
+                                                                            tag="blockquote"/>
+                                                                        <default_pre
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            description="Preformatted"
+                                                                            tag="pre"/>
+                                                                    </formats>
+                                                                </paraformat>
+                                                                <links
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    features="*"/>
+                                                            </rtePlugins>
+                                                            <uiSettings jcr:primaryType="nt:unstructured">
+                                                                <cui jcr:primaryType="nt:unstructured">
+                                                                    <inline
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        toolbar="[format#bold,format#italic,format#underline,links#modifylink,links#unlink,links#anchor]">
+                                                                        <popovers jcr:primaryType="nt:unstructured">
+                                                                            <paraformat
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                items="paraformat:getFormats:paraformat-pulldown"
+                                                                                ref="paraformat"/>
+                                                                        </popovers>
+                                                                    </inline>
+                                                                </cui>
+                                                            </uiSettings>
+                                                        </rte>
+                                                        <dropdown
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            emptyText="----  Please Select a Value -----"
+                                                            fieldDescription="Select option from Dropdown"
+                                                            fieldLabel="Dropdown"
+                                                            name="./dd">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <opt1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Option1"
+                                                                    value="val1"/>
+                                                                <opt2
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Option2"
+                                                                    value="val2"/>
+                                                            </items>
+                                                        </dropdown>
+                                                        <checkbox
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldDescription="Checkbox desc"
+                                                            name="./chk"
+                                                            text="checkbox1"
+                                                            value="chkbox1"/>
+                                                        <radio
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                            fieldDescription="Select Radio"
+                                                            fieldLabel="Radio Group"
+                                                            name="./radio1">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <male
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Option1"
+                                                                    value="val1"/>
+                                                                <female
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Option2"
+                                                                    value="val2"/>
+                                                            </items>
+                                                        </radio>
+                                                        <fieldset
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Fieldset Title"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <checkbox
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    name="./chk2"
+                                                                    text="CheckItem1"
+                                                                    value="chkbox2"/>
+                                                                <checkbox2
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    name="./chk3"
+                                                                    text="CheckItem2"
+                                                                    value="chkbox3"/>
+                                                            </items>
+                                                        </fieldset>
+                                                        <pathfield
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Browse pathfield"
+                                                            fieldLabel="path field"
+                                                            name="./path"
+                                                            rootPath="/content/aemlab"/>
+                                                        <pathbrowser
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Browse path browser - select a value from 'en' folder"
+                                                            fieldLabel="pathbrowser"
+                                                            name="./pathbrowser"
+                                                            rootPath="/content/aemlab"/>
+                                                        <fileupload
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            autoStart="{Boolean}false"
+                                                            class="cq-droptarget"
+                                                            fileNameParameter="./imageName"
+                                                            fileReferenceParameter="./imageReference"
+                                                            mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./image"
+                                                            title="File Upload"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <colorfield
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                                            fieldDescription="Color description"
+                                                            fieldLabel="Color"
+                                                            name="./color"
+                                                            variant="default"/>
+                                                        <datepicker
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                            fieldDescription="Date Picker"
+                                                            fieldLabel="Date"
+                                                            name="./date" />
+                                                         <switch
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/switch"
+                                                            fieldDescription="Switch"
+                                                            fieldLabel="Switch"
+                                                            value="true"
+                                                            name="./switch" />
+                                                         <hidden
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            fieldDescription="hidden"
+                                                            fieldLabel="Hidden Field"
+                                                            name="./hidden" />
                                                     </items>
                                                 </field>
                                             </mjson>
