@@ -88,8 +88,12 @@
                 var $input = $(this);
                 var key = $input.attr('name').substring(2);
                 var inputValue = $input.val();
-
-                if($input.hasClass('_coral-Checkbox-input')){
+                if($input.hasClass('cq-RichText-editable')){
+                    if($input.text().length !=0){
+                        inputValue=$input.html()
+                    }
+                }
+                else if($input.hasClass('_coral-Checkbox-input')){
                     inputValue = $input.parent().attr('checked') ? inputValue : "";
                 }
                 jsonObj[key] = inputValue;

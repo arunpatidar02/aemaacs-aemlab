@@ -3,7 +3,7 @@
     jcr:primaryType="nt:unstructured"
     jcr:title="Multifield JSON Save"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[cq.authoring.dialog.multifield.json]">
+    extraClientlibs="[cq.authoring.dialog.multifield.json,cq.authoring.dialog.multifield.decoration]">
     <content
         granite:class="cmp-json-dropdown__editor"
         jcr:primaryType="nt:unstructured"
@@ -223,7 +223,6 @@
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/switch"
                                                             fieldDescription="Switch"
                                                             fieldLabel="Switch"
-                                                            value="true"
                                                             name="./switch" />
                                                          <hidden
                                                             jcr:primaryType="nt:unstructured"
