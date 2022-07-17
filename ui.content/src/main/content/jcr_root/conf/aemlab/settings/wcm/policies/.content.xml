@@ -258,7 +258,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Lab - Content,/apps/aemlab/components/form/container,group:AEM Lab - Structure]">
+                    components="[group:AEM Lab - Content,/apps/aemlab/components/form/container,group:AEM Lab - Structure, group:AEM Lab - Concept]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">

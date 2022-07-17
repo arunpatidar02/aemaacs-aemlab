@@ -1,0 +1,11 @@
+<p>Multifield component allows to add/reorder/remove multiple instances of a field.</p>
+
+<p>In the simplest case this is a simple form input field (e.g. textfield, textarea) 
+but it can also be a complex component acting as an aggregate of multiple subcomponents (e.g. address entry).</p>
+
+<p>The field to be included is defined in the subnode named field. Regardless of the component used, 
+Multifield assumes they all write to the same property (defined by the name property of the field subnode) 
+thus the resulting value will always be multi value.</p>
+
+<p>When rendering existing entries, the Multifield will iterate over the multi value, get each value, 
+set it in the field and let the field render it.</p>
