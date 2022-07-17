@@ -1,6 +1,6 @@
 /*CSS to add fancy separtor for multifield(Granite type)*/
 .cq-Dialog coral-multifield coral-multifield-item:not(:first-child){
-    border-top:2px solid lightgrey;
+    border-top:2px solid gray;
     margin-bottom:10px;
     margin-top:20px;
 } 
@@ -22,15 +22,10 @@
     padding-top:20px
 }
 
-.cq-Dialog coral-multifield{
-    counter-reset: coral-multifield-item;
-} 
-
 .cq-Dialog coral-multifield coral-Multifield-item::before{
-    counter-increment: coral-multifield-item;
-    content: counter(coral-multifield-item);
+    content: attr(aria-label);
     font-size:large;
     background-color:lightgray;
     color:#919191;
-    padding:0 5px ;
+    padding:0 10px ;
 }
