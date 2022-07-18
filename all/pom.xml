@@ -50,6 +50,12 @@
                             <target>/apps/aemlab-packages/content/install</target>
                         </embedded>
                         <embedded>
+                            <groupId>com.community.aemlab</groupId>
+                            <artifactId>aemlab.acl</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aemlab-packages/content/install</target>
+                        </embedded>
+                        <embedded>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.content</artifactId>
                             <type>zip</type>
@@ -59,6 +65,31 @@
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.config</artifactId>
                             <type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
+                        <!-- Tools -->
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+            				<artifactId>acs-aem-commons-content</artifactId>
+            				<type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                             <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            				 <artifactId>accesscontroltool-package</artifactId>
+            				 <type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>org.cid15.aem.groovy.console</groupId>
+	            			<artifactId>aem-groovy-console-all</artifactId>
+            				<type>zip</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>io.wcm</groupId>
+	    					<artifactId>io.wcm.caconfig.editor.package</artifactId>
+            				<type>zip</type>
                             <target>/apps/aemlab-vendor-packages/application/install</target>
                         </embedded>
                     </embeddeds>
@@ -165,6 +196,12 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
+         <dependency>
+            <groupId>com.community.aemlab</groupId>
+            <artifactId>aemlab.acl</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
 
 
         <dependency>
@@ -177,5 +214,28 @@
             <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
         </dependency>
+        
+        <!-- Tools -->
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <version>${acs.commons.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            <artifactId>accesscontroltool-package</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>org.cid15.aem.groovy.console</groupId>
+	        <artifactId>aem-groovy-console-all</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+		    <groupId>io.wcm</groupId>
+	    	<artifactId>io.wcm.caconfig.editor.package</artifactId>
+	    	<type>zip</type>
+    	</dependency>
     </dependencies>
 </project>

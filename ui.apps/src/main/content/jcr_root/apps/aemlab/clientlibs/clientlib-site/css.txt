@@ -13,3 +13,4 @@ footer.css
 header.css
 separator.css
 title.css
+rte.css

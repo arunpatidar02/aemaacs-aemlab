@@ -1,0 +1,43 @@
+.style-Picker-Dialog ._coral-Dialog-content {
+    overflow-y: hidden;
+}
+
+.style-Picker-Dialog #ADD_STYLE,
+.style-Picker-Dialog #REMOVE_STYLE {
+    margin: 10px 20px 10px 20px;
+    min-width: 100px;
+    font-size: 16px;
+}
+
+.style-Picker-Dialog .coral-Dialog-wrapper,
+.style-Picker-Dialog .coral3-Dialog-wrapper {
+    position: relative !important;
+    left: 0 !important;
+    top: 14px !important;
+    margin: 0.625rem auto !important;
+}
+
+.style-Picker-Dialog {
+    background-color: #f0f0f0;
+    overflow: hidden !important;
+    font-size: 15px;
+}
+
+.coral--light ._coral-Popover.is-open ._coral-Menu ._coral-Menu-item.is-disabled {
+    background-color: #77a8d4;
+}
+
+.coral--light ._coral-Popover.is-open ._coral-Menu ._coral-Menu-item.is-disabled ._coral-Menu-itemLabel {
+    padding-left: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.coral--light ._coral-Popover.is-open ._coral-Menu ._coral-Menu-itemLabel {
+    padding-left: 1.5rem;
+    font-size: 14px
+}
+
+.rte-dialog--stylePickerDialog {
+    transform: scale(0.9) !important;
+}

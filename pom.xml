@@ -15,6 +15,7 @@
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
         <module>ui.content</module>
+        <module>aemlab.acl</module>
         <module>dispatcher.cloud</module>
     </modules>
 
@@ -27,12 +28,16 @@
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
         <vault.password>admin</vault.password>
-        <core.wcm.components.version>2.15.2</core.wcm.components.version>
+        <core.wcm.components.version>2.19.0</core.wcm.components.version>
         <bnd.version>5.0.0</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aem.sdk.api>2021.2.4887.20210204T154817Z-210128</aem.sdk.api>
+        <aem.sdk.api>2022.6.7904.20220629T070041Z-220600</aem.sdk.api>
         <componentGroupName>aemlab</componentGroupName>
+        <acs.commons.version>5.3.2</acs.commons.version>
+        <accesscontroltool.version>3.0.4</accesscontroltool.version>
+        <aem.groovy.console.version>17.0.0</aem.groovy.console.version>
+        <cac.editor.version>1.12.0</cac.editor.version>
     </properties>
 
     <build>
@@ -595,6 +600,40 @@ Bundle-DocURL:
                 <version>1.0.1</version>
                 <scope>test</scope>
             </dependency>
+            <!-- ACS Commons -->
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>acs-aem-commons-bundle</artifactId>
+                <version>${acs.commons.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>acs-aem-commons-content</artifactId>
+                <version>${acs.commons.version}</version>
+                <type>content-package</type>
+            </dependency>
+            <!-- See: https://github.com/Netcentric/accesscontroltool -->
+            <dependency>
+                <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+                <artifactId>accesscontroltool-package</artifactId>
+                <version>${accesscontroltool.version}</version>
+                <type>zip</type>
+            </dependency>
+            <!-- See: https://github.com/CID15/aem-groovy-console -->
+            <dependency>
+	            <groupId>org.cid15.aem.groovy.console</groupId>
+	            <artifactId>aem-groovy-console-all</artifactId>
+	            <type>zip</type>
+	            <version>${aem.groovy.console.version}</version>
+	        </dependency>
+	        <!-- https://github.com/wcm-io/io.wcm.caconfig.editor -->
+	         <dependency>
+		        <groupId>io.wcm</groupId>
+	    		<artifactId>io.wcm.caconfig.editor.package</artifactId>
+	    		<version>${cac.editor.version}</version>
+	    		<type>zip</type>
+    		 </dependency>
         </dependencies>
     </dependencyManagement>
 
