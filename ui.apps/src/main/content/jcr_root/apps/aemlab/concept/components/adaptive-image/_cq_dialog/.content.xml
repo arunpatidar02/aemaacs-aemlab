@@ -2,7 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
     jcr:title="Adpative Image Example"
-    sling:resourceType="cq/gui/components/authoring/dialog">
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.dialog.radio-init]">
     <content
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -39,7 +40,7 @@
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                                 fieldDescription="The title Style"
                                                 fieldLabel="Title Style"
-                                                name="./title-style">
+                                                name="./titleStyle">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                         jcr:primaryType="nt:unstructured"
@@ -93,24 +94,6 @@
                                                 title="Upload Image Asset - 2"
                                                 uploadUrl="${suffix.path}"
                                                 useHTML5="{Boolean}true"/>
-                                             <pathbrowser
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                                fieldDescription="Browse an Image"
-                                                rootPath="/content/dam/aemlab"
-                                                predicate="svgpredicate"
-                                                crumbRoot="SVG Home"
-                                                name="./filePath"
-                                                fieldLabel="Browse Image3"/>
-                                             <pathfield
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldDescription="Select an Image"
-                                                rootPath="/content/dam/aemlab"
-                                                predicate="svgpredicate"
-                                                crumbRoot="SVG Home"
-                                                name="./filePathField"
-                                                fieldLabel="Browse Image4"/>
                                         </items>
                                     </column>
                                 </items>

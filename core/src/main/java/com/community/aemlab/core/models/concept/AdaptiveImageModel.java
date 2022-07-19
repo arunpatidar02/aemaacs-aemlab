@@ -1,6 +1,7 @@
 package com.community.aemlab.core.models.concept;
 
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.Self;
@@ -14,12 +15,14 @@ public class AdaptiveImageModel {
 
     @ValueMapValue
     private String title;
+    
+    @ValueMapValue
+    @Default(values = "span")
+    private String titleStyle;
 
     @ValueMapValue
     private String file2Reference;
     
-    @ValueMapValue
-    private String filePath;
 
     public String getTitle() {
         return title;
@@ -29,8 +32,8 @@ public class AdaptiveImageModel {
         return file2Reference;
     }
     
-    public String getFilePath() {
-        return filePath;
+    public String getTitleStyle() {
+        return titleStyle;
     }
 
     public String getSerset() {
