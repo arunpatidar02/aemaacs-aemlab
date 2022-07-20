@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:description="AEMLAB - Simple Approval Workflow"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="AEMLAB - Simple Approval Workflow"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <participant
+                jcr:description="Step to Approve Marketing Content"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Participant"
+                sling:resourceType="cq/workflow/components/model/participant">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PARTICIPANT="aemlab-ref-ca"/>
+            </participant>
+            <or
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Approval Options"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Branch 1"
+                branchName2="Branch 2"
+                branchOrder="[0,1]"
+                default1="true"
+                orSplit="true">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <activateresourceproc
+                        jcr:description="A process to activate a page or asset"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Activate Page/Asset"
+                        sling:resourceType="wcm/workflow/components/workflow/activateresourceprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </activateresourceproc>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <dynamic_participant_
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Review the Rejected Content"
+                        sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            DYNAMIC_PARTICIPANT="/libs/workflow/scripts/initiator-participant-chooser.ecma"/>
+                    </dynamic_participant_>
+                    <or
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Rework or Cancel the request"
+                        sling:resourceType="cq/workflow/components/model/or"
+                        branches="2"
+                        branchName1="Branch 1"
+                        branchName2="Branch 2"
+                        branchOrder="[0,1]"
+                        orSplit="true">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <noopprocess
+                                jcr:description="Cancel the request"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Cancel"
+                                sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="/libs/workflow/scripts/noop.ecma"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </noopprocess>
+                        </_x0031_>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <goto
+                                jcr:description="Review the Content"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Rework Needed"
+                                sling:resourceType="cq/workflow/components/model/goto">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="com.adobe.granite.workflow.core.process.GotoProcess"
+                                    PROCESS_AUTO_ADVANCE="false"
+                                    TARGET_NODE_PATH="/conf/global/settings/workflow/models/aemlab-simple-approval-wf/jcr:content/flow/participant"/>
+                            </goto>
+                        </_x0032_>
+                    </or>
+                </_x0032_>
+            </or>
+        </flow>
+    </jcr:content>
+</jcr:root>
