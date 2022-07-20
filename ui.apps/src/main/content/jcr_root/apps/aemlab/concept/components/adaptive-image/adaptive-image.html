@@ -1,13 +1,12 @@
 <div data-sly-use.imageObj="com.community.aemlab.core.models.concept.AdaptiveImageModel"
      data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-     data-sly-test.hasContent="${imageObj.title || imageObj.fileReference2}"
+     data-sly-test.hasContent="${imageObj.title || imageObj.imageSrc}"
      class="cmp-adaptive-image">
     <h3 class="cmp-adaptive-image__title cmp-adaptive-image__title_${imageObj.titleStyle}" data-sly-test.title="${imageObj.title}">${title}</h3>
     <div class="cmp-adaptive-image__image-wrapper">
 	    <picture>
-	         <img class="cmp-adaptive-image__image" data-sly-test.image="${imageObj.fileReference2}" 
+	         <img class="cmp-adaptive-image__image" data-sly-test.image="${imageObj.imageSrc}" 
 	              src="${image}"
-	              srcset="${imageObj.srcset}"
 	              alt="${title}" 
 	              title="${title}" />
 	     </picture>

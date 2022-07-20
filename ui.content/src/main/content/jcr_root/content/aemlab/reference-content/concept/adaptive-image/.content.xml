@@ -23,7 +23,7 @@
                     <adaptive-image
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemlab/concept/components/adaptive-image"
-                        file2Reference="/content/dam/aemlab/banners/banner-1.png"
+                        fileReference="/content/dam/aemlab/banners/banner-1.png"
                         title="This is an example of radio initialization and using core image">
                         <image 
                             jcr:primaryType="nt:unstructured"
@@ -33,7 +33,7 @@
                     <adaptive-image2
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemlab/concept/components/adaptive-image"
-                        file2Reference="/content/dam/aemlab/banners/banner-3.png"
+                        fileReference="/content/dam/aemlab/banners/banner-3.png"
                         titleStyle = "b"
                         title="This is an example of radio set and images">
                         <image 
