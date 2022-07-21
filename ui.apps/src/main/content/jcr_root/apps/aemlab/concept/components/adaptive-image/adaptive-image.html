@@ -4,9 +4,10 @@
      class="cmp-adaptive-image">
     <h3 class="cmp-adaptive-image__title cmp-adaptive-image__title_${imageObj.titleStyle}" data-sly-test.title="${imageObj.title}">${title}</h3>
     <div class="cmp-adaptive-image__image-wrapper">
-	    <picture>
+	    <picture class="cmp-adaptive-image__picture">
 	         <img class="cmp-adaptive-image__image" data-sly-test.image="${imageObj.imageSrc}" 
 	              src="${image}"
+				  srcset = ${imageObj.imageSrcset}
 	              alt="${title}" 
 	              title="${title}" />
 	     </picture>

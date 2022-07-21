@@ -19,7 +19,7 @@ import com.adobe.cq.wcm.core.components.models.Image;
 
 @Model(adaptables = { SlingHttpServletRequest.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class AdaptiveImageModel {
-	
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(AdaptiveImageModel.class);
 
 	@Self
@@ -38,22 +38,26 @@ public class AdaptiveImageModel {
 	@Inject
 	private Resource imageResource;
 
-	
-	private String imageSrc="";
+	private String imageSrc = "";
+	private String imageSrcset = "";
+	int[] widths = {};
 
 	@PostConstruct
 	protected void init() {
 		Image image = this.modelFactory.getModelFromWrappedRequest(this.request, imageResource, Image.class);
 		if (image != null) {
-			this.imageSrc = image.getSrc();
+			this.imageSrc = image.getFileReference();
+			this.imageSrcset = ImageUtils.getSrcSet(image);
+			LOGGER.debug("imageSrcset - {}", imageSrcset);
+
 		}
-		LOGGER.debug("Image path - {}", imageSrc);
+
 	}
 
 	public String getTitle() {
 		return title;
 	}
-	
+
 	public String getTitleStyle() {
 		return titleStyle;
 	}
@@ -62,6 +66,8 @@ public class AdaptiveImageModel {
 		return this.imageSrc;
 	}
 
-	
+	public String getImageSrcset() {
+		return this.imageSrcset;
+	}
 
 }
