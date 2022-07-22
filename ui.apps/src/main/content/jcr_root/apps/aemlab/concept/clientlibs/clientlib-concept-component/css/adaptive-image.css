@@ -1,0 +1,8 @@
+.cmp-adaptive-image__image-wrapper{
+    display:flex;
+    column-gap: 20px;
+}
+.cmp-adaptive-image__image-wrapper > * {
+    max-width: 50%;
+    min-width: 50%;
+}

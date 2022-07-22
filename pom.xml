@@ -28,11 +28,11 @@
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
         <vault.password>admin</vault.password>
-        <core.wcm.components.version>2.19.0</core.wcm.components.version>
+        <core.wcm.components.version>2.20.6</core.wcm.components.version>
         <bnd.version>5.0.0</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aem.sdk.api>2022.6.7904.20220629T070041Z-220600</aem.sdk.api>
+        <aem.sdk.api>2022.7.8005.20220711T194049Z-220600</aem.sdk.api>
         <componentGroupName>aemlab</componentGroupName>
         <acs.commons.version>5.3.2</acs.commons.version>
         <accesscontroltool.version>3.0.4</accesscontroltool.version>

@@ -68,6 +68,14 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="wcm/core/components/policies/mapping"/>
                         </components>
+                         <concept jcr:primaryType="nt:unstructured">
+                         	<components jcr:primaryType="nt:unstructured">
+                         		<adaptive-image 
+                         			cq:policy="aemlab/concept/components/adaptive-image/policy_image"
+                                	jcr:primaryType="nt:unstructured"
+                                	sling:resourceType="wcm/core/components/policies/mapping"/>
+                         	</components>
+                         </concept>
                     </aemlab>
                 </container>
                 <title
