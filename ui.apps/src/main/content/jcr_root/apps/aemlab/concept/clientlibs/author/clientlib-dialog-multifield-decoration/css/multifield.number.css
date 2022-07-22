@@ -5,7 +5,6 @@
     margin-top:20px;
 } 
 
-
 .cq-Dialog coral-multifield coral-multifield-item:first-child{
     margin-bottom:10px;
     margin-top:-10px;
@@ -24,7 +23,7 @@
 
 .cq-Dialog coral-multifield coral-Multifield-item::before{
     content: attr(aria-label);
-    font-size:large;
+    font-size:1rem;
     background-color:lightgray;
     color:#919191;
     padding:0 10px ;

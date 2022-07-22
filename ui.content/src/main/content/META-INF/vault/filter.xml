@@ -2,7 +2,8 @@
 <workspaceFilter version="1.0">
    
      <filter root="/conf/aemlab">
-        <exclude pattern="/conf/aemlab/actool"/>
+        <include pattern="/conf/aemlab/settings(.*)"/>
+        <include pattern="/conf/aemlab/sling:settings(.*)"/>
     </filter>
     <filter root="/content/aemlab">
         <include pattern="/content/aemlab"/>
