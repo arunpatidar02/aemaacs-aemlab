@@ -24,22 +24,13 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemlab/concept/components/adaptive-image"
                         fileReference="/content/dam/aemlab/banners/banner-1.png"
+                        titleStyle = "b"
                         title="This is an example of radio initialization and using core image">
                         <image 
                             jcr:primaryType="nt:unstructured"
                             fileReference="/content/dam/aemlab/banners/banner-2.png"
                             sling:resourceType="aemlab/components/image"/>
                     </adaptive-image>
-                    <adaptive-image2
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemlab/concept/components/adaptive-image"
-                        fileReference="/content/dam/aemlab/banners/banner-3.png"
-                        titleStyle = "b"
-                        title="This is an example of radio set and images">
-                        <image 
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="aemlab/components/image"/>
-                    </adaptive-image2>
                 </container>
             </container>
         </root>

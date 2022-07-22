@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.cq.wcm.core.components.models.Image;
+import com.community.aemlab.core.utils.ImageUtils;
 
 @Model(adaptables = { SlingHttpServletRequest.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class AdaptiveImageModel {
@@ -40,7 +41,7 @@ public class AdaptiveImageModel {
 
 	private String imageSrc = "";
 	private String imageSrcset = "";
-	int[] widths = {};
+	
 
 	@PostConstruct
 	protected void init() {
