@@ -14,7 +14,6 @@ header .cmp-experiencefragment--header .cmp-container{
     width: auto;
     display: flex;
     align-items: stretch;
-    overflow:hidden;
 }
 
 header .cmp-experiencefragment--header .cmp-containera:after{
