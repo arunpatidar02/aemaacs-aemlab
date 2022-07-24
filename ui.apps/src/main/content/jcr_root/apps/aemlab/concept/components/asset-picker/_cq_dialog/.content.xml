@@ -34,8 +34,8 @@
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                                 fieldDescription="Browse pathfield"
                                                 fieldLabel="Asset Picker 1"
-                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true"
                                                 name="./path"
+                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true"
                                                 rootPath="/content/dam"/>
                                             <pathfield2
                                                 jcr:primaryType="nt:unstructured"
@@ -43,9 +43,9 @@
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                                 fieldDescription="Browse pathfield"
                                                 fieldLabel="Asset Picker - Multiple"
-                                                multiple="{Boolean}true"
-                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true&mimetype=*png&mode=multiple"
                                                 name="./path2"
+                                                multiple="{Boolean}true"
+                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true&amp;mimetype=*png&amp;mode=multiple"
                                                 rootPath="/content/dam"/>
                                             <pathfield3
                                                 jcr:primaryType="nt:unstructured"
