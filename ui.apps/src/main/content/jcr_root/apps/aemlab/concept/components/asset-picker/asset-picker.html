@@ -1,0 +1,68 @@
+<h1 id="asset-selector" tabindex="-1">Asset selector</h1>
+<div class="extension note">
+<div>NOTE</div>
+<div>
+<p>The Asset selector was called <a href="https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html">Asset picker</a> in prior versions of Experience Manager.</p>
+</div>
+</div>
+<p>The asset selector lets you browse, search, and filter assets in Adobe Experience Manager Assets. You can also fetch the metadata of assets that you select using the asset selector. To customize the asset selector interface, you can launch it with supported request parameters. These parameters set the context of the asset selector for a particular scenario.</p>
+<p>Currently, you can pass the request parameters <code>assettype</code> (<em>Image/Video/Text</em>) and selection <code>mode</code> (<em>Single/Multiple</em>) as contextual information for the asset selector, which remains intact throughout the selection.</p>
+<p>The asset selector uses the HTML5 <strong>Window.postMessage</strong> message to send data for the selected asset to the recipient.</p>
+<p>The asset selector is based on Granite’s foundation picker vocabulary. By default, the asset selector operates in browse mode. However, you can apply filters using the Omnisearch experience to refine your search for particular assets.</p>
+<p>You can integrate any web page (irrespective of whether it is part of the CQ container) with the asset selector (<code>https://[AEM_server]:[port]/aem/assetpicker.html</code>).</p>
+<h2 id="contextual-parameters" tabindex="-1">Contextual Parameters</h2>
+<p>You can pass the following request parameters in a URL to launch the asset selector in a particular context:</p>
+<table border="1">
+<thead>
+<tr>
+<th>Name</th>
+<th>Values</th>
+<th>Example</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resource suffix (B)</td>
+<td>Folder path as the resource suffix in the URL:<code>http://localhost:4502/aem/</code><br><code>assetpicker.html/&lt;folder_path&gt;</code></td>
+<td>To launch the asset selector with a particular folder selected, for example with the folder <code>/content/dam/we-retail/en/activities</code> selected, the URL should be of the form: <code>http://localhost:4502/aem/assetpicker.html</code><br><code>/content/dam/we-retail/en/activities?assettype=images</code></td>
+<td>If you require a particular folder to be selected when the asset selector is launched, passed it as a resource suffix.</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>single, multiple</td>
+<td><code>http://localhost:4502/aem/assetpicker.html</code><br><code>?mode=multiple</code> <br> <code>http://localhost:4502/aem/assetpicker.html</code><br><code>?mode=single</code></td>
+<td>In multiple mode, you can select several assets simultaneously using the asset selector.</td>
+</tr>
+<tr>
+<td>dialog</td>
+<td>true, false</td>
+<td><code>http://localhost:4502/aem/assetpicker.html</code><br><code>?dialog=true</code></td>
+<td>Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL.</td>
+</tr>
+<tr>
+<td>root</td>
+<td><code>&lt;folder_path&gt;</code></td>
+<td><code>http://localhost:4502/aem/</code><br><code>assetpicker.html?assettype=images</code><br><code>&amp;root=/content/dam/we-retail/en/activities</code></td>
+<td>Use this option to specify the root folder for the asset selector. In this case, the asset selector lets you select only child assets (direct/indirect) under the root folder.</td>
+</tr>
+<tr>
+<td>viewmode</td>
+<td>search</td>
+<td></td>
+<td>To launch the asset selector in search mode, with assettype and mimetype parameters.</td>
+</tr>
+<tr>
+<td>assettype (S)</td>
+<td>images, documents, multimedia, archives</td>
+<td><ul><li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images</code></li> <li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents</code></li> <li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia</code></li> <li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives</code></li></td>
+<td>Use this option to filter asset types based on the value passed.</td>
+</tr>
+<tr>
+<td>mimetype</td>
+<td>mimetype(s) (<code>/jcr:content/metadata/dc:format</code>) of an asset (wildcard also supported)</td>
+<td><ul><li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png</code></li>  <li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;?mimetype=*png</code></li>  <li><code>http://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation</code></li>  <li><code>http://localhost:4502/aem/assetpicker?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png</code></li></ul></td>
+<td>Use it to filter assets based on MIME type(s)</td>
+</tr>
+</tbody>
+</table>
