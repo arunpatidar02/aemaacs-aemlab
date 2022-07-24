@@ -3,38 +3,42 @@
     "use strict";
 
     const PICKER_FORM = 'form.granite-pickerdialog-content';
-    const SELECTORS={
-        SELECT_BTN:PICKER_FORM + ' button.asset-picker-done',
-        CANCEL_BTN:PICKER_FORM + ' button.asset-picker-clear',
-        SELECTED_ITEM:PICKER_FORM + ' .foundation-selections-item.is-selected',
-        ITEM_ATTR : 'data-foundation-collection-item-id',
-        PATH_FIELD_SELECTOR : '.pathfield__asset--selector input[aria-controls="asset-selector-launcher-setting"]',
-        PATH_FIELD_MULTI_SELECTOR : '.pathfield__asset--selector[multiple] input[aria-controls="asset-selector-launcher-setting"]',
-        MODE_ELEMENT:PICKER_FORM+' #cq-damadmin-admin-assetselector-collection',
-        MODE_ATTR:'selectionmode'
+    const PATHFIELD_TARGET = '.pathfield__asset--selector';
+    const MULTIPLE = 'multiple';
+    const CLICK = 'click';
+    const SELECTORS = {
+        SELECT_BTN: PICKER_FORM + ' button.asset-picker-done',
+        CANCEL_BTN: PICKER_FORM + ' button.asset-picker-clear',
+        SELECTED_ITEM: PICKER_FORM + ' .foundation-selections-item.is-selected',
+        ITEM_ATTR: 'data-foundation-collection-item-id',
+        PATHFIELD_SELECTOR: PATHFIELD_TARGET + ' input[aria-controls="asset-selector-launcher-setting"]',
+        PATHFIELD_MULTI_SELECTOR: PATHFIELD_TARGET + '[multiple] input[aria-controls="asset-selector-launcher-setting"]',
+        MODE_ELEMENT: PICKER_FORM + ' #cq-damadmin-admin-assetselector-collection',
+        MODE_ATTR: 'selectionmode',
+        CORAL_TAGLIST: 'coral-taglist'
     };
 
-    $(document).on("click", SELECTORS.SELECT_BTN, function (e) {
+    $(document).on(CLICK, SELECTORS.SELECT_BTN, function () {
         var mode = document.querySelector(SELECTORS.MODE_ELEMENT).getAttribute(SELECTORS.MODE_ATTR);
-        if(mode === "multiple" ){
+        if (mode === MULTIPLE) {
             var selectedItems = document.querySelectorAll(SELECTORS.SELECTED_ITEM);
-            var tagList = $(SELECTORS.PATH_FIELD_MULTI_SELECTOR).closest('.pathfield__asset--selector').find('coral-taglist');
+            var tagList = $(SELECTORS.PATHFIELD_MULTI_SELECTOR).closest(PATHFIELD_TARGET).find(SELECTORS.CORAL_TAGLIST);
             for (const item of selectedItems) {
-                var value = item.getAttribute(SELECTORS.ITEM_ATTR)
+                var value = item.getAttribute(SELECTORS.ITEM_ATTR);
                 var tag = new Coral.Tag().set({
                     value: value,
                     label: {
-                      innerHTML: value
+                        innerHTML: value
                     }
-                  });
-                  tagList.append(tag);
+                });
+                tagList.append(tag);
             }
         }
-        else{
+        else {
             var selectedItem = document.querySelector(SELECTORS.SELECTED_ITEM).getAttribute(SELECTORS.ITEM_ATTR);
-            document.querySelector(SELECTORS.PATH_FIELD_SELECTOR).value=selectedItem;
+            document.querySelector(SELECTORS.PATHFIELD_SELECTOR).value = selectedItem;
         }
-         //close popup
+        //closing popup by cancel button click
         document.querySelector(SELECTORS.CANCEL_BTN).click();
     });
 
