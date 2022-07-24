@@ -42,8 +42,9 @@
                                                 granite:class="pathfield__asset--selector"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                                 fieldDescription="Browse pathfield"
-                                                fieldLabel="Asset Picker 2"
-                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true"
+                                                fieldLabel="Asset Picker - Multiple"
+                                                multiple="{Boolean}true"
+                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true&mimetype=*png&mode=multiple"
                                                 name="./path2"
                                                 rootPath="/content/dam"/>
                                             <pathfield3
