@@ -33,9 +33,25 @@
                                                 granite:class="pathfield__asset--selector"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                                 fieldDescription="Browse pathfield"
-                                                fieldLabel="Select an asset"
+                                                fieldLabel="Asset Picker 1"
                                                 pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true"
                                                 name="./path"
+                                                rootPath="/content/dam"/>
+                                            <pathfield2
+                                                jcr:primaryType="nt:unstructured"
+                                                granite:class="pathfield__asset--selector"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Browse pathfield"
+                                                fieldLabel="Asset Picker 2"
+                                                pickerSrc="/mnt/overlay/dam/gui/content/assetselector/_jcr_content/body/items/assetselector.html?dialog=true"
+                                                name="./path2"
+                                                rootPath="/content/dam"/>
+                                            <pathfield3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Browse pathfield"
+                                                fieldLabel="Defualt Picker"
+                                                name="./path3"
                                                 rootPath="/content/dam"/>
                                         </items>
                                     </column>
