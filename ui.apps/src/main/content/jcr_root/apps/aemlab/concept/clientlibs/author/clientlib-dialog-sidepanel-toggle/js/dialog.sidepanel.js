@@ -7,19 +7,26 @@
         const GLOBAL_SIDE_PANEL_BUTTON_SELECTOR = '.editor-GlobalBar coral-actionbar-primary coral-actionbar-item button.toggle-sidepanel';
         const ACTION_HEADER_BUTTONS_SELECTOR = DIALOG_ACTION_HEADER_SELECTOR + '>button';
         const ACTION_HEADER_HELP_BUTTON_SELECTOR = ACTION_HEADER_BUTTONS_SELECTOR + ':nth-child(1)';
-        const ACTION_HEADER_SIDEPANEL_BUTTON_SELECTOR = 'button.cq-dialog-sidepaneltoggle';
+        const CQ_DIALOG_SIDEPANEL_TOGGLE_CLASS = 'cq-dialog-sidepaneltoggle';
+        const ACTION_HEADER_SIDEPANEL_BUTTON_SELECTOR = 'button.' + CQ_DIALOG_SIDEPANEL_TOGGLE_CLASS;
+        const CQ_DIALOG_HEADER_ACTION_CLASS = 'cq-dialog-header-action';
 
-        var sidePanelToggleBtnHTML = '<button is="coral-button" icon="railLeft" variant="minimal" class="cq-dialog-header-action cq-dialog-sidepaneltoggle _coral-Button _coral-Button--secondary _coral-Button--quiet" type="button" title="Toggle Side Panel" size="M">';
-        sidePanelToggleBtnHTML += '<coral-icon size="S" class="_coral-Icon--sizeS _coral-Icon" role="img" icon="railLeft">';
-        sidePanelToggleBtnHTML += '<svg focusable="false" aria-hidden="true" class="_coral-Icon--svg _coral-Icon"><use xlink:href="#spectrum-icon-18-RailLeft"></use></svg>';
-        sidePanelToggleBtnHTML += '</coral-icon><coral-button-label class="_coral-Button-label"></coral-button-label>';
-        sidePanelToggleBtnHTML += '</button>';
+        var sidePanelToggleBtn = new Coral.Button().set({
+            size: 'M',
+            variant: 'minimal',
+            icon: 'railLeft',
+            iconSize: "S",
+            type: 'button',
+            title: 'Toggle Side Panel'
+        });
+
+        sidePanelToggleBtn.classList.add(CQ_DIALOG_SIDEPANEL_TOGGLE_CLASS, CQ_DIALOG_HEADER_ACTION_CLASS);
 
         if ($(ACTION_HEADER_BUTTONS_SELECTOR).length > 2) {
             return;
         }
 
-        $(ACTION_HEADER_HELP_BUTTON_SELECTOR).after(sidePanelToggleBtnHTML);
+        $(ACTION_HEADER_HELP_BUTTON_SELECTOR).after(sidePanelToggleBtn);
 
         if (flag) {
             $(document).on('click', ACTION_HEADER_SIDEPANEL_BUTTON_SELECTOR, function () {
