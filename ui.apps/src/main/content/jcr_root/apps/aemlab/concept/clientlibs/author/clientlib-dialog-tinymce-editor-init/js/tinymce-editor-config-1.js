@@ -1,12 +1,12 @@
 (function ($, $document) {
     "use strict";
-    var flag = true;
     $document.on("dialog-ready", function () {
 
         var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const TEXTAREA_SELECTOR = '.tinymce-editor';
 
         tinymce.init({
-            selector: '.tinymce-editor',
+            selector: TEXTAREA_SELECTOR,
             plugins: 'preview searchreplace autosave save directionality visualblocks visualchars image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons',
             mobile: {
                 plugins: 'preview searchreplace autosave save directionality visualblocks visualchars image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbar emoticons'
@@ -28,7 +28,7 @@
                 { title: 'Portrait', value: 'aemlab-image__portrait' }
             ],
             importcss_append: true,
-            height: 600,
+            height: 500,
             image_caption: true,
             quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
             noneditable_noneditable_class: 'mceNonEditable',

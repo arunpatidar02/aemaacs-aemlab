@@ -20,7 +20,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/container"
                         margin="{Boolean}true">
                         <items jcr:primaryType="nt:unstructured">
-                            <textfield
+                            <textarea
                                 jcr:primaryType="nt:unstructured"
                                 granite:class="tinymce-editor"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
@@ -28,6 +28,14 @@
                                 rows="{Long}5"
                                 fieldLabel="Textarea"
                                 name="./text"/>
+                            <textarea2
+                                jcr:primaryType="nt:unstructured"
+                                granite:class="tinymce-editor-2"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="Enter Text"
+                                rows="{Long}5"
+                                fieldLabel="Textarea"
+                                name="./text2"/>
                         </items>
                     </properties>
                 </items>
