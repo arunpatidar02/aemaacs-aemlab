@@ -12,7 +12,7 @@
             plugins: 'preview searchreplace autolink autosave save directionality visualblocks visualchars image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbar emoticons'
           },
           menubar: 'file edit view insert format tools table help',
-          toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange formatpainter removeformat | pagebreak | charmap emoticons |  preview save print | insertfile image media template link anchor codesample | ltr rtl ',
+          toolbar: 'undo redo | bold italic underline strikethrough link',
           autosave_ask_before_unload: true,
           autosave_interval: '30s',
           autosave_prefix: '{path}{query}-{id}-',

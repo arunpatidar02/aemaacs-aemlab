@@ -28427,7 +28427,6 @@
         if (baseUrl) {
           editorManager._setBaseUrl(baseUrl);
         }
-        editorManager.baseURI = editorManager.baseURI + '/tinymce';
         this.baseUri = editorManager.baseURI;
         const referrerPolicy = getReferrerPolicy(self);
         if (referrerPolicy) {
@@ -28435,7 +28434,12 @@
           DOMUtils.DOM.styleSheetLoader._setReferrerPolicy(referrerPolicy);
         }
         AddOnManager.languageLoad = getOption('language_load');
-        editorManager.baseURL = editorManager.baseURL + '/tinymce';
+        // Adding tinymce root folder
+        const regex = new RegExp('.*\\/tinymce$', 'gm')
+        if(!editorManager.baseURL.match(regex)){
+          editorManager.baseURL = editorManager.baseURL + '/tinymce';
+        } 
+        // done
         AddOnManager.baseURL = editorManager.baseURL;
         this.setDirty(false);
         this.documentBaseURI = new URI(getDocumentBaseUrl(self), { base_uri: this.baseUri });
