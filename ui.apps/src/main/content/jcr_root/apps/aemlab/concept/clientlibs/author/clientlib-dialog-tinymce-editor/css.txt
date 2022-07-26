@@ -1,0 +1,2 @@
+#base=css
+tinymce-custom-style.css
