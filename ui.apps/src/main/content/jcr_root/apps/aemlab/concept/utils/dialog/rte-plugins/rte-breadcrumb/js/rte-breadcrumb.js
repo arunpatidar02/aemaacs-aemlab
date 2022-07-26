@@ -3,10 +3,12 @@
 
 
     $(document).on("dialog-ready", function () {
-        var breadcrumbItem = '<div class="breadcrumb-rte"><p class="placeholder">Selected item breadcrumb will be shown here, and allow to select parents by clicking on breadcrumb</p></div>';
+        var breadcrumbItem = '<div class="breadcrumb-rte"><p class="placeholder">Selected item and its breadcrumb will be shown here, and allow to select any element by clicking on breadcrumb</p></div>';
         setTimeout(function () {
+            $('.breadcrumb-rte').remove();
             $('.coral-RichText[data-showbreadcrumb="true"]').each(function () {
-                if (!$(this).find('.breadcrumb-rte')) {
+                var breadcrumbNotExists = $(this).find('.breadcrumb-rte').text().length == 0 ? true : false;
+                if (breadcrumbNotExists) {
                     $(this).parent().find(".rte-sourceEditor").after(breadcrumbItem);
                 }
             });
@@ -31,7 +33,7 @@
     });
 
     function createBreadCrumb(xpath, sep) {
-        var separator = '<div aria-hidden="true" class="item-sep"> >> </div>';
+        var separator = '<div aria-hidden="true" class="item-sep"> › </div>';
         var tagName = xpath.substr(xpath.lastIndexOf("/") + 1)
         var breadcrumbStr = '<div role="button" class="item-xpath" data-xpath="' + xpath.replace(/\|/g, "/") + '">' + tagName + '</div>'
         if (sep) {
