@@ -5,7 +5,7 @@
     sling:resourceType="cq/gui/components/authoring/dialog"
     extraClientlibs="[cq.authoring.dialog.text.tinymce-editor]">
     <content
-        granite:class="cmp-json-dropdown__editor"
+        granite:class="cmp-tinymce__editor"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
@@ -22,7 +22,6 @@
                         <items jcr:primaryType="nt:unstructured">
                             <textarea
                                 jcr:primaryType="nt:unstructured"
-                                granite:class="tinymce-editor"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                 fieldDescription="Textarea - Config 1"
                                 rows="{Long}5"
@@ -34,7 +33,6 @@
                             </textarea>
                             <textarea2
                                 jcr:primaryType="nt:unstructured"
-                                granite:class="tinymce-editor"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                 fieldDescription="Enter Text"
                                 rows="{Long}5"
@@ -76,7 +74,6 @@
                                     <items jcr:primaryType="nt:unstructured">
                                         <textarea3
                                             jcr:primaryType="nt:unstructured"
-                                            granite:class="tinymce-editor textarea3"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                             fieldDescription="Enter Text"
                                             rows="{Long}5"
@@ -88,7 +85,6 @@
                                         </textarea3>
                                         <textarea4
                                             jcr:primaryType="nt:unstructured"
-                                            granite:class="tinymce-editor textarea4"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
                                             fieldDescription="Enter Text"
                                             rows="{Long}5"
