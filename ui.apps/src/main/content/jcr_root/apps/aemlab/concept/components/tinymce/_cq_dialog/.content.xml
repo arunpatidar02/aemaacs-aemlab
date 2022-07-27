@@ -3,7 +3,7 @@
     jcr:primaryType="nt:unstructured"
     jcr:title="RTE Plugins"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[cq.authoring.dialog.text.tinymce-editor,cq.authoring.dialog.text.tinymce-editor.init]">
+    extraClientlibs="[cq.authoring.dialog.text.tinymce-editor]">
     <content
         granite:class="cmp-json-dropdown__editor"
         jcr:primaryType="nt:unstructured"
