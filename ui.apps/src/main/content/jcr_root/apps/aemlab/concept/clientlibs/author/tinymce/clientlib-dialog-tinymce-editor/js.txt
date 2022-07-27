@@ -5,6 +5,3 @@ tinymce-editor-configs.js
 
 // tinymce initializer on load for textarea
 tinymce-editor-init.js
-
-// tinymce initializer on multifield add
-tinymce-multifield-reinit.js

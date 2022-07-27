@@ -16,7 +16,7 @@
                 tinyMCEConfig2(selector);
                 break;
             default:
-                console.warn(`Tinymce Config ${ tinymceConfig } is not initialize for ${ selector }`);
+                console.warn(`Tinymce Config ${tinymceConfig} is not initialize for ${selector}`);
         }
     }
     /*
