@@ -3,7 +3,7 @@
     $document.on("dialog-ready", function () {
 
         var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const TEXTAREA_SELECTOR = '.tinymce-editor-2';
+        const TEXTAREA_SELECTOR = 'textarea.tinymce-editor[data-tinymce-config="tinymce-editor-2"]';
 
         tinymce.init({
             selector: TEXTAREA_SELECTOR,
