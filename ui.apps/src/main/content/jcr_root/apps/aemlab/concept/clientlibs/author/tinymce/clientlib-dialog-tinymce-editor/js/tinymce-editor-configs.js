@@ -19,6 +19,7 @@
                 console.warn(`Tinymce Config ${tinymceConfig} is not initialize for ${selector}`);
         }
     }
+
     /*
         TinyMCE Editor Config for tinymce-editor-1
     */
@@ -48,7 +49,7 @@
             importcss_append: true,
             height: 500,
             image_caption: true,
-            quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+            quickbars_selection_toolbar: 'bold italic |  blockquote | quicklink | quicktable',
             noneditable_noneditable_class: 'mceNonEditable',
             toolbar_mode: 'sliding',
             convert_urls: convertUrls,
