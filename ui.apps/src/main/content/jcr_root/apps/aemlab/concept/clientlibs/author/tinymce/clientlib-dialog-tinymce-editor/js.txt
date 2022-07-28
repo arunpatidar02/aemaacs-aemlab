@@ -1,0 +1,7 @@
+#base=js
+tinymce.js
+// tinymce config
+tinymce-editor-configs.js
+
+// tinymce initializer on load for textarea
+tinymce-editor-init.js

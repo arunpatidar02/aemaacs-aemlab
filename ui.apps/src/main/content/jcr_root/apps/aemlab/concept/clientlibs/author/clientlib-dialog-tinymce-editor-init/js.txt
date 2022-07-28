@@ -1,3 +1,0 @@
-#base=js
-tinymce-editor-config-1.js
-tinymce-editor-config-2.js

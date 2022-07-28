@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:Folder">
+    <rtePlugins jcr:primaryType="nt:unstructured">
+        <format jcr:primaryType="nt:unstructured" features="*" />
+        <paraformat jcr:primaryType="nt:unstructured" features="*">
+            <formats jcr:primaryType="nt:unstructured">
+                <default_h3 jcr:primaryType="nt:unstructured" description="Heading 3" tag="h3" />
+                <default_h4 jcr:primaryType="nt:unstructured" description="Heading 4" tag="h4" />
+                <default_blockquote jcr:primaryType="nt:unstructured" description="Quote" tag="blockquote" />
+                <default_pre jcr:primaryType="nt:unstructured" description="Preformatted" tag="pre" />
+            </formats>
+        </paraformat>
+        <links jcr:primaryType="nt:unstructured" features="*" />
+    </rtePlugins>
+    <uiSettings jcr:primaryType="nt:unstructured">
+        <cui jcr:primaryType="nt:unstructured">
+            <inline jcr:primaryType="nt:unstructured" toolbar="[format#bold,format#italic,format#underline,links#modifylink,links#unlink,links#anchor]">
+                <popovers jcr:primaryType="nt:unstructured">
+                    <paraformat jcr:primaryType="nt:unstructured" items="paraformat:getFormats:paraformat-pulldown" ref="paraformat" />
+                </popovers>
+            </inline>
+        </cui>
+    </uiSettings>
+</jcr:root>
