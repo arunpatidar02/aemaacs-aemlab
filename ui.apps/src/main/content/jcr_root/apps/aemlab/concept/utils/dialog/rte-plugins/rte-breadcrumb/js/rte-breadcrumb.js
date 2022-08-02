@@ -34,7 +34,7 @@
 
     function createBreadCrumb(xpath, sep) {
         var separator = '<div aria-hidden="true" class="item-sep"> › </div>';
-        var tagName = xpath.substr(xpath.lastIndexOf("/") + 1)
+        var tagName = getTagName(xpath);
         var breadcrumbStr = '<div role="button" class="item-xpath" data-xpath="' + xpath.replace(/\|/g, "/") + '">' + tagName + '</div>'
         if (sep) {
             breadcrumbStr = breadcrumbStr + separator;
@@ -71,6 +71,14 @@
 
         }
         return xpath;
+    }
+
+    function getTagName(xpath) {
+        var tagName = xpath.substr(xpath.lastIndexOf("/") + 1);
+
+        var doc = document.evaluate(xpath.replace(/\|/g, "/"), document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        var classList = Array.from(doc.classList).join('.');
+        return tagName + (classList ? '.' + classList : '');
     }
 
 
