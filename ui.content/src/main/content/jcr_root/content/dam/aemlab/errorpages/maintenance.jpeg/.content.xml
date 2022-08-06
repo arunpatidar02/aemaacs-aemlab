@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:prismusagerights="http://prismstandard.org/namespaces/prismusagerights/2.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns1="http://purl.org/dc/terms/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="e4b1b4f7-695c-4dd4-a448-b76ccd8d3633">
+    <jcr:content
+        dam:assetState="processed"
+        dam:relativePath="aem64app/maintenance.jpeg"
+        jcr:lastModified="{Date}2022-08-06T14:44:37.520+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2022-08-06T14:44:33.071+02:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}300"
+            dam:Physicalheightininches="{Decimal}15.0"
+            dam:Physicalwidthindpi="{Long}300"
+            dam:Physicalwidthininches="{Decimal}15.0"
+            dam:Progressive="no"
+            dam:sha1="c841a96116df80d69c111f075371b7fcb9544a74"
+            dam:size="{Long}1241689"
+            dc:creator="[Karen Roach]"
+            dc:creator_xmpArrayType="rdf:Seq"
+            dc:description="Sorry we are having Technical Difficulties message on yellow sign message isolated on white "
+            dc:format="image/jpeg"
+            dc:subject="[technical difficulties,outage sign,problems,down,outage,failure,breakdown,trouble,equipment,sorry,we,are,having,sign,yellow,text,words,type,message,isolated on white,isolated,object,no people,nobody]"
+            dc:subject_xmpArrayType="rdf:Bag"
+            dc:title="Technical Difficulties message on yellow sign"
+            exif:ColorSpace="{Long}1"
+            exif:ComponentsConfiguration="{Long}[1,2,3,0]"
+            exif:ComponentsConfiguration_xmpArrayType="rdf:Seq"
+            exif:ExifVersion="0232"
+            exif:FlashpixVersion="0100"
+            exif:PixelXDimension="{Long}4500"
+            exif:PixelYDimension="{Long}4500"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Technical Difficulties message on yellow sign"
+            ns1:provenance="self#jumbf=/c2pa/adobe:urn:uuid:7c7950b9-77ec-4e0f-b62a-8d63cc7ce103/c2pa.claim"
+            photoshop:ColorMode="{Long}3"
+            photoshop:Country="United States of America"
+            photoshop:Credit="Karen Roach - stock.adobe.com"
+            photoshop:ICCProfile="sRGB IEC61966-2.1"
+            photoshop:Source="425044309"
+            prismusagerights:creditLine="[Karen Roach - stock.adobe.com]"
+            prismusagerights:creditLine_xmpArrayType="rdf:Bag"
+            tiff:ImageLength="{Long}4500"
+            tiff:ImageWidth="{Long}4500"
+            tiff:Orientation="{Long}1"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="300/1"
+            tiff:YCbCrPositioning="{Long}1"
+            tiff:YResolution="300/1"
+            xmp:CreateDate="{Date}2016-03-09T11:07:19.000+01:00"
+            xmp:CreatorTool="Adobe Photoshop 22.3 (Windows)"
+            xmp:MetadataDate="{Date}2021-03-30T13:40:01.000-04:00"
+            xmp:ModifyDate="{Date}2021-03-30T13:40:01.000+02:00"
+            xmp:Rating="{Decimal}5"
+            xmpMM:DocumentID="adobe:docid:photoshop:9cc46bf6-cb5b-2a4b-b22f-8744075f4a6a"
+            xmpMM:InstanceID="xmp.iid:0a028179-506e-7f4e-bca8-be81f23fda22"
+            xmpMM:OriginalDocumentID="xmp.did:117532EE08E6E511A74D86C64226D658"
+            xmpRights:Marked="{Boolean}true">
+            <photoshop:TextLayers
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}2"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    photoshop:LayerName="Sorry"
+                    photoshop:LayerText="Sorry, we are having"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    photoshop:LayerName="Hiring"
+                    photoshop:LayerText="Technical Difficulties"
+                    xmpNodeType="xmpStruct"/>
+            </photoshop:TextLayers>
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="adobe:docid:photoshop:636e8045-2787-5748-be68-f716a1395d83"
+                stRef:instanceID="xmp.iid:7c79e381-1bfd-c546-be55-0f252efe0e95"
+                stRef:originalDocumentID="xmp.did:117532EE08E6E511A74D86C64226D658"
+                xmpNodeType="xmpStruct"/>
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}23"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:117532EE08E6E511A74D86C64226D658"
+                    stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"
+                    stEvt:when="{Date}2016-03-09T11:07:44.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:C914E645C0F2E611831F867F054A8F17"
+                    stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"
+                    stEvt:when="{Date}2017-02-14T09:17:10.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:EC1DD104CAF2E61191F6C07BECC09157"
+                    stEvt:softwareAgent="Adobe Bridge CS6 (Windows)"
+                    stEvt:when="{Date}2017-02-14T10:26:55.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0034_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:6CB1C393FEF2E611831F867F054A8F17"
+                    stEvt:softwareAgent="Adobe Photoshop CS6 (Windows)"
+                    stEvt:when="{Date}2017-02-14T16:43:27.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0035_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:fffb37d0-92ad-5544-9024-4b0b672f2418"
+                    stEvt:softwareAgent="Adobe Photoshop 21.2 (Windows)"
+                    stEvt:when="{Date}2021-01-06T08:53:01.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0036_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:8feb855f-dca2-d940-b0fc-2676dff6982f"
+                    stEvt:softwareAgent="Adobe Bridge 2019 (Windows)"
+                    stEvt:when="{Date}2021-01-06T09:07:22.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0037_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:f06e5963-9d8d-1949-95f7-3e66870f6187"
+                    stEvt:softwareAgent="Adobe Bridge 2019 (Windows)"
+                    stEvt:when="{Date}2021-01-06T09:08:16.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0038_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:63e34d55-5f21-6545-82d5-6f64b4ccfc7e"
+                    stEvt:softwareAgent="Adobe Photoshop 21.2 (Windows)"
+                    stEvt:when="{Date}2021-01-17T11:08:32.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0039_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:d3b74154-44d6-3b43-aa7c-fe1230f61dfb"
+                    stEvt:softwareAgent="Adobe Photoshop 21.2 (Windows)"
+                    stEvt:when="{Date}2021-01-17T11:12:56.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_0
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:04de9ba7-e8fe-db42-9cec-ca490981c7f1"
+                    stEvt:softwareAgent="Adobe Bridge 2020 (Windows)"
+                    stEvt:when="{Date}2021-01-17T11:49:00.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_1
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:477fc4a8-7482-ce4f-af70-abf7d6f44d23"
+                    stEvt:softwareAgent="Adobe Photoshop 22.1 (Windows)"
+                    stEvt:when="{Date}2021-02-15T12:52:15.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_2
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:5816d454-17f8-fd41-a9c9-9dfd44ea6b2f"
+                    stEvt:softwareAgent="Adobe Photoshop 22.1 (Windows)"
+                    stEvt:when="{Date}2021-02-15T12:52:15.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_3
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:b5bef376-77c9-d844-89af-0d567008614b"
+                    stEvt:softwareAgent="Adobe Bridge 2021 (Windows)"
+                    stEvt:when="{Date}2021-02-16T07:54:36.000-05:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_4
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:addfece9-0e6d-ac43-8aab-c580b86a89e7"
+                    stEvt:softwareAgent="Adobe Photoshop 22.3 (Windows)"
+                    stEvt:when="{Date}2021-03-15T16:00:13.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_5
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:88a9ed0a-5681-494e-a129-adcf3bf7b362"
+                    stEvt:softwareAgent="Adobe Photoshop 22.3 (Windows)"
+                    stEvt:when="{Date}2021-03-15T16:00:13.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_6
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:17bbbbe3-8c94-2944-af97-fa144857028a"
+                    stEvt:softwareAgent="Adobe Bridge 2021 (Windows)"
+                    stEvt:when="{Date}2021-03-16T08:42:47.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_7
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:23846e1d-10fb-6540-a745-3cdebfb53ae7"
+                    stEvt:softwareAgent="Adobe Photoshop 22.3 (Windows)"
+                    stEvt:when="{Date}2021-03-29T14:44:48.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_8
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:e9e84c1d-c389-0b4c-afa9-bb7ac9f3ea4d"
+                    stEvt:softwareAgent="Adobe Photoshop 22.3 (Windows)"
+                    stEvt:when="{Date}2021-03-30T07:44:55.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0031_9
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:0d9e424f-844e-f240-b888-cab7b8f853a5"
+                    stEvt:softwareAgent="Adobe Bridge 2021 (Windows)"
+                    stEvt:when="{Date}2021-03-30T13:39:49.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_0
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:7c79e381-1bfd-c546-be55-0f252efe0e95"
+                    stEvt:softwareAgent="Adobe Photoshop 22.3 (Windows)"
+                    stEvt:when="{Date}2021-03-30T13:40:01.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_1
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="converted"
+                    stEvt:parameters="from application/vnd.adobe.photoshop to image/jpeg"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_2
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="derived"
+                    stEvt:parameters="converted from application/vnd.adobe.photoshop to image/jpeg"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_3
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:0a028179-506e-7f4e-bca8-be81f23fda22"
+                    stEvt:softwareAgent="Adobe Photoshop 22.3 (Windows)"
+                    stEvt:when="{Date}2021-03-30T13:40:01.000-04:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

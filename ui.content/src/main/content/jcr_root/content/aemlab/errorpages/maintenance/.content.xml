@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-06T15:03:26.642+02:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-08-05T14:02:13.004+02:00"
+        cq:lastReplicated_publish="{Date}2022-08-05T14:02:13.004+02:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicatedBy_publish="admin"
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/aemlab/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Maintenance"
+        jcr:uuid="ac367399-fc96-4805-b761-853e21416c71"
+        sling:resourceType="aemlab/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemlab/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemlab/components/container">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemlab/components/container"
+                    layout="responsiveGrid">
+                    <teaser_copy
+                        jcr:created="{Date}2022-08-06T14:53:18.495+02:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Sorry for the inconvenience but we're performing some maintenance at the moment. If you need to you can always &lt;a href=&quot;mailto:arunpatidar@aemlab.com&quot;>contact us&lt;/a>, otherwise we'll be back online shortly!&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-08-06T15:03:26.636+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="We'll be back soon!"
+                        sling:resourceType="aemlab/components/teaser"
+                        altValueFromDAM="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemlab/errorpages/500.jpeg"
+                        imageFromPageImage="false"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        pretitle="Maintenance detected"
+                        textIsRich="true"
+                        titleFromPage="false"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
