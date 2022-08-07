@@ -19,7 +19,7 @@
 # /005 { /type "allow" /url "/bin/*"    }  # allow bin path access
 
 # This rule allows content to be access
-/0010 { /type "allow" /extension '(css|eot|gif|ico|jpeg|jpg|js|gif|pdf|png|svg|swf|ttf|woff|woff2|html)' /path "/content/*" }  # disable this rule to allow mapped content only
+/0010 { /type "allow" /extension '(css|eot|gif|ico|jpeg|jpg|js|gif|pdf|png|svg|swf|ttf|woff|woff2|html|mp4|mov|m4v)' /path "/content/*" }  # disable this rule to allow mapped content only
 
 # Enable specific mime types in non-public content directories
 /0011 { /type "allow" /method "GET" /extension '(css|eot|gif|ico|jpeg|jpg|js|gif|png|svg|swf|ttf|woff|woff2)' }
@@ -46,3 +46,23 @@
 
 # Allow index page
 /0030 { /type "allow" /url "/index.html" }
+
+# Allow IMS Authentication
+/0031 { /type "allow" /method "GET" /url "/callback/j_security_check" }
+
+# AEM Sites Filters
+# to allow site30 theme servlet
+/0052 { /type "allow" /extension "theme" /path "/content/*" }
+
+# Allow manifest.webmanifest files located in the content
+/0053 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
+
+# Allow Apache Sling Sitemap selectors: sitemap, sitemap-index, sitemap.any-nested-or-named-sitemap
+/0054 { /type "allow" /method "GET" /path "/content/*" /selectors 'sitemap(-index)?' /extension "xml" }
+
+# Allow GraphQL & preflight requests
+# GraphQL also supports "GET" requests, if you intend to use "GET" add a rule in filters.any
+/0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
+
+# GraphQL Persisted Queries & preflight requests
+/0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
