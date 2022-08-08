@@ -1,5 +1,5 @@
 #
-# This is the abblab publish virtualhost definition for Apache. 
+# This is the aemlab publish virtualhost definition for Apache. 
 #
 
 # Include customer defined variables
@@ -51,7 +51,7 @@ Include conf.d/variables/custom.vars
 		# Enabled to allow rewrites to take affect and not be ignored by the dispatcher module
 		DispatcherUseProcessedURL	On
 		# Default setting to allow all errors to come from the aem instance
-		DispatcherPassError		0
+		DispatcherPassError		1
 	</IfModule>
 	<IfModule mod_rewrite.c>
 		RewriteEngine	on
