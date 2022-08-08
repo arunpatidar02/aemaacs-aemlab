@@ -8,7 +8,8 @@
 Include conf.d/rewrites/default_rewrite.rules
 
 # rewrite for root redirect
-RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/us/en.html [PT,L]
+RewriteRule ^/?$ /${CONTENT_FOLDER_NAME}/reference-content.html [PT,L]
+RewriteRule ^/(content|content.html)$ /${CONTENT_FOLDER_NAME}/reference-content.html [R=301,NE,L]
 
 RewriteCond %{REQUEST_URI} !^/apps
 RewriteCond %{REQUEST_URI} !^/bin
