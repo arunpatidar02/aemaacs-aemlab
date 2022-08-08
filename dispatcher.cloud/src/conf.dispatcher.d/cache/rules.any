@@ -22,4 +22,27 @@ $include "./default_rules.any"
   /glob "*.pdf"
   /type "allow"
   }
+  
+/0104
+  {
+  /glob "*.jpeg"
+  /type "allow"
+  }
 
+/0105
+  {
+  /glob "*.jpg"
+  /type "allow"
+  }
+  
+/0106
+  {
+  /glob "*.png"
+  /type "allow"
+  }
+  
+/0107
+  {
+  /glob "*.svg"
+  /type "allow"
+  }
