@@ -7,7 +7,7 @@
         SHOWDOWN_URL: "https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js",
         README_SCRIPT: "readme-script",
         README_MODEL_ID: "readme-model-content",
-        README_MODEL_TITLE:"Component Readme"
+        README_MODEL_TITLE: "Component Readme"
     };
 
     const SELECTOR = {
