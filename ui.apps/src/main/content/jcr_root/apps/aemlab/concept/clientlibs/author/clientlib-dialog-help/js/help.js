@@ -25,16 +25,12 @@
         let hrefInit = helpEle?.getAttribute(SELECTOR.DATA_HREF_INIT);
 
 
-        if (!href || hrefInit) {
-            return;
-        }
+        if (!href || hrefInit) return;
 
         let r = new RegExp(CONST.REGEX, 'i');
         let isAbsPath = r.test(href)
 
-        if (isAbsPath) {
-            return;
-        }
+        if (isAbsPath) return;
 
         helpEle.addEventListener("click", function (event) {
             event.stopPropagation();
@@ -43,9 +39,7 @@
 
         // Get Readme file content and create popup
         $.get(href, function (data, status) {
-            if (status !== CONST.SUCCESS) {
-                return
-            }
+            if (status !== CONST.SUCCESS) return;
 
             let scriptEle = document.querySelector(SELECTOR.SHOWDOWN_SCRIPT);
             if (!scriptEle) {
@@ -76,8 +70,6 @@
 
             document.body.append(popover);
         }
-
-
 
         function loadScript(callback) {
             var script = document.createElement('script');
