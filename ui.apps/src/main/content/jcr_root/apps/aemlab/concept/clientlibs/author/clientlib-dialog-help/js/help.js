@@ -3,64 +3,81 @@
 
     const CONST = {
         SUCCESS: "success",
-        REGEX : "^(?:[a-z+]+:)?//",
-        SHOWDOWN_URL:"https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js",
-        README_SCRIPT: "readme-script"
-     };
+        REGEX: "^(?:[a-z+]+:)?//",
+        SHOWDOWN_URL: "https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js",
+        README_SCRIPT: "readme-script",
+        README_MODEL_ID: "readme-model-content",
+        README_MODEL_TITLE:"Component Readme"
+    };
 
     const SELECTOR = {
         HELP_LINK: ".cq-dialog-header-action.cq-dialog-help._coral-Button",
-        DATA_HREF:"data-href",
-        DATA_HREF_INIT:"data-href-init",
-        SHOWDOWN_SCRIPT: "#" + CONST.README_SCRIPT
+        DATA_HREF: "data-href",
+        DATA_HREF_INIT: "data-href-init",
+        SHOWDOWN_SCRIPT: "#" + CONST.README_SCRIPT,
+        README_MODEL: "#" + CONST.README_MODEL_ID
     };
 
     $(document).on("dialog-ready", function () {
-        console.log('loading..')
-
-
-
+        $(SELECTOR.README_MODEL).remove();
         let helpEle = document.querySelector(SELECTOR.HELP_LINK);
-        let href= helpEle?.getAttribute(SELECTOR.DATA_HREF);
+        let href = helpEle?.getAttribute(SELECTOR.DATA_HREF);
         let hrefInit = helpEle?.getAttribute(SELECTOR.DATA_HREF_INIT);
 
-        console.log(helpEle, href,hrefInit);
 
-        if(!href || hrefInit){
+        if (!href || hrefInit) {
             return;
         }
-    
+
         let r = new RegExp(CONST.REGEX, 'i');
         let isAbsPath = r.test(href)
 
-        if(isAbsPath){
+        if (isAbsPath) {
             return;
         }
 
-        // Get Readme file content
-        $.get(href, function(data, status){
-            if(status !== CONST.SUCCESS){
+        helpEle.addEventListener("click", function (event) {
+            event.stopPropagation();
+        });
+
+
+        // Get Readme file content and create popup
+        $.get(href, function (data, status) {
+            if (status !== CONST.SUCCESS) {
                 return
             }
 
             let scriptEle = document.querySelector(SELECTOR.SHOWDOWN_SCRIPT);
-            if(!scriptEle){
+            if (!scriptEle) {
                 loadScript(convertMarkup);
             }
 
             function convertMarkup() {
-                console.log('loaded', window.showdown)
                 const converter = new showdown.Converter();
                 const html = converter.makeHtml(data);
-                console.log(html);
+                createPopUp(html);
             }
-            
-
-            // convert MD to HTML
-            //console.log(data);
         })
 
-        
+        function createPopUp(html) {
+            var popover = new Coral.Popover().set({
+                placement: "right",
+                variant: "help",
+                id: CONST.README_MODEL_ID,
+                header: {
+                    innerHTML: CONST.README_MODEL_TITLE
+                },
+                content: {
+                    innerHTML: html
+                },
+                target: SELECTOR.HELP_LINK,
+                closable: "on"
+            });
+
+            document.body.append(popover);
+        }
+
+
 
         function loadScript(callback) {
             var script = document.createElement('script');
@@ -70,20 +87,14 @@
             helpEle.appendChild(script);
             script.onreadystatechange = callback;
             script.onload = callback;
-        
-            script.onerror = function(err) {
-              console.error(err);
+
+            script.onerror = function (err) {
+                console.error(err);
             };
+        }
 
-           
-          }
-
-        
         helpEle?.setAttribute(SELECTOR.DATA_HREF_INIT, true);
-
-
-        
     });
 
-   
+
 })($);
