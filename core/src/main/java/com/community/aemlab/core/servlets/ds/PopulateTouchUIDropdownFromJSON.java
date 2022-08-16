@@ -38,6 +38,10 @@ import com.day.cq.commons.jcr.JcrConstants;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(service = Servlet.class, immediate = true, property = {
         Constants.SERVICE_DESCRIPTION + "=Get Coral Dropdown options from json",
         ServletResolverConstants.SLING_SERVLET_RESOURCE_TYPES + "=" + PopulateTouchUIDropdownFromJSON.DATASOURCE_TYPE,
@@ -102,6 +106,10 @@ public class PopulateTouchUIDropdownFromJSON extends SlingSafeMethodsServlet {
         }
     }
 
+    /**
+     * @param opt
+     * @return ValueMap
+     */
     private ValueMap getOptionValueMap(Option opt) {
         ValueMap vm = new ValueMapDecorator(new HashMap<>());
 
@@ -116,6 +124,12 @@ public class PopulateTouchUIDropdownFromJSON extends SlingSafeMethodsServlet {
         return vm;
     }
 
+    /**
+     * @param jsonResource
+     * @return jsonString
+     * @throws RepositoryException
+     * @throws IOException
+     */
     private String getJsonString(Resource jsonResource) throws RepositoryException, IOException {
         Node cfNode = jsonResource.adaptTo(Node.class);
         InputStream in = cfNode.getProperty(JcrConstants.JCR_DATA).getBinary().getStream();
@@ -129,6 +143,10 @@ public class PopulateTouchUIDropdownFromJSON extends SlingSafeMethodsServlet {
         return sb.toString();
     }
 
+    /**
+     * @author arunpatidar02
+     *
+     */
     private class Option {
         String text;
         String value;

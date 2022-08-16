@@ -8,37 +8,26 @@ import javax.servlet.ServletException;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.servlets.HttpConstants;
+import org.apache.sling.api.servlets.ServletResolverConstants;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Modified;
-import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.community.aemlab.core.services.SampleOsgiService;
 
 /**
  * @author arunpatidar02
  *
  */
-@Component(immediate = true, service = Servlet.class, property = { "sling.servlet.extensions=txt",
-		"sling.servlet.paths=/bin/osgi", "sling.servlet.paths=/bin/foo", "sling.servlet.methods=get" })
-@Designate(ocd = SampleOsgiServlet.Configuration.class)
-public class SampleOsgiServlet extends SlingSafeMethodsServlet {
+@Component(immediate = true, service = Servlet.class)
+@Designate(ocd = SampleOsgiServlet2.Configuration.class)
+public class SampleOsgiServlet2 extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 1L;
-	
-	private static int counter = 0; 
-
-	private static final Logger LOG = LoggerFactory.getLogger(SampleOsgiServlet.class);
-
-	@Reference
-	private transient SampleOsgiService sampleOsgiService;
 
 	private boolean enabled;
 
@@ -47,11 +36,11 @@ public class SampleOsgiServlet extends SlingSafeMethodsServlet {
 			throws ServletException, IOException {
 
 		PrintWriter out = resp.getWriter();
-		LOG.info("sampleOsgiService STARTED......");
 		resp.setContentType("text/plain");
-		out.write("Annotation Demo Servlet - OSGi - enabled: " + enabled + "\n");
-		out.write(sampleOsgiService.getSettings());
-		LOG.info("sampleOsgiService END......{}", counter++);
+		if (enabled)
+			out.write(req.getPathInfo());
+		else
+			out.write("Servlet is not enabled");
 	}
 
 	@Activate
@@ -60,10 +49,19 @@ public class SampleOsgiServlet extends SlingSafeMethodsServlet {
 		enabled = config.enabled();
 	}
 
-	@ObjectClassDefinition(name = "Annotation Demo Servlet - OSGi", description = "Sample servlet config")
+	@ObjectClassDefinition(name = "Annotation Demo Servlet - OSGi - 2", description = "Sample servlet config 2")
 	public @interface Configuration {
-		@AttributeDefinition(name = "Enable", description = "Sample boolean property", type = AttributeType.BOOLEAN)
-		boolean enabled() default false;
+		@AttributeDefinition(name = "Enable", description = "Servlet Enabled", type = AttributeType.BOOLEAN)
+		boolean enabled() default true;
+
+		@AttributeDefinition(name = "sling.servlet.resourceTypes", description = "Servlet ResourceTypes ", type = AttributeType.STRING)
+		String[] sling_servlet_resourceTypes() default { "aemlab/components/title", "aemlab/components/image" };
+
+		@AttributeDefinition(name = ServletResolverConstants.SLING_SERVLET_EXTENSIONS, description = "Servlet Extension", type = AttributeType.STRING)
+		String[] sling_servlet_extensions() default { "txt" };
+
+		@AttributeDefinition(name = "Methods", description = "Servlet Methods", type = AttributeType.STRING)
+		String[] sling_servlet_methods() default HttpConstants.METHOD_GET;
 
 	}
 }

@@ -9,7 +9,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.services.SampleOsgiService;
+import com.community.aemlab.core.services.config.Configuration;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(immediate = true, service = SampleOsgiService.class)
 @Designate(ocd = Configuration.class)
 public class SampleOsgiServiceImpl implements SampleOsgiService {
@@ -24,6 +29,9 @@ public class SampleOsgiServiceImpl implements SampleOsgiService {
 	char[] passwordProp;
 	long longProp;
 
+	/**
+	 * @return settings
+	 */
 	public String getSettings() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Sample OSGi Service:\n");
@@ -48,6 +56,4 @@ public class SampleOsgiServiceImpl implements SampleOsgiService {
 		longProp = config.servicename_propertyname_long();
 	}
 
-	protected void deactivate() {
-	}
 }

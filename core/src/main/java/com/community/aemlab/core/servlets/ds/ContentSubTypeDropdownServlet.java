@@ -19,6 +19,10 @@ import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(service = Servlet.class, immediate = true, property = {
         Constants.SERVICE_DESCRIPTION + "=Populating Coral Dropdown using servlet",
         "sling.servlet.resourceTypes=aemlab/dialog/granite/components/select/datasource/content/subtype",

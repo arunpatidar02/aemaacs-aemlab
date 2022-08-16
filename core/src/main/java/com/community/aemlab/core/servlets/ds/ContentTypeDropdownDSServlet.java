@@ -28,6 +28,10 @@ import com.adobe.granite.ui.components.ds.SimpleDataSource;
 import com.adobe.granite.ui.components.ds.ValueMapResource;
 import com.day.cq.commons.jcr.JcrConstants;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(service = Servlet.class, immediate = true, property = {
         Constants.SERVICE_DESCRIPTION + "=Populating Coral Dropdown using datasource servlet",
         "sling.servlet.resourceTypes=aemlab/dialog/granite/components/select/datasource/content/type",

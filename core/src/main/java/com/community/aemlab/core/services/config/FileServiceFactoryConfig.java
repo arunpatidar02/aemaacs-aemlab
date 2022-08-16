@@ -4,6 +4,10 @@ import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @ObjectClassDefinition(name = "File Factory Service Configuration", description = "Factory Service Configurations")
 public @interface FileServiceFactoryConfig {
 

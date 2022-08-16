@@ -16,6 +16,10 @@ import org.osgi.framework.ServiceReference;
 
 import com.community.aemlab.core.services.FileService;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Model(adaptables = { SlingHttpServletRequest.class,
 		Resource.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class FileServiceModel {
@@ -45,10 +49,22 @@ public class FileServiceModel {
 
 	}
 
+	/**
+	 * Get the message
+	 * 
+	 * @return message
+	 */
 	public String getMessage() {
 		return fileData1 + fileData2;
 	}
 
+	/**
+	 * Get the factory Filter
+	 * 
+	 * @param type
+	 * @param maxSize
+	 * @return service factory ldap expression
+	 */
 	private String getFilter(String type, String maxSize) {
 		return "(&(max.size=" + maxSize + ")(file.type=" + type + "))";
 	}

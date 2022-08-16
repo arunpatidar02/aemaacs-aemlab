@@ -63,6 +63,11 @@ public class HelloWorldModel {
             + "This is instance: " + settings.getSlingId() + "\n";
     }
 
+    /**
+     * Get Message 
+     * 
+     * @return message
+     */
     public String getMessage() {
         return message;
     }

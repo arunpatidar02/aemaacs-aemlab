@@ -9,9 +9,12 @@ import org.osgi.service.metatype.annotations.Designate;
 import com.community.aemlab.core.services.FileService;
 import com.community.aemlab.core.services.config.FileServiceFactoryConfig;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(service = FileService.class, immediate = true)
 @Designate(ocd = FileServiceFactoryConfig.class, factory = true)
-
 public class FileServiceImpl implements FileService {
 	private String data;
 

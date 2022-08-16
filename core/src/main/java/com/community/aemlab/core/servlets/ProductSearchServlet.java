@@ -15,6 +15,10 @@ import org.osgi.service.component.propertytypes.ServiceDescription;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(service = { Servlet.class }, immediate = true)
 @SlingServletResourceTypes(resourceTypes = "aemlab/utils/product/search", methods = HttpConstants.METHOD_GET, selectors = "product-search", extensions = "html")
 @ServiceDescription("Product Search Servlet")

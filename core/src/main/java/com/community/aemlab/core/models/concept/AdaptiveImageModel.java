@@ -18,6 +18,10 @@ import org.slf4j.LoggerFactory;
 import com.adobe.cq.wcm.core.components.models.Image;
 import com.community.aemlab.core.utils.ImageUtils;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Model(adaptables = { SlingHttpServletRequest.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class AdaptiveImageModel {
 
@@ -55,18 +59,30 @@ public class AdaptiveImageModel {
 
 	}
 
+	/**
+	 * @return title
+	 */
 	public String getTitle() {
 		return title;
 	}
 
+	/**
+	 * @return titleStyle
+	 */
 	public String getTitleStyle() {
 		return titleStyle;
 	}
 
+	/**
+	 * @return imageSrc
+	 */
 	public String getImageSrc() {
 		return this.imageSrc;
 	}
 
+	/**
+	 * @return imageSrcset
+	 */
 	public String getImageSrcset() {
 		return this.imageSrcset;
 	}

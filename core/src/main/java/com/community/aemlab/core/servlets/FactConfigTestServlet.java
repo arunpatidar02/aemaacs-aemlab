@@ -1,7 +1,6 @@
 package com.community.aemlab.core.servlets;
 
 import java.io.IOException;
-import java.rmi.ServerException;
 
 import javax.servlet.Servlet;
 
@@ -15,6 +14,12 @@ import org.osgi.service.component.annotations.Reference;
 
 import com.community.aemlab.core.services.FileService;
 
+/**
+ * A Test Servlet
+ * 
+ * @author arunpatidar02
+ *
+ */
 @Component(service = Servlet.class, property = {
 		Constants.SERVICE_DESCRIPTION + "=Demo Servlet to access factory configs",
 		"sling.servlet.methods=" + HttpConstants.METHOD_GET, "sling.servlet.paths=" + "/bin/demo/facttest" })
@@ -29,8 +34,7 @@ public class FactConfigTestServlet extends SlingSafeMethodsServlet {
 	transient FileService fs2;
 
 	@Override
-	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
-			throws ServerException, IOException {
+	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp) throws IOException {
 		try {
 			resp.setContentType("text/html");
 			resp.getWriter().write("<br>" + fs1.getFileData());

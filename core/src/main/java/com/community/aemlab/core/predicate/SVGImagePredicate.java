@@ -39,7 +39,7 @@ public class SVGImagePredicate extends AbstractNodePredicate {
 
     /**
      * @param node
-     * @return
+     * @return true if node is svg image otherwise false
      */
     private static boolean found(Node node) {
         try {
@@ -56,6 +56,10 @@ public class SVGImagePredicate extends AbstractNodePredicate {
         return false;
     }
 
+    /**
+     * @param node
+     * @return true if node is folder otherwise false
+     */
     private static boolean isFolder(Node node) {
         try {
             if (node.isNodeType(JcrResourceConstants.NT_SLING_ORDERED_FOLDER)

@@ -1,4 +1,4 @@
-package com.community.aemlab.core.services.impl;
+package com.community.aemlab.core.services.config;
 
 import org.apache.commons.lang3.StringUtils;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
@@ -6,6 +6,10 @@ import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.osgi.service.metatype.annotations.Option;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @ObjectClassDefinition(name = "Annotation Demo Service - OSGi", description = "Sample services")
 public @interface Configuration {
 

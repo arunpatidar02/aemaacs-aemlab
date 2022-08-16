@@ -16,11 +16,16 @@ import org.osgi.service.component.annotations.Component;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(immediate = true, service = Servlet.class, property = { "sling.servlet.extensions=txt",
 		"sling.servlet.paths=/bin/create/xf", "sling.servlet.methods=get" })
 public class CreateXFServlet extends SlingSafeMethodsServlet {
 	private static final long serialVersionUID = 1L;
 
+	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
 
