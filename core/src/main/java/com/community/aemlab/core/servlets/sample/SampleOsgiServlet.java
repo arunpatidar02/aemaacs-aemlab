@@ -1,4 +1,4 @@
-package com.community.aemlab.core.servlets;
+package com.community.aemlab.core.servlets.sample;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -20,7 +20,7 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.community.aemlab.core.services.SampleOsgiService;
+import com.community.aemlab.core.services.sample.SampleOsgiService;
 
 /**
  * @author arunpatidar02
