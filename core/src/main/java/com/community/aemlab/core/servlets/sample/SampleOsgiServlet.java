@@ -35,7 +35,7 @@ public class SampleOsgiServlet extends SlingSafeMethodsServlet {
 	
 	private static int counter = 0; 
 
-	private static final Logger LOG = LoggerFactory.getLogger(SampleOsgiServlet.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(SampleOsgiServlet.class);
 
 	@Reference
 	private transient SampleOsgiService sampleOsgiService;
@@ -47,11 +47,11 @@ public class SampleOsgiServlet extends SlingSafeMethodsServlet {
 			throws ServletException, IOException {
 
 		PrintWriter out = resp.getWriter();
-		LOG.info("sampleOsgiService STARTED......");
+		LOGGER.info("sampleOsgiService STARTED......");
 		resp.setContentType("text/plain");
 		out.write("Annotation Demo Servlet - OSGi - enabled: " + enabled + "\n");
 		out.write(sampleOsgiService.getSettings());
-		LOG.info("sampleOsgiService END......{}", counter++);
+		LOGGER.info("sampleOsgiService END......{}", counter++);
 	}
 
 	@Activate
