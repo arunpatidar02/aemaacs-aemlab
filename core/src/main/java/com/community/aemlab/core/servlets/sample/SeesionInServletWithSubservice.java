@@ -1,6 +1,7 @@
 package com.community.aemlab.core.servlets.sample;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +15,7 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
+import org.apache.sling.jcr.api.SlingRepository;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -22,6 +24,10 @@ import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.utils.AEMLABConstants;
 
+/**
+ * @author arunpatidar02
+ *
+ */
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Simple Demo Servlet to get Session ",
 		"sling.servlet.methods=" + HttpConstants.METHOD_GET, "sling.servlet.paths=" + "/bin/get/session/subservice" })
 
@@ -29,6 +35,9 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 
 	@Reference
 	private transient ResourceResolverFactory resourceFactory;
+
+	@Reference
+	private transient SlingRepository repository = null;
 
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOGGER = LoggerFactory.getLogger(SeesionInServletWithSubservice.class);
@@ -41,22 +50,49 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put(ResourceResolverFactory.SUBSERVICE, AEMLABConstants.AEMLAB_SUBSERVICE_READ);
-		Session session = null;
+		PrintWriter pw = response.getWriter();
 
+		sampleSubserviceSession(pw);
+		sampleJCRSession(pw);
+	}
+
+	private void sampleSubserviceSession(PrintWriter pw) {
+		Session session = null;
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put(ResourceResolverFactory.SUBSERVICE, "readService");
 		try (ResourceResolver resourceResolver = resourceFactory.getServiceResourceResolver(paramMap)) {
+			LOGGER.trace("User id inside {}", resourceResolver.getUserID());
 			session = resourceResolver.adaptTo(Session.class);
-			if (session.isLive()) {
-				response.getWriter().println("Session User is " + session.getUserID());
-			}
+			// Business logic
+			pw.println("Session User from getServiceResourceResolver is - " + session.getUserID());
 
 		} catch (Exception e) {
-			response.getWriter().println("Can't get session from subservice");
-			LOGGER.error(e.getMessage());
+			LOGGER.error("sampleSubserviceSession : Unable to Login : ", e);
 		} finally {
-			if (session != null && session.isLive()) {
-				LOGGER.trace("Session is alive, closing now");
-				session.logout();
-			}
+			closeSession(session);
+		}
+	}
+
+	// Get Session for JCR repository operation
+	private void sampleJCRSession(PrintWriter pw) {
+		Session session = null;
+		try {
+			session = repository.loginService("readService", null);
+			LOGGER.trace("User id inside {}", session.getUserID());
+			// Business logic
+			pw.println("Session User from loginService is - " + session.getUserID());
+		} catch (Exception e1) {
+			e1.printStackTrace();
+			LOGGER.error("sampleJCRSession : Unable to Login : ", e1);
+		} finally {
+			closeSession(session);
+		}
+	}
+
+	// Close Session
+	private void closeSession(Session session) {
+		if (session != null && session.isLive()) {
+			session.logout();
 		}
 	}
 
