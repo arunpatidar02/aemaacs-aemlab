@@ -40,7 +40,7 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 		response.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
 		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put(ResourceResolverFactory.SUBSERVICE, AEMLABConstants.AEMLAB_SERVICEUSER_READ);
+		paramMap.put(ResourceResolverFactory.SUBSERVICE, AEMLABConstants.AEMLAB_SUBSERVICE_READ);
 		Session session = null;
 
 		try (ResourceResolver resourceResolver = resourceFactory.getServiceResourceResolver(paramMap)) {

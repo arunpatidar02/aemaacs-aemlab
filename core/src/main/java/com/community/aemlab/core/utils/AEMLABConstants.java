@@ -11,7 +11,7 @@ public class AEMLABConstants {
 	}
 	
 	public static final String CONTENTTYPE_TXT_HTML = "text/html";
-	public static final String AEMLAB_SERVICEUSER_READ = "aemlab-service-read-user";
-	public static final String AEMLAB_SERVICEUSER_WRITE = "aemlab-service-write-user";
+	public static final String AEMLAB_SUBSERVICE_READ = "aemlab-service-read";
+	public static final String AEMLAB_SUBSERVICE_WRITE = "aemlab-service-write";
 
 }
