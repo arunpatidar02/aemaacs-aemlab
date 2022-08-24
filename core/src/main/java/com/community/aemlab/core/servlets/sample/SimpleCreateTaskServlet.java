@@ -18,7 +18,7 @@ import com.adobe.granite.taskmanagement.TaskManager;
 import com.adobe.granite.taskmanagement.TaskManagerException;
 
 @Component(service = Servlet.class, immediate = true, property = {
-		Constants.SERVICE_DESCRIPTION + "= Simple Task Servlet", "sling.servlet.paths=/bin/task/inbox/notification" })
+		Constants.SERVICE_DESCRIPTION + "= Simple Task Servlet", "sling.servlet.paths=/bin/task/create" })
 public class SimpleCreateTaskServlet extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 1L;

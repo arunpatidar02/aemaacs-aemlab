@@ -65,6 +65,7 @@ public class AEMLABResourceResolverProviderImpl implements AEMLABResourceResolve
 	private void closeResResolver(ResourceResolver resourceResolver) {
 		try {
 			if (resourceResolver != null && resourceResolver.isLive()) {
+				LOGGER.trace("[AEMLABResourceResolverProvider] closing resourceResolver");
 				resourceResolver.close();
 			}
 		} catch (Exception e) {

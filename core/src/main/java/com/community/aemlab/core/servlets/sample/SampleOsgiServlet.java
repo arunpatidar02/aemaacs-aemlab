@@ -21,6 +21,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.services.sample.SampleOsgiService;
+import com.community.aemlab.core.utils.AEMLABConstants;
 
 /**
  * @author arunpatidar02
@@ -45,13 +46,14 @@ public class SampleOsgiServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
+		
+		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
 		PrintWriter out = resp.getWriter();
-		LOGGER.info("sampleOsgiService STARTED......");
-		resp.setContentType("text/plain");
+		LOGGER.debug("sampleOsgiService STARTED......");
 		out.write("Annotation Demo Servlet - OSGi - enabled: " + enabled + "\n");
 		out.write(sampleOsgiService.getSettings());
-		LOGGER.info("sampleOsgiService END......{}", counter++);
+		LOGGER.debug("sampleOsgiService END......{}", counter++);
 	}
 
 	@Activate

@@ -1,4 +1,5 @@
 package com.community.aemlab.core.servlets.sample;
+
 import java.io.IOException;
 
 import javax.servlet.Servlet;
@@ -11,6 +12,7 @@ import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 
+import com.community.aemlab.core.utils.AEMLABConstants;
 import com.day.cq.tagging.Tag;
 import com.day.cq.tagging.TagManager;
 
@@ -28,19 +30,17 @@ public class GetTags extends SlingSafeMethodsServlet {
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
 
+		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
+
 		try {
 			TagManager tagManager = req.getResourceResolver().adaptTo(TagManager.class);
+			Tag tagObj = tagManager.resolve("/content/cq:tags/experience-fragments/variation/web");
 
-			Tag tagObj = tagManager.resolve("/content/cq:tags/we-retail/apparel/hat");
-			Tag tagObj2 = tagManager.resolve("/etc/tags/we-retail/apparel/hat");
-
-			resp.getWriter().write("<p>Hat Tag details(Content) " + tagObj.getTitle() + "</p>");
-			resp.getWriter().write("<p>Hat Tag details(etc) " + tagObj2.getTitle() + "</p>");
+			resp.getWriter().write("<p>Tag details -  " + tagObj.getTitle() + "</p>");
 
 		} catch (Exception e) {
 			resp.getWriter().write("<p>" + e.getMessage() + "</p>");
 		}
 
-		resp.setContentType("text/html");
 	}
 }

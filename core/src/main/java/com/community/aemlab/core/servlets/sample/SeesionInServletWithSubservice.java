@@ -47,9 +47,6 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 			throws ServletException, IOException {
 
 		response.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
-
-		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put(ResourceResolverFactory.SUBSERVICE, AEMLABConstants.AEMLAB_SUBSERVICE_READ);
 		PrintWriter pw = response.getWriter();
 
 		sampleSubserviceSession(pw);
@@ -59,7 +56,7 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 	private void sampleSubserviceSession(PrintWriter pw) {
 		Session session = null;
 		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put(ResourceResolverFactory.SUBSERVICE, "readService");
+		paramMap.put(ResourceResolverFactory.SUBSERVICE, AEMLABConstants.AEMLAB_SUBSERVICE_READ);
 		try (ResourceResolver resourceResolver = resourceFactory.getServiceResourceResolver(paramMap)) {
 			LOGGER.trace("User id inside {}", resourceResolver.getUserID());
 			session = resourceResolver.adaptTo(Session.class);
@@ -77,7 +74,7 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 	private void sampleJCRSession(PrintWriter pw) {
 		Session session = null;
 		try {
-			session = repository.loginService("readService", null);
+			session = repository.loginService(AEMLABConstants.AEMLAB_SUBSERVICE_READ, null);
 			LOGGER.trace("User id inside {}", session.getUserID());
 			// Business logic
 			pw.println("Session User from loginService is - " + session.getUserID());

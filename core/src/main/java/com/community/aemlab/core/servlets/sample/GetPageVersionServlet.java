@@ -36,7 +36,7 @@ public class GetPageVersionServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
-		String qs = "/content/aemlab/en/jcr:content";
+		String qs = "/content/aemlab/us/en/jcr:content";
 		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
 		try {

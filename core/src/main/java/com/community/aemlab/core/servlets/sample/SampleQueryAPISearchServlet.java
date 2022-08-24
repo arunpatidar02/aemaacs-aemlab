@@ -51,18 +51,19 @@ public class SampleQueryAPISearchServlet extends SlingAllMethodsServlet {
 		ResourceResolver resourceResolver = request.getResourceResolver();
 		Session session = resourceResolver.adaptTo(Session.class);
 
-		/*
+		/**
 		 * Query
 		 * 
 		 * type=cq:Page 
-		 * path=/content/aemlab
+		 * path=/content/aemlab 
 		 * group.1_property=jcr:content/jcr:created
 		 * group.1_property.operation= exists
 		 * group.2_property=jcr:content/cq:lastModified
 		 * group.2_property.operation=exists 
-		 * group.p.or=true p.limit=-1
+		 * group.p.or=true 
+		 * p.limit=-1
 		 * 
-		 */
+		 **/
 
 		Map<String, String> filteredQueryParamMap = new HashMap<>();
 
@@ -89,12 +90,12 @@ public class SampleQueryAPISearchServlet extends SlingAllMethodsServlet {
 
 		Query query = queryBuilder.createQuery(PredicateGroup.create(filteredQueryParamMap2), session);
 		SearchResult result = query.getResult();
-		
+
 		// QueryBuilder has a leaking ResourceResolver, so the following work around is required.
 		ResourceResolver leakingResourceResolver = null;
-		
+
 		LOGGER.debug("Result node {}", result.getTotalMatches());
-		
+
 		response.getWriter().print("Result nodes found  : " + query.getResult().getHits().size());
 		try {
 			final List<Resource> resources = new ArrayList<>();
@@ -114,7 +115,6 @@ public class SampleQueryAPISearchServlet extends SlingAllMethodsServlet {
 				leakingResourceResolver.close();
 			}
 		}
-		response.setContentType("text/html");
 
 	}
 
