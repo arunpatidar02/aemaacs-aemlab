@@ -1,0 +1,9 @@
+{
+  "include-filter.config.enabled":true,
+  "include-filter.config.extension":"html",
+  "include-filter.config.resource-types":[
+    "aemlab/concept/components/sdi-example"
+  ],
+  "include-filter.config.rewrite":true,
+  "include-filter.config.path":"/content/aemlab"
+}
