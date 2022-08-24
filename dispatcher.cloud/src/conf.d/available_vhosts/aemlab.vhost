@@ -39,6 +39,11 @@ Include conf.d/variables/custom.vars
 		Header always append X-Frame-Options SAMEORIGIN
 	</Directory>
 	<Directory "${DOCROOT}">
+		# Add Includes to enable SSI Includes used by Sling Dynamic Include
+		Options FollowSymLinks Includes
+
+		# Set includes to process .html files
+		AddOutputFilter INCLUDES .html
 		AllowOverride None
 		Require all granted
 	</Directory>

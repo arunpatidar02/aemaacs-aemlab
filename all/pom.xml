@@ -92,6 +92,12 @@
             				<type>zip</type>
                             <target>/apps/aemlab-vendor-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>org.apache.sling</groupId>
+			    			<artifactId>org.apache.sling.dynamic-include</artifactId>
+            				<type>jar</type>
+                            <target>/apps/aemlab-vendor-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                     <subPackages>
                     </subPackages>
@@ -237,5 +243,10 @@
 	    	<artifactId>io.wcm.caconfig.editor.package</artifactId>
 	    	<type>zip</type>
     	</dependency>
+    	<dependency>
+			 <groupId>org.apache.sling</groupId>
+			 <artifactId>org.apache.sling.dynamic-include</artifactId>
+			 <type>jar</type>
+		</dependency>
     </dependencies>
 </project>
