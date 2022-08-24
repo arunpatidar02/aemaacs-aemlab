@@ -1,4 +1,4 @@
-package com.community.aemlab.core.services.impl.sample;
+package com.community.aemlab.core.services.sample.impl;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
