@@ -1,4 +1,4 @@
-package com.community.aemlab.core.servlets;
+package com.community.aemlab.core.servlets.sample;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,6 +19,8 @@ import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
+import com.community.aemlab.core.utils.AEMLABConstants;
+
 /**
  * @author arunpatidar02
  *
@@ -38,7 +40,8 @@ public class SampleOsgiServlet3 extends SlingSafeMethodsServlet {
 			throws ServletException, IOException {
 
 		PrintWriter out = resp.getWriter();
-		resp.setContentType("text/plain");
+		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
+		
 		if (enabled)
 			out.write("Servlet3 is enabled  -- >" + req.getPathInfo());
 		else

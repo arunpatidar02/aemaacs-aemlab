@@ -1,4 +1,4 @@
-package com.community.aemlab.core.servlets;
+package com.community.aemlab.core.servlets.sample;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.community.aemlab.core.events;
+package com.community.aemlab.core.listeners.sample;
 
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
@@ -19,7 +19,7 @@ public class PageEvent implements EventHandler {
 
 	@Override
 	public void handleEvent(Event event) {
-		LOG.info("Event is called with paths PageEvent Test ......");
+		LOG.debug("Event is called with paths PageEvent Test ......");
 	}
 
 }

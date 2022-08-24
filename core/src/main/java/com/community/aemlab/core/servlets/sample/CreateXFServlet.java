@@ -1,4 +1,4 @@
-package com.community.aemlab.core.servlets;
+package com.community.aemlab.core.servlets.sample;
 
 import java.io.IOException;
 
@@ -13,6 +13,7 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Component;
 
+import com.community.aemlab.core.utils.AEMLABConstants;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 
@@ -28,6 +29,8 @@ public class CreateXFServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
+		
+		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
 		try {
 			ResourceResolver resourceResolver = req.getResourceResolver();
@@ -45,8 +48,7 @@ public class CreateXFServlet extends SlingSafeMethodsServlet {
 			
 			session.save();
 
-			resp.setContentType("text/plain");
-			resp.getWriter().write("Page is created");
+			resp.getWriter().write("XF is created");
 		} catch (Exception e) {
 			resp.getWriter().write("Error : " + e.getMessage());
 		}

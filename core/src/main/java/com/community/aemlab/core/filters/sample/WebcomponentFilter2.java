@@ -1,4 +1,4 @@
-package com.community.aemlab.core.filters;
+package com.community.aemlab.core.filters.sample;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -69,12 +69,12 @@ public class WebcomponentFilter2 implements Filter {
 
 	@Override
 	public void init(FilterConfig filterConfig) {
-		LOGGER.debug("Filter init");
+		LOGGER.trace("Filter init");
 	}
 
 	@Override
 	public void destroy() {
-		LOGGER.debug("Filter destroy");
+		LOGGER.trace("Filter destroy");
 	}
 
 	@ObjectClassDefinition(name = "Annotation Demo Filter - OSGi", description = "Sample Filter config")

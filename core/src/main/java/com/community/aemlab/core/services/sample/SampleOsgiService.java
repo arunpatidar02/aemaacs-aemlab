@@ -1,4 +1,4 @@
-package com.community.aemlab.core.services;
+package com.community.aemlab.core.services.sample;
 /**
  * @author arunpatidar02
  *
