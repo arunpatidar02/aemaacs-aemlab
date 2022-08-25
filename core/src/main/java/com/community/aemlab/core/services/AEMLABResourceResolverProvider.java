@@ -5,6 +5,12 @@ import org.apache.sling.api.resource.ResourceResolver;
 public interface AEMLABResourceResolverProvider {
 
 	/**
+	 * @param subserviceName
+	 * @return resourceResolver
+	 */
+	public ResourceResolver getResourceResolver(String subserviceName);
+	
+	/**
 	 * @return resourceResolver
 	 */
 	public ResourceResolver getReadResourceResolver();

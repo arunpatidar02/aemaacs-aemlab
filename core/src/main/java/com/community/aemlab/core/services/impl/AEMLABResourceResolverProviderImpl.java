@@ -18,7 +18,7 @@ import com.community.aemlab.core.utils.AEMLABConstants;
  * @author arunpatidar02
  *
  */
-@Component(service = AEMLABResourceResolverProvider.class, immediate = true)
+@Component(service = AEMLABResourceResolverProvider.class, immediate = true, name = "AEMLABResourceResolverProvider Factory")
 public class AEMLABResourceResolverProviderImpl implements AEMLABResourceResolverProvider {
 
 	@Reference
@@ -27,13 +27,18 @@ public class AEMLABResourceResolverProviderImpl implements AEMLABResourceResolve
 	private static final Logger LOGGER = LoggerFactory.getLogger(AEMLABResourceResolverProviderImpl.class);
 
 	@Override
+	public ResourceResolver getResourceResolver(String subserviceName) {
+		return getResourceResourceResolver(subserviceName);
+	}
+
+	@Override
 	public ResourceResolver getReadResourceResolver() {
-		return getResourceResourceResolver(true);
+		return getResourceResourceResolver(AEMLABConstants.AEMLAB_SUBSERVICE_READ);
 	}
 
 	@Override
 	public ResourceResolver getWriteResourceResolver() {
-		return getResourceResourceResolver(false);
+		return getResourceResourceResolver(AEMLABConstants.AEMLAB_SUBSERVICE_WRITE);
 	}
 
 	@Override
@@ -45,10 +50,9 @@ public class AEMLABResourceResolverProviderImpl implements AEMLABResourceResolve
 	 * @param isRead
 	 * @return ResourceResolver
 	 */
-	private ResourceResolver getResourceResourceResolver(boolean isRead) {
+	private ResourceResolver getResourceResourceResolver(String subserviceName) {
 		Map<String, Object> map = new HashMap<>();
-		map.put(ResourceResolverFactory.SUBSERVICE,
-				isRead ? AEMLABConstants.AEMLAB_SUBSERVICE_READ : AEMLABConstants.AEMLAB_SUBSERVICE_WRITE);
+		map.put(ResourceResolverFactory.SUBSERVICE, subserviceName);
 		try {
 			return resourceFactory.getServiceResourceResolver(map);
 		} catch (LoginException e) {
