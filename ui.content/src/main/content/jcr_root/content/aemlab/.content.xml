@@ -4,6 +4,7 @@
     <jcr:content
         cq:allowedTemplates="[/conf/aemlab/settings/wcm/templates/page-content,/apps/wcm-io/caconfig/editor-package/templates/editor]"
         cq:conf="/conf/aemlab"
+        sling:configRef="/conf/aemlab"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         jcr:primaryType="cq:PageContent"
         jcr:title="AEM Lab"

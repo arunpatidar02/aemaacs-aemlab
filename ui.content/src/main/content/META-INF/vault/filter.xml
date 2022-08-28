@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
    
-     <filter root="/conf/aemlab">
+    <filter root="/conf/aemlab">
         <include pattern="/conf/aemlab/settings(.*)"/>
-        <include pattern="/conf/aemlab/sling:settings(.*)"/>
+        <include pattern="/conf/aemlab/sling:config(.*)"/>
+    </filter>
+    <filter root="/conf/aemlab" mode="merge">
+        <include pattern="/conf/aemlab"/>
     </filter>
     <filter root="/content/aemlab">
         <include pattern="/content/aemlab"/>

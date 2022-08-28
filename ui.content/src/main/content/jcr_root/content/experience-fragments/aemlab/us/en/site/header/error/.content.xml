@@ -9,7 +9,7 @@
         cq:xfMasterVariation="{Boolean}true"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Header"
+        jcr:title="Error Header"
         sling:resourceType="aemlab/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
@@ -27,20 +27,9 @@
                 <text_copy
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemlab/components/text"
-                    id="header-logo"
+                    id="header-logo-center"
                     text="&lt;p>&lt;a href=&quot;#&quot;>AEM&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;#&quot;>Lab&lt;/a>&lt;/p>&#xd;&#xa;"
                     textIsRich="true"/>
-                <text_628130385_copy
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemlab/components/text"
-                    id="header-navigation"
-                    text="&lt;ul>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Services&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>About Us&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Contact Us&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;#&quot;>Careers&lt;/a>&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
-                    textIsRich="true"/>
-                <search
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemlab/components/search"
-                    id="header-search"
-                    searchRoot="/content/aemlab/reference-content"/>
             </container>
         </root>
     </jcr:content>

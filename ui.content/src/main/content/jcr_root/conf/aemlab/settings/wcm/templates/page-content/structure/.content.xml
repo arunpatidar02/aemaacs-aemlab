@@ -10,10 +10,12 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aemlab/components/container"
             layout="simple">
-            <experiencefragment-header
+            <header
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemlab/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/aemlab/us/en/site/header/master"/>
+                sling:resourceType="aemlab/concept/components/cac-xf"
+                configName="com.community.aemlab.core.conf.HeaderFooterConfig"
+                property="headerPath"
+                noConfigLabel="No configuration defined for Header"/>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemlab/components/container"
@@ -23,10 +25,12 @@
                     sling:resourceType="aemlab/components/container"
                     editable="{Boolean}true"/>
             </container>
-            <experiencefragment-footer
+            <footer
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemlab/components/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/aemlab/us/en/site/footer/master"/>
+                sling:resourceType="aemlab/concept/components/cac-xf"
+                configName="com.community.aemlab.core.conf.HeaderFooterConfig"
+                property="footerPath"
+                noConfigLabel="No configuration defined for Footer"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
