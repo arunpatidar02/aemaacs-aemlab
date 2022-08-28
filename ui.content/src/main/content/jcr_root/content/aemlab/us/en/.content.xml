@@ -7,6 +7,7 @@
         cq:template="/conf/aemlab/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
+        sling:sitemapRoot="{Boolean}true"
         sling:resourceType="aemlab/components/page"
         pageTitle="AEM Lab">
         <root
