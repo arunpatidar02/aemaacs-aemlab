@@ -11,6 +11,7 @@
 
 #aemlab-header >.text{
     padding:0;
+    width:100%;
 }
 
 
@@ -19,7 +20,8 @@
 	content:'';
 }
 
-#aemlab-header #header-logo{
+#aemlab-header #header-logo,
+#aemlab-header #header-logo-center{
     flex: 1 1 auto;
     position: relative;
     width: auto;
@@ -27,13 +29,22 @@
     margin:1rem 1rem 0 0;
 }
 
-#aemlab-header #header-logo p, #aemlab-header #header-logo p a{
+#aemlab-header #header-logo-center{
+	justify-content: center;
+}
+
+#aemlab-header #header-logo p, 
+#aemlab-header #header-logo-center p,
+#aemlab-header #header-logo p a,
+#aemlab-header #header-logo-center p a{
     font-size:2rem;
     color:#026491;
     font-family:CustomFont;
 }
 
-#aemlab-header #header-logo p+p, #aemlab-header #header-logo p+p a{
+
+#aemlab-header #header-logo p+p, #aemlab-header #header-logo p+p a,
+#aemlab-header #header-logo-center p+p, #aemlab-header #header-logo-center p+p a{
     color:#E5710B;
 }
 
