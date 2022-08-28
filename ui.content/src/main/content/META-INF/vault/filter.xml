@@ -3,7 +3,7 @@
    
      <filter root="/conf/aemlab">
         <include pattern="/conf/aemlab/settings(.*)"/>
-        <include pattern="/conf/aemlab/sling:settings(.*)"/>
+        <include pattern="/conf/aemlab/sling:config(.*)"/>
     </filter>
     <filter root="/content/aemlab">
         <include pattern="/content/aemlab"/>

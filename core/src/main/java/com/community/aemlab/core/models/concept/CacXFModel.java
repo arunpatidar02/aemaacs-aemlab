@@ -24,7 +24,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.slf4j.Logger;
 
 import com.adobe.cq.xf.ExperienceFragmentsConstants;
-import com.community.aemlab.core.services.ConfigurationService;
+import com.community.aemlab.core.services.CAConfigurationService;
 import com.day.cq.wcm.api.Page;
 
 @Model(adaptables = { SlingHttpServletRequest.class,
@@ -44,20 +44,19 @@ public class CacXFModel {
 	private Page currentPage;
 
 	@Inject
-	private ConfigurationService configService;
+	private CAConfigurationService configService;
 
 	@Inject
 	@Named("log")
 	private Logger logger;
 
+	ValueInfo<String> valueInfo;
+
+	@SuppressWarnings("unchecked")
 	@PostConstruct
 	protected void init() {
 		logger.debug("Processing data for {}", currentPage.getPath());
-	}
-
-	@SuppressWarnings("unchecked")
-	public ValueInfo<String> getConfigValue() {
-		return (ValueInfo<String>) configService.getConfigValue(currentPage.adaptTo(Resource.class), configName,
+		valueInfo = (ValueInfo<String>) configService.getConfigValue(currentPage.adaptTo(Resource.class), configName,
 				property);
 	}
 
@@ -69,7 +68,11 @@ public class CacXFModel {
 	 */
 	public String getFragmentPath() {
 
-		ValueInfo<?> configuration = getConfigValue();
+		ValueInfo<?> configuration = valueInfo;
+		
+		if(configuration == null) {
+			return null;
+		}
 		String fragmentPath = (String) configuration.getEffectiveValue();
 		if (StringUtils.isEmpty(fragmentPath)) {
 			logger.warn("Experience fragment {} is empty", fragmentPath);

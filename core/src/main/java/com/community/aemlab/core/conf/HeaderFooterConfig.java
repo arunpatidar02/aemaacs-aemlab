@@ -11,10 +11,9 @@ import org.apache.sling.caconfig.annotation.Property;
  * @author arupatidar02
  */
 @Configuration(label = "AEMLAB - Header and Footer Configuration", 
-				description = "Template configuration for header and Footer", 
-				name = "template/headerfooter")
+				description = "Template configuration for header and Footer")
 
-public @interface HeaderFooterConfiguration {
+public @interface HeaderFooterConfig {
 
 	/**
 	 * @return Path parameter

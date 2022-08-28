@@ -1,33 +1,33 @@
-footer.experiencefragment{
+#aemlab-footer{
 	background:#0174a9;
 	color:#fff;
 	padding:2rem 6rem 0;
     margin-top: 2rem;
 }
 
-footer.experiencefragment a, footer.experiencefragment h3, footer.experiencefragment h4{
+#aemlab-footer a, #aemlab-footer h3, #aemlab-footer h4{
 	color:#fff;
 }
 
-footer.experiencefragment a{
+#aemlab-footer a{
 	border-bottom:1px solid #959494;
 	padding-bottom:2px;
 }
 
 
-footer.experiencefragment a:after{
+#aemlab-footer a:after{
 	content:'';
 }
 
-footer.experiencefragment ul{
+#aemlab-footer ul{
     margin-left:0;
 }
 
-footer.experiencefragment ul li{
+#aemlab-footer ul li{
 	list-style:none;
 }
 
-footer.experiencefragment .text{
+#aemlab-footer .text{
     padding: 0 2rem;
 }
 
