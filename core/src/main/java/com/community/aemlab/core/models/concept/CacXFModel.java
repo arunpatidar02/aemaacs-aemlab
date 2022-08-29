@@ -2,7 +2,6 @@
 package com.community.aemlab.core.models.concept;
 
 import static com.community.aemlab.core.utils.AEMLABConstants.FORWARD_SLASH;
-import static com.community.aemlab.core.utils.AEMLABConstants.SPACE;
 
 import java.util.Iterator;
 
@@ -10,7 +9,6 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.jackrabbit.JcrConstants;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -38,12 +36,6 @@ public class CacXFModel {
 	@ValueMapValue(name = "property")
 	private String property;
 
-	@ValueMapValue(name = "tagName")
-	private String tagName;
-
-	@ValueMapValue(name = "classList")
-	private String[] classList;
-
 	@SlingObject
 	private ResourceResolver resolver;
 
@@ -57,16 +49,12 @@ public class CacXFModel {
 	@Named("log")
 	private Logger logger;
 
-	private static final String DIV = "div";
 	private String fragmentPath;
-	private String cssClassName;
 
 	@PostConstruct
 	protected void init() {
 		logger.debug("Processing data for {}", currentPage.getPath());
 		fragmentPath = constructFragmentPath();
-		tagName = StringUtils.isNotBlank(tagName) ? tagName : DIV;
-		cssClassName = ArrayUtils.isNotEmpty(classList) ? StringUtils.join(classList, SPACE) : StringUtils.EMPTY;
 	}
 
 	/**
@@ -74,20 +62,6 @@ public class CacXFModel {
 	 */
 	public String getFragmentPath() {
 		return fragmentPath;
-	}
-
-	/**
-	 * @return tagName
-	 */
-	public String getTagName() {
-		return tagName;
-	}
-
-	/**
-	 * @return tagName
-	 */
-	public String getCssClassName() {
-		return cssClassName;
 	}
 
 	/**
