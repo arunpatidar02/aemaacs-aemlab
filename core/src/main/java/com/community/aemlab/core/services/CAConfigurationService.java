@@ -5,6 +5,7 @@ import static com.community.aemlab.core.utils.AEMLABConstants.SEARCH_SEQ;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.caconfig.management.ConfigurationData;
 import org.apache.sling.caconfig.management.ValueInfo;
 
 public interface CAConfigurationService {
@@ -12,9 +13,16 @@ public interface CAConfigurationService {
 	/**
 	 * Get configuration data for supplied resource context
 	 *
-	 * @return: configuration data for given configName
+	 * @return: configuration data for given configName and property
 	 */
 	ValueInfo<?> getConfigValue(Resource contextResource, String configName, String property);
+
+	/**
+	 * Get configuration data for supplied resource context
+	 *
+	 * @return: configuration data for given configName
+	 */
+	ConfigurationData getConfigurationData(Resource contextResource, String configName);
 
 	/**
 	 * Get list of all configuration items in given configuration/sub-configuration

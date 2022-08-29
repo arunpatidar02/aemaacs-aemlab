@@ -1,0 +1,41 @@
+.c-gtt {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    border-color: #0174a9;
+}
+
+.c-gtt::after {
+    content: "\2912";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 50px;
+    color: #fff;
+}
+
+.c-gtt.show:hover {
+    cursor: pointer;
+    background-color: #0174a9;
+    opacity: 1;
+}
+
+.c-gtt:active {
+    background-color: #555;
+}
+
+.c-gtt.show {
+    opacity: 0.25;
+    visibility: visible;
+}

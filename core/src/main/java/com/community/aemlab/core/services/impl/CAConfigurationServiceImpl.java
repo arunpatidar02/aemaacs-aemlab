@@ -23,11 +23,16 @@ public class CAConfigurationServiceImpl implements CAConfigurationService {
 
 	@Override
 	public ValueInfo<?> getConfigValue(Resource contextResource, String configName, String property) {
+		ConfigurationData configData = getConfigurationData(contextResource,configName);
+		return configData != null ? configData.getValueInfo(property) : null;
+	}
+
+	@Override
+	public ConfigurationData getConfigurationData(Resource contextResource, String configName) {
 		if (isConfigInvalid(configName)) {
 			return null;
 		}
-		ConfigurationData configData = configManager.getConfiguration(contextResource, configName);
-		return configData != null ? configData.getValueInfo(property) : null;
+		return configManager.getConfiguration(contextResource, configName);
 	}
 
 }

@@ -5,9 +5,10 @@
         <include pattern="/conf/aemlab/settings(.*)"/>
         <include pattern="/conf/aemlab/sling:config(.*)"/>
     </filter>
-    <filter root="/conf/aemlab" mode="merge">
-        <include pattern="/conf/aemlab"/>
-    </filter>
+    
+    <filter root="/conf/aemlab/reference-content" /> 
+    <filter root="/conf/aemlab" mode="merge" />
+    
     <filter root="/content/aemlab">
         <include pattern="/content/aemlab"/>
         <include pattern="/content/aemlab/jcr:content(.*)"/>

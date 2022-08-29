@@ -526,5 +526,5 @@ input[type="submit"]:focus {
     font-family: 'CustomFont';
     font-style: normal;
     font-weight: normal;
-    src: local('CustomFont'), url('../clientlib-site/resources/fonts/Austria.ttf') format('truetype');
+    src: local('CustomFont'), url('../../clientlib-site/resources/fonts/Austria.ttf') format('truetype');
   }

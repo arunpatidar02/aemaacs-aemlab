@@ -27,6 +27,9 @@
                     sling:resourceType="aemlab/components/container"
                     editable="{Boolean}true"/>
             </container>
+            <go_to_top
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemlab/concept/components/go-to-top"/>
             <footer
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemlab/concept/components/cac-xf"
