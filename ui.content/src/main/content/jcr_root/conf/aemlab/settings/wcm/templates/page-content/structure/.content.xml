@@ -13,6 +13,8 @@
             <header
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemlab/concept/components/cac-xf"
+                tagName="header"
+                classList="[aemlab-header, aemlab-header__cac]"
                 configName="com.community.aemlab.core.conf.HeaderFooterConfig"
                 property="headerPath"
                 noConfigLabel="No configuration defined for Header"/>
@@ -28,6 +30,8 @@
             <footer
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemlab/concept/components/cac-xf"
+                tagName="footer"
+                classList="[aemlab-footer, aemlab-footer__cac]"
                 configName="com.community.aemlab.core.conf.HeaderFooterConfig"
                 property="footerPath"
                 noConfigLabel="No configuration defined for Footer"/>
