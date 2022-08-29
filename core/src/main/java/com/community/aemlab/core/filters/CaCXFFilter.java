@@ -24,6 +24,8 @@ import org.slf4j.LoggerFactory;
 import com.day.cq.wcm.api.components.IncludeOptions;
 
 @Component(service = Filter.class, property = {
+		Constants.SERVICE_DESCRIPTION + "=Context Aware Configuration - Decoration Tag and Class based on configuration",
+		Constants.SERVICE_VENDOR + "=AEMLAB",
 		EngineConstants.SLING_FILTER_SCOPE + "=" + EngineConstants.FILTER_SCOPE_COMPONENT,
 		"sling.filter.resourceTypes" + "=" + CaCXFFilter.CAC_XF_RESOURCETYPE,
 		Constants.SERVICE_RANKING + ":Integer=" + 201 })
