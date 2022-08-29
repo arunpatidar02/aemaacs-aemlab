@@ -71,7 +71,7 @@
 #aemlab-header #header-navigation ul {
     position: relative;
     display: flex;
-    margin: 1rem 2rem 0 30rem;
+    margin: 1rem 2rem;
     overflow: hidden;
 }
 

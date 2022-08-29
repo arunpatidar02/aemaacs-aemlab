@@ -51,12 +51,10 @@
                                 useFixedInlineToolbar="{Boolean}true">
                                 <rtePlugins 
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                    path="/apps/aemlab/concept/utils/dialog/rte-plugins/rteconfig/basic/rtePlugins"/>
+                                    sling:resourceSuperType="/apps/aemlab/concept/utils/dialog/rte-plugins/rteconfig/basic/rtePlugins"/>
                                 <uiSettings 
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                    path="/apps/aemlab/concept/utils/dialog/rte-plugins/rteconfig/basic/uiSettings"/>
+                                    sling:resourceSuperType="/apps/aemlab/concept/utils/dialog/rte-plugins/rteconfig/basic/uiSettings"/>
                             </rte>
                             <multifield 
                                 jcr:primaryType="nt:unstructured"

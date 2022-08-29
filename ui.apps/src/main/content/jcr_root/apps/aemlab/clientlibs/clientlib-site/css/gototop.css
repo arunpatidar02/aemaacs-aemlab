@@ -36,6 +36,6 @@
 }
 
 .c-gtt.show {
-    opacity: 0.25;
+    opacity: 0.75;
     visibility: visible;
 }
