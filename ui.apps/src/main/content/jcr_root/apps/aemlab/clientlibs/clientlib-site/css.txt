@@ -1,3 +1,5 @@
+#base=css
+
 reset.css
 commons.css
 text.css
@@ -14,3 +16,4 @@ header.css
 separator.css
 title.css
 rte.css
+gototop.css

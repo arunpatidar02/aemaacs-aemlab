@@ -9,5 +9,5 @@
       <!-- Fragment Path: /editor.html${data.fragmentPath} -->
     </sly>
     <sly data-sly-test=${data.fragmentPath}
-         data-sly-resource="${@path=data.fragmentPath, selectors='content', wcmmode='disabled'}"></sly>
+         data-sly-resource="${@path=data.fragmentPath, decorationTagName=data.tagName, cssClassName=data.cssClassName, selectors='content', wcmmode='disabled'}"></sly>
 </sly>

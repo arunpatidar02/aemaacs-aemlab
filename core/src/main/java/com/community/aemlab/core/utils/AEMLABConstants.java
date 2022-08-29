@@ -15,6 +15,7 @@ public class AEMLABConstants {
 	public static final String AEMLAB_SUBSERVICE_WRITE = "aemlab-service-write";
 	
 	public static final String COMMA = ",";
+	public static final String SPACE = " ";
 
 	public static final String HYPHEN = "-";
 

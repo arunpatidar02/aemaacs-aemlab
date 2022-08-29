@@ -2,6 +2,7 @@
 package com.community.aemlab.core.models.concept;
 
 import static com.community.aemlab.core.utils.AEMLABConstants.FORWARD_SLASH;
+import static com.community.aemlab.core.utils.AEMLABConstants.SPACE;
 
 import java.util.Iterator;
 
@@ -9,10 +10,10 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.jackrabbit.JcrConstants;
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.PersistenceException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
@@ -37,6 +38,12 @@ public class CacXFModel {
 	@ValueMapValue(name = "property")
 	private String property;
 
+	@ValueMapValue(name = "tagName")
+	private String tagName;
+
+	@ValueMapValue(name = "classList")
+	private String[] classList;
+
 	@SlingObject
 	private ResourceResolver resolver;
 
@@ -50,41 +57,66 @@ public class CacXFModel {
 	@Named("log")
 	private Logger logger;
 
-	ValueInfo<String> valueInfo;
+	private static final String DIV = "div";
+	private String fragmentPath;
+	private String cssClassName;
 
-	@SuppressWarnings("unchecked")
 	@PostConstruct
 	protected void init() {
 		logger.debug("Processing data for {}", currentPage.getPath());
-		valueInfo = (ValueInfo<String>) configService.getConfigValue(currentPage.adaptTo(Resource.class), configName,
-				property);
+		fragmentPath = constructFragmentPath();
+		tagName = StringUtils.isNotBlank(tagName) ? tagName : DIV;
+		cssClassName = ArrayUtils.isNotEmpty(classList) ? StringUtils.join(classList, SPACE) : StringUtils.EMPTY;
+	}
+
+	/**
+	 * @return fragmentPath
+	 */
+	public String getFragmentPath() {
+		return fragmentPath;
+	}
+
+	/**
+	 * @return tagName
+	 */
+	public String getTagName() {
+		return tagName;
+	}
+
+	/**
+	 * @return tagName
+	 */
+	public String getCssClassName() {
+		return cssClassName;
 	}
 
 	/**
 	 * Gets master variation for configured experience fragment
 	 *
-	 * @return
-	 * @throws PersistenceException
+	 * @return variationPath
 	 */
-	public String getFragmentPath() {
+	@SuppressWarnings("unchecked")
+	private String constructFragmentPath() {
+		ValueInfo<String> configuration = (ValueInfo<String>) configService
+				.getConfigValue(currentPage.adaptTo(Resource.class), configName, property);
 
-		ValueInfo<?> configuration = valueInfo;
-		
-		if(configuration == null) {
+		if (configuration == null) {
 			return null;
 		}
-		String fragmentPath = (String) configuration.getEffectiveValue();
-		if (StringUtils.isEmpty(fragmentPath)) {
-			logger.warn("Experience fragment {} is empty", fragmentPath);
-			return fragmentPath;
+
+		String fPath = configuration.getEffectiveValue();
+		if (StringUtils.isBlank(fPath)) {
+			logger.warn("Experience fragment {} is empty", fPath);
+			return fPath;
 		}
-		Resource fragment = resolver.getResource(fragmentPath);
+
+		Resource fragment = resolver.getResource(fPath);
 		if (fragment == null || fragment.getChild(JcrConstants.JCR_CONTENT) == null) {
-			logger.warn("Experience fragment {} does not have metadata or configuration category is incorrect",
-					fragmentPath);
+			logger.warn("Experience fragment {} does not have metadata or configuration category is incorrect", fPath);
 			return null;
 		}
-		String variationPath = fragmentPath;
+
+		String variationPath = fPath;
 		if (fragment.getChild(JcrConstants.JCR_CONTENT)
 				.isResourceType(ExperienceFragmentsConstants.RT_EXPERIENCE_FRAGMENT_MASTER)) {
 			Iterator<Resource> children = fragment.getChildren().iterator();
@@ -101,7 +133,6 @@ public class CacXFModel {
 			}
 		}
 		return StringUtils.join(variationPath, FORWARD_SLASH, JcrConstants.JCR_CONTENT);
-
 	}
 
 }
