@@ -75,6 +75,16 @@ Import-Package: javax.annotation;version=0.0.0,*
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>
         </dependency>
+        <!-- for ContentHandlerBasedTransformer -->
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-bundle</artifactId>
+        </dependency>
+        <dependency>
+		    <groupId>com.google.code.findbugs</groupId>
+		    <artifactId>jsr305</artifactId>
+		    <scope>provided</scope>
+		</dependency>
         <!-- Testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

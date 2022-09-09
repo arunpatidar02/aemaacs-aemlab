@@ -1,6 +1,6 @@
 package com.community.aemlab.core.conf;
 
-import static com.community.aemlab.core.utils.AEMLABConstants.CONTENT_XF_AEMLAB_ROOT;
+import static com.community.aemlab.core.utils.AEMLABConstants.AEMLAB_CONTENT_XF_ROOT;
 
 import org.apache.sling.caconfig.annotation.Configuration;
 import org.apache.sling.caconfig.annotation.Property;
@@ -19,14 +19,14 @@ public @interface HeaderFooterConfig {
 	 * @return Path parameter
 	 */
 	@Property(label = "Header", description = "Browse path to experience fragment for header", order = 1, property = {
-			"widgetType=pathbrowser", "pathbrowserRootPath=" + CONTENT_XF_AEMLAB_ROOT })
+			"widgetType=pathbrowser", "pathbrowserRootPath=" + AEMLAB_CONTENT_XF_ROOT })
 	String headerPath();
 
 	/**
 	 * @return Path parameter
 	 */
 	@Property(label = "Footer", description = "Browse path to experience fragment for footer", order = 2, property = {
-			"widgetType=pathbrowser", "pathbrowserRootPath=" + CONTENT_XF_AEMLAB_ROOT })
+			"widgetType=pathbrowser", "pathbrowserRootPath=" + AEMLAB_CONTENT_XF_ROOT })
 	String footerPath();
 
 }
