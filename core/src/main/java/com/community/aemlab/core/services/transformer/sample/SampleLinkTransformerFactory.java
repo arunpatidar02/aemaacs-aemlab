@@ -35,7 +35,7 @@ public class SampleLinkTransformerFactory implements Transformer, TransformerFac
 	Logger log = LoggerFactory.getLogger(SampleLinkTransformerFactory.class);
 
 	public SampleLinkTransformerFactory() {
-		LOGGER.debug("customlinkchecker");
+		LOGGER.trace("customlinkchecker");
 	}
 
 	public void characters(char[] ch, int start, int length) throws SAXException {

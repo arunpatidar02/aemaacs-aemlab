@@ -27,11 +27,11 @@ import com.day.cq.wcm.api.components.IncludeOptions;
 		Constants.SERVICE_DESCRIPTION + "=Context Aware Configuration - Decoration Tag and Class based on configuration",
 		Constants.SERVICE_VENDOR + "=AEMLAB",
 		EngineConstants.SLING_FILTER_SCOPE + "=" + EngineConstants.FILTER_SCOPE_COMPONENT,
-		"sling.filter.resourceTypes" + "=" + CaCXFFilter.CAC_XF_RESOURCETYPE,
+		"sling.filter.resourceTypes" + "=" + CacXfFilter.CAC_XF_RESOURCETYPE,
 		Constants.SERVICE_RANKING + ":Integer=" + 201 })
-public class CaCXFFilter implements Filter {
+public class CacXfFilter implements Filter {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(CaCXFFilter.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(CacXfFilter.class);
 	public static final String CAC_XF_RESOURCETYPE = "aemlab/concept/components/cac-xf";
 	private static final String TAGNAME = "tagName";
 	private static final String CLASS_LIST = "classList";
@@ -44,14 +44,14 @@ public class CaCXFFilter implements Filter {
 		IncludeOptions options = IncludeOptions.getOptions(request, true);
 
 		Resource res = slingRequest.getResource();
-		LOGGER.debug("Resource Path : {}", res.getPath());
+		LOGGER.trace("Resource Path : {}", res.getPath());
 
 		ValueMap vm = res.getValueMap();
 
 		String tagName = vm.get(TAGNAME, StringUtils.EMPTY);
 		String[] classList = vm.get(CLASS_LIST, new String[] {});
 
-		LOGGER.debug("tagName : {} and classList : {}", tagName, classList);
+		LOGGER.trace("tagName : {} and classList : {}", tagName, classList);
 
 		if (StringUtils.isNotBlank(tagName)) {
 			options.setDecorationTagName(tagName);
@@ -66,10 +66,12 @@ public class CaCXFFilter implements Filter {
 
 	@Override
 	public void init(FilterConfig filterConfig) {
+		LOGGER.trace("init CacXfFilter");
 	}
 
 	@Override
 	public void destroy() {
+		LOGGER.trace("destroy CacXfFilter");
 	}
 
 }
