@@ -68,7 +68,7 @@
 			        <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
-                    <group>AEM Lab</group>
+                    <group>AEMLab</group>
                     <properties>
                         <installhook.actool.class>biz.netcentric.cq.tools.actool.installhook.AcToolInstallHook</installhook.actool.class>
                     </properties>

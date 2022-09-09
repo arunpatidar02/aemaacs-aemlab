@@ -106,6 +106,7 @@
                         </embedded>
                     </embeddeds>
                     <subPackages></subPackages>
+                    <group>AEMLab</group>
                 </configuration>
             </plugin>
             <plugin>

@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
    
+    <!-- Template and root context-aware-config -->
     <filter root="/conf/aemlab">
-        <include pattern="/conf/aemlab/settings(.*)"/>
         <include pattern="/conf/aemlab/sling:config(.*)"/>
+        <include pattern="/conf/aemlab/oneweb/sling:config(.*)"/>
+        
+        <include pattern="/conf/aemlab/oneweb/settings(.*)"/>
     </filter>
     
-    <filter root="/conf/aemlab/reference-content" /> 
+    <!-- Context-aware-config -->
+    <filter root="/conf/aemlab/oneweb/reference-content" /> 
     <filter root="/conf/aemlab" mode="merge" />
     
+    <!-- Content -->
     <filter root="/content/aemlab">
         <include pattern="/content/aemlab"/>
         <include pattern="/content/aemlab/jcr:content(.*)"/>
     </filter>
+    <filter root="/content/aemlab/oneweb">
+        <include pattern="/content/aemlab/oneweb"/>
+        <include pattern="/content/aemlab/oneweb/jcr:content(.*)"/>
+    </filter>
     <filter root="/content/aemlab" mode="merge"/>
+
+    <!-- DAM -->
     <filter root="/content/dam/aemlab">
         <include pattern="/content/dam/aemlab"/>
         <include pattern="/content/dam/aemlab/jcr:content(.*)"/>
     </filter>
+    <filter root="/content/dam/aemlab/oneweb">
+        <include pattern="/content/dam/aemlab/oneweb"/>
+        <include pattern="/content/dam/aemlab/oneweb/jcr:content(.*)"/>
+    </filter>
     <filter root="/content/dam/aemlab" mode="merge"/>
+
+    <!-- XF -->
     <filter root="/content/experience-fragments/aemlab" mode="merge"/>
-	<filter root="/home/users/system/aemlab"/>
+
+    <!-- System User -->
+	<filter root="/home/users/system/aemlab">
+	 <include pattern="/home/users/system/aemlab"/>
+        <include pattern="/home/users/system/aemlab/jcr:content(.*)"/>
+        <include pattern="/home/users/system/aemlab/aemlab-service-user(.*)"/>
+    </filter>
 </workspaceFilter>

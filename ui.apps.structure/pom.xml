@@ -49,6 +49,7 @@
                         <filter><root>/apps/settings</root></filter>
 
                     </filters>
+                    <group>AEMLab</group>
                 </configuration>
             </plugin>
         </plugins>
