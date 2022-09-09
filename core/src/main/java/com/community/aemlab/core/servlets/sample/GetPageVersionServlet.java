@@ -36,7 +36,7 @@ public class GetPageVersionServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
-		String qs = "/content/aemlab/us/en/jcr:content";
+		String qs = "/content/aemlab/oneweb/oneweb/us/en/jcr:content";
 		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
 		try {
@@ -66,7 +66,7 @@ public class GetPageVersionServlet extends SlingSafeMethodsServlet {
 	public Session getJCRSession() {
 		Session session = null;
 		try {
-			session = repository.loginService(AEMLABConstants.AEMLAB_SUBSERVICE_READ, null);
+			session = repository.loginService(AEMLABConstants.ONEWEB_SUBSERVICE_READ, null);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 			LOGGER.error("getJCRSession : Unable to Login : ", e1);

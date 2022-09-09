@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="RTE Plugins"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.dialog.text.tinymce-editor]">
+    <content
+        granite:class="cmp-tinymce__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <textarea
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="Textarea - Config 1"
+                                rows="{Long}5"
+                                fieldLabel="Textarea"
+                                name="./text">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    tinymce-config="tinymce-editor-1"/>
+                            </textarea>
+                            <textarea2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="Enter Text"
+                                rows="{Long}5"
+                                fieldLabel="Textarea - Config 2"
+                                name="./text2">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    tinymce-config="tinymce-editor-2"/>
+                            </textarea2>
+                            <rte
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Enter Text"
+                                fieldLabel="Rich Text Editor - OOTB"
+                                name="./rteText"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins 
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/aemlab/oneweb/concept/utils/dialog/rte-plugins/rteconfig/basic/rtePlugins"/>
+                                <uiSettings 
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/aemlab/oneweb/concept/utils/dialog/rte-plugins/rteconfig/basic/uiSettings"/>
+                            </rte>
+                            <multifield 
+                                jcr:primaryType="nt:unstructured"
+                                fieldLabel="Multifield"
+                                granite:class="tinymce-enabled"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    target-tinymce-textarea="textarea3,textarea4"/>
+                                <field 
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./multicomp"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <textarea3
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            fieldDescription="Enter Text"
+                                            rows="{Long}5"
+                                            fieldLabel="Textarea - Config 2"
+                                            name="./text3">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                tinymce-config="tinymce-editor-2"/>
+                                        </textarea3>
+                                        <textarea4
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            fieldDescription="Enter Text"
+                                            rows="{Long}5"
+                                            fieldLabel="Textarea - Config 1"
+                                            name="./text4">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                tinymce-config="tinymce-editor-1"/>
+                                        </textarea4>
+                                    </items>
+                                </field>
+                            </multifield>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

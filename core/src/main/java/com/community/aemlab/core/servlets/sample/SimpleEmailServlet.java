@@ -52,7 +52,7 @@ import com.day.cq.mailer.MessageGatewayService;
 public class SimpleEmailServlet extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 2598426539166789516L;
-	private static final String EMAIL_TEMPLATE = "/apps/aemlab/concept/utils/email-template.txt";
+	private static final String EMAIL_TEMPLATE = "/apps/aemlab/oneweb/concept/utils/email-template.txt";
 	private static final Logger LOGGER = LoggerFactory.getLogger(SimpleEmailServlet.class);
 
 	private static final String EMAIL_TITLE = "Demo Email";
@@ -73,7 +73,7 @@ public class SimpleEmailServlet extends SlingSafeMethodsServlet {
 			parameters.put("name", "arunpatidar02");
 			parameters.put("id", "0001");
 			parameters.put("host.prefix", "http://localhost");
-			parameters.put("faqpath", "/content/aemlab/en/faq");
+			parameters.put("faqpath", "/content/aemlab/oneweb/en/faq");
 			final MailTemplate mailTemplate = MailTemplate.create(EMAIL_TEMPLATE, templateNode.getSession());
 			HtmlEmail email = mailTemplate.getEmail(StrLookup.mapLookup(parameters), HtmlEmail.class);
 			email.setSubject(EMAIL_SUBJECT);

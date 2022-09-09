@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    contentTypes="[text/html]"
+    enabled="{Boolean}true"
+    generatorType="htmlparser"
+    order="1000"
+    paths="[/content/aemlab/oneweb/reference-content,/content/experience-fragments/aemlab/oneweb/reference-content/]"
+    serializerType="htmlwriter"
+    transformerTypes="[linkrewriterprefixer,linkrewriter,shortenlinkrewriter,linkrewriterprefixer]">
+    <generator-htmlparser
+        jcr:primaryType="nt:unstructured"
+        includeTags="[A,/A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,/BODY,INPUT,/INPUT,BUTTON,/BUTTON,META,/META]" />
+    <transformer-linkrewriter
+        jcr:primaryType="nt:unstructured"
+        component-optional="{Boolean}true" />
+    <transformer-1
+        jcr:primaryType="nt:unstructured"
+        preprocess="{Boolean}true" />
+</jcr:root>

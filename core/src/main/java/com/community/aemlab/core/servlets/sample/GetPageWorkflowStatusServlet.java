@@ -30,7 +30,7 @@ public class GetPageWorkflowStatusServlet extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOGGER = LoggerFactory.getLogger(GetPageWorkflowStatusServlet.class);
-	private static final String PAGE_PATH = "/content/aemlab/language-masters/en/";
+	private static final String PAGE_PATH = "/content/aemlab/oneweb/language-masters/en/";
 
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)

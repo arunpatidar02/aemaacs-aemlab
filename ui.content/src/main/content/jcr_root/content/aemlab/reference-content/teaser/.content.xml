@@ -2,19 +2,19 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:template="/conf/aemlab/settings/wcm/templates/page-content"
+        cq:template="/conf/aemlab/oneweb/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="Teaser"
-        sling:resourceType="aemlab/components/page">
+        sling:resourceType="aemlab/oneweb/components/page">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="aemlab/components/container">
+            sling:resourceType="aemlab/oneweb/components/container">
             <container
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aemlab/components/container">
+                sling:resourceType="aemlab/oneweb/components/container">
                 <container
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aemlab/components/container"
+                    sling:resourceType="aemlab/oneweb/components/container"
                     layout="responsiveGrid">
                     <title
                         jcr:created="{Date}2020-08-27T23:23:56.091+02:00"
@@ -22,7 +22,7 @@
                         jcr:lastModified="{Date}2020-08-27T23:23:56.091+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemlab/components/title"/>
+                        sling:resourceType="aemlab/oneweb/components/title"/>
                     <teaser
                         jcr:created="{Date}2020-08-27T23:23:49.141+02:00"
                         jcr:createdBy="admin"
@@ -31,10 +31,10 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content management"
-                        sling:resourceType="aemlab/components/teaser"
+                        sling:resourceType="aemlab/oneweb/components/teaser"
                         actionsEnabled="false"
                         descriptionFromPage="false"
-                        fileReference="/content/dam/aemlab/svg/instagram.svg"
+                        fileReference="/content/dam/aemlab/oneweb/svg/instagram.svg"
                         linkURL="#"
                         pretitle="CMS"
                         textIsRich="true"
@@ -45,7 +45,7 @@
                         jcr:lastModified="{Date}2020-08-27T23:25:02.889+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemlab/components/separator"/>
+                        sling:resourceType="aemlab/oneweb/components/separator"/>
                     <teaser_copy
                         jcr:created="{Date}2020-08-27T23:23:49.141+02:00"
                         jcr:createdBy="admin"
@@ -54,10 +54,10 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content management"
-                        sling:resourceType="aemlab/components/teaser"
+                        sling:resourceType="aemlab/oneweb/components/teaser"
                         actionsEnabled="true"
                         descriptionFromPage="false"
-                        fileReference="/content/dam/aemlab/svg/instagram.svg"
+                        fileReference="/content/dam/aemlab/oneweb/svg/instagram.svg"
                         linkURL="#"
                         pretitle="CMS"
                         textIsRich="true"
@@ -75,7 +75,7 @@
                         jcr:lastModified="{Date}2020-08-27T23:25:51.664+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="aemlab/components/separator"/>
+                        sling:resourceType="aemlab/oneweb/components/separator"/>
                     <teaser_copy_1161130087
                         jcr:created="{Date}2020-08-27T23:23:49.141+02:00"
                         jcr:createdBy="admin"
@@ -84,7 +84,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content management"
-                        sling:resourceType="aemlab/components/teaser"
+                        sling:resourceType="aemlab/oneweb/components/teaser"
                         actionsEnabled="true"
                         descriptionFromPage="false"
                         linkURL="#"

@@ -33,7 +33,7 @@ public class GetResourceFromSubServiceServlet extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOGGER = LoggerFactory.getLogger(GetResourceFromSubServiceServlet.class);
-	private static final String PATH = "/content/aemlab/reference-content";
+	private static final String PATH = "/content/aemlab/oneweb/reference-content";
 
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)

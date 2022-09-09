@@ -32,7 +32,7 @@ import com.day.cq.wcm.api.components.IncludeOptions;
 public class CacXfFilter implements Filter {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CacXfFilter.class);
-	public static final String CAC_XF_RESOURCETYPE = "aemlab/concept/components/cac-xf";
+	public static final String CAC_XF_RESOURCETYPE = "aemlab/oneweb/concept/components/cac-xf";
 	private static final String TAGNAME = "tagName";
 	private static final String CLASS_LIST = "classList";
 

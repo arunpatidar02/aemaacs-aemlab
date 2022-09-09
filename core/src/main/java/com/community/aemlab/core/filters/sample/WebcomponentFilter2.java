@@ -86,7 +86,7 @@ public class WebcomponentFilter2 implements Filter {
 		String[] sling_filter_scope() default "DISABLED";
 
 		@AttributeDefinition(name = "sling.filter.resourceTypes", description = "Filter ResourceTypes ", type = AttributeType.STRING)
-		String[] sling_filter_resourceTypes() default { "aemlab/components/text", "aemlab/components/breadcrumb" };
+		String[] sling_filter_resourceTypes() default { "aemlab/oneweb/components/text", "aemlab/oneweb/components/breadcrumb" };
 
 	}
 

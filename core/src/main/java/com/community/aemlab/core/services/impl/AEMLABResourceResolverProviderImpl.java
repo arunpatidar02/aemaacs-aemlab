@@ -48,7 +48,7 @@ public class AEMLABResourceResolverProviderImpl implements AEMLABResourceResolve
 	private ResourceResolver getResourceResourceResolver(boolean isRead) {
 		Map<String, Object> map = new HashMap<>();
 		map.put(ResourceResolverFactory.SUBSERVICE,
-				isRead ? AEMLABConstants.AEMLAB_SUBSERVICE_READ : AEMLABConstants.AEMLAB_SUBSERVICE_WRITE);
+				isRead ? AEMLABConstants.ONEWEB_SUBSERVICE_READ : AEMLABConstants.ONEWEB_SUBSERVICE_WRITE);
 		try {
 			return resourceFactory.getServiceResourceResolver(map);
 		} catch (LoginException e) {

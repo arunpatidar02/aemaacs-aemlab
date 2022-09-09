@@ -48,7 +48,7 @@ public class GetPageAsset extends SlingSafeMethodsServlet {
 		if (qs == null) {
 			LOGGER.info("{} is null", PAGE);
 			resp.getWriter().write(
-					"Please provide Page path in page quesry string parameter e.g. ?page=/content/aemlab/reference-content");
+					"Please provide Page path in page quesry string parameter e.g. ?page=/content/aemlab/oneweb/reference-content");
 			return;
 		}
 

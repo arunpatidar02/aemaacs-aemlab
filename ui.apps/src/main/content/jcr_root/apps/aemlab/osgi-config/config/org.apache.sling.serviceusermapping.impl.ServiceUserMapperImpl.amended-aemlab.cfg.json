@@ -1,7 +1,0 @@
-{
-  "user.mapping":[
-    "aemlab.core:aemlabService=[aemlab-service-user]",
-    "aemlab.core:aemlab-service-read=[aemlab-service-read-user]",
-    "aemlab.core:aemlab-service-write=[aemlab-service-write-user]"
-  ]
-}
