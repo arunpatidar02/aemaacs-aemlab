@@ -23,6 +23,9 @@
         <include pattern="/content/aemlab/oneweb/jcr:content(.*)"/>
     </filter>
     <filter root="/content/aemlab" mode="merge"/>
+    <filter root="/content/aemlab/oneweb/reference-content"/>
+    
+    
 
     <!-- DAM -->
     <filter root="/content/dam/aemlab">
@@ -44,4 +47,7 @@
         <include pattern="/home/users/system/aemlab/jcr:content(.*)"/>
         <include pattern="/home/users/system/aemlab/aemlab-service-user(.*)"/>
     </filter>
+    
+    
+    
 </workspaceFilter>

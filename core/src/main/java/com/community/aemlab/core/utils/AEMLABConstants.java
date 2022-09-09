@@ -17,9 +17,6 @@ public class AEMLABConstants {
 	public static final String EXTENSION_JSON = ".json";
 	
 	
-	public static final String ONEWEB_SUBSERVICE_READ = "al-oneweb-service-read";
-	public static final String ONEWEB_SUBSERVICE_WRITE = "al-oneweb-service-write";
-	
 	public static final String COMMA = ",";
 	public static final String SPACE = " ";
 

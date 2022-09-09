@@ -15,7 +15,7 @@
                 sling:resourceType="aemlab/oneweb/concept/components/cac-xf"
                 tagName="header"
                 classList="[aemlab-header, aemlab-header__cac]"
-                configName="com.community.aemlab.core.conf.HeaderFooterConfig"
+                configName="com.community.aemlab.oneweb.core.conf.HeaderFooterConfig"
                 property="headerPath"
                 noConfigLabel="No configuration defined for Header"/>
             <container
@@ -35,7 +35,7 @@
                 sling:resourceType="aemlab/oneweb/concept/components/cac-xf"
                 tagName="footer"
                 classList="[aemlab-footer, aemlab-footer__cac]"
-                configName="com.community.aemlab.core.conf.HeaderFooterConfig"
+                configName="com.community.aemlab.oneweb.core.conf.HeaderFooterConfig"
                 property="footerPath"
                 noConfigLabel="No configuration defined for Footer"/>
         </root>
