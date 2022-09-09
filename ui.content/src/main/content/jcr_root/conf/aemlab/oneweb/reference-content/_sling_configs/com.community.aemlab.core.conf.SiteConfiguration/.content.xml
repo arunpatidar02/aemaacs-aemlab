@@ -4,4 +4,4 @@
     sling:configPropertyInherit="{Boolean}true"
     useFullyQualifiedURLsInLinks="{Boolean}true"
 	publishDomain="https://www.aemlab-ref.com"	
-	numberOfSegmentsToCutOff="{Long}3"/>
+	numberOfSegmentsToCutOff="{Long}4"/>

@@ -51,7 +51,7 @@ public class PopulateTouchUIDropdownFromJSON extends SlingSafeMethodsServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger LOGGER = LoggerFactory.getLogger(PopulateTouchUIDropdownFromJSON.class);
 
-    static final String DATASOURCE_TYPE = "aemlab/dialog/granite/components/select/datasource/json";
+    static final String DATASOURCE_TYPE = "aemlab/oneweb/dialog/granite/components/select/datasource/json";
     private static final String OPTIONS_PROPERTY = "options";
     private static final String DATASOURCE_NODE = "datasource";
     private static final String TEXT = "text";

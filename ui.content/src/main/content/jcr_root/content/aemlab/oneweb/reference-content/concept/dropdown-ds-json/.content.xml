@@ -4,7 +4,7 @@
     <jcr:content
         cq:template="/conf/aemlab/oneweb/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Dynamic Dropdown"
+        jcr:title="Dropdown Using Json Datasource"
         sling:resourceType="aemlab/oneweb/components/page">
         <root
             jcr:primaryType="nt:unstructured"

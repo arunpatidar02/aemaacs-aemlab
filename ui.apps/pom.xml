@@ -64,11 +64,6 @@
                     </repositoryStructurePackages>
                     <embeddeds>
                         <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.core</artifactId>
-                            <target>/apps/aemlab-vendor/install</target>
-                        </embedded>
-                        <embedded>
                             <groupId>com.community.aemlab</groupId>
                             <artifactId>oneweb.core</artifactId>
                             <target>/apps/aemlab/oneweb/install</target>
@@ -80,10 +75,6 @@
                         <dependency>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.content</artifactId>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
                         </dependency>
                     </dependencies>
                     <group>AEMLab</group>
@@ -135,8 +126,6 @@
             <version>${project.version}</version>
         </dependency>
 
-
-
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>
@@ -155,11 +144,6 @@
             <type>zip</type>
         </dependency>
 
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
-            <type>zip</type>
-        </dependency>
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>

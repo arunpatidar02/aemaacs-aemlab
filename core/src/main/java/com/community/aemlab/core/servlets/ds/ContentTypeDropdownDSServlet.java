@@ -34,7 +34,7 @@ import com.day.cq.commons.jcr.JcrConstants;
  */
 @Component(service = Servlet.class, immediate = true, property = {
         Constants.SERVICE_DESCRIPTION + "=Populating Coral Dropdown using datasource servlet",
-        "sling.servlet.resourceTypes=aemlab/dialog/granite/components/select/datasource/content/type",
+        "sling.servlet.resourceTypes=aemlab/oneweb/dialog/granite/components/select/datasource/content/type",
         "sling.servlet.methods=" + HttpConstants.METHOD_GET })
 public class ContentTypeDropdownDSServlet extends SlingSafeMethodsServlet {
 

@@ -41,68 +41,56 @@
                             <groupId>com.community.aemlab</groupId>
                             <artifactId>oneweb.ui.apps</artifactId>
                             <type>zip</type>
-                            <target>/apps/aemlab/oneweb-packages/application/install</target>
+                            <target>/apps/aemlab-oneweb-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.community.aemlab</groupId>
                             <artifactId>oneweb.ui.content</artifactId>
                             <type>zip</type>
-                            <target>/apps/aemlab/oneweb-packages/content/install</target>
+                            <target>/apps/aemlab-oneweb-packages/content/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.community.aemlab</groupId>
                             <artifactId>oneweb.acl</artifactId>
                             <type>zip</type>
-                            <target>/apps/aemlab/oneweb-packages/content/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aemlab-vendor/packages</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aemlab-vendor/packages</target>
+                            <target>/apps/aemlab-oneweb-packages/content/install</target>
                         </embedded>
                         <!-- Tools -->
                         <embedded>
                             <groupId>com.adobe.acs</groupId>
             				<artifactId>acs-aem-commons-content</artifactId>
             				<type>zip</type>
-                            <target>/apps/aemlab-vendor/packages</target>
+                            <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
                         <embedded>
                              <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
             				 <artifactId>accesscontroltool-package</artifactId>
             				 <type>zip</type>
-                            <target>/apps/aemlab-vendor/packages</target>
+                            <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
                         <embedded>
                             <groupId>org.cid15.aem.groovy.console</groupId>
 	            			<artifactId>aem-groovy-console-all</artifactId>
             				<type>zip</type>
-                            <target>/apps/aemlab-vendor/packages</target>
+                            <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
                         <embedded>
                             <groupId>io.wcm</groupId>
 	    					<artifactId>io.wcm.caconfig.editor.package</artifactId>
             				<type>zip</type>
-                            <target>/apps/aemlab-vendor/packages</target>
+                            <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
                         <embedded>
 						    <groupId>io.wcm</groupId>
 						    <artifactId>io.wcm.caconfig.extensions</artifactId>
 						    <type>jar</type>
-						    <target>/apps/aemlab-vendor/install</target>
+						    <target>/apps/aemlab-vendor-packages/install</target>
 						</embedded>
                         <embedded>
                             <groupId>org.apache.sling</groupId>
 			    			<artifactId>org.apache.sling.dynamic-include</artifactId>
             				<type>jar</type>
-                            <target>/apps/aemlab-vendor/install</target>
+                            <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
                     </embeddeds>
                     <subPackages></subPackages>

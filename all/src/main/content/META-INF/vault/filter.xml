@@ -15,7 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-	 <filter root="/apps/aemlab" mode="merge"/>
-    <filter root="/apps/aemlab/oneweb-packages"/>
-    <filter root="/apps/aemlab-vendor"/>
+     <filter root="/apps/aemlab-oneweb-packages"/>
+     <filter root="/apps/aemlab-vendor-packages"/>
 </workspaceFilter>

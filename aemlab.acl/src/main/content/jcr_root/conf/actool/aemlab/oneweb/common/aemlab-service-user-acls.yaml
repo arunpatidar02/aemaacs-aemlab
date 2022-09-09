@@ -2,12 +2,14 @@
 - user_config:
    - al-oneweb-service-write-user:
        - isMemberOf:
-         isSystemUser: true 
+         isSystemUser: true
+         name: al-oneweb-service-write-user 
          path: /home/users/system/aemlab/oneweb
 
    - al-oneweb-service-read-user:
        - isMemberOf:
          isSystemUser: true 
+         name: al-oneweb-service-read-user
          path: /home/users/system/aemlab/oneweb
 
 - ace_config:

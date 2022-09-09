@@ -25,7 +25,7 @@ import com.google.gson.Gson;
  */
 @Component(service = Servlet.class, immediate = true, property = {
         Constants.SERVICE_DESCRIPTION + "=Populating Coral Dropdown using servlet",
-        "sling.servlet.resourceTypes=aemlab/dialog/granite/components/select/datasource/content/subtype",
+        "sling.servlet.resourceTypes=aemlab/oneweb/dialog/granite/components/select/datasource/content/subtype",
         ServletResolverConstants.SLING_SERVLET_EXTENSIONS + "=json",
         "sling.servlet.methods=" + HttpConstants.METHOD_GET })
 public class ContentSubTypeDropdownServlet extends SlingSafeMethodsServlet {
