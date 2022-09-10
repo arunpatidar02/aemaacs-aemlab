@@ -40,7 +40,7 @@ public class SampleResourceChangeListener implements ResourceChangeListener {
 	@ObjectClassDefinition(name = "Annotation Demo SampleResourceChangeListener - OSGi", description = "Resource change Listener Registration properties")
 	public @interface Config {
 		@AttributeDefinition(name = "Paths", description = "ResourceChangeListener Paths property")
-		String[] resource_paths() default { "/content/aemlab/dam/import", "/content/aemlab/import" };
+		String[] resource_paths() default { "/content/aemlab/oneweb/dam/import", "/content/aemlab/oneweb/import" };
 
 		@AttributeDefinition(name = "Changes", description = "ResourceChangeListener Changes property")
 		String[] resource_change_types() default { "ADDED","CHANGED" };

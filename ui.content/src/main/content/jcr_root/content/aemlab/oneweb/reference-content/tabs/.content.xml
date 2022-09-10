@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/aemlab/oneweb/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Tabs"
+        sling:resourceType="aemlab/oneweb/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemlab/oneweb/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemlab/oneweb/components/container">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemlab/oneweb/components/container"
+                    layout="responsiveGrid">
+                    <title
+                        jcr:created="{Date}2020-08-27T23:17:10.615+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:17:10.615+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/title"/>
+                    <tabs
+                        jcr:created="{Date}2020-08-27T23:17:16.185+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:20:13.713+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/tabs">
+                        <item_1
+                            cq:panelTitle="Content management"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Tab 1"
+                            sling:resourceType="aemlab/oneweb/components/container"
+                            layout="responsiveGrid">
+                            <text
+                                jcr:created="{Date}2020-08-27T23:20:30.521+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-27T23:22:16.715+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aemlab/oneweb/components/text"
+                                text="&lt;p>As channels have multiplied, you have to create thousands of pieces of copy and art. Experience Manager helps you manage it all in a fluid and dynamic way, so you can keep up with every screen and platform.&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                            <button
+                                cq:styleIds="[1597597803606,1597597781326]"
+                                jcr:created="{Date}2020-08-27T23:21:34.803+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-27T23:21:56.349+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Explore Adobe Experience Manager"
+                                sling:resourceType="aemlab/oneweb/components/button"
+                                link="https://www.adobe.com/lu_en/marketing-cloud/experience-manager.html"/>
+                        </item_1>
+                        <item_2
+                            cq:panelTitle=" Campaign execution"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Tab 2"
+                            sling:resourceType="aemlab/oneweb/components/container"
+                            layout="responsiveGrid">
+                            <text
+                                jcr:created="{Date}2020-08-27T23:20:54.129+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-27T23:20:59.578+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aemlab/oneweb/components/text"
+                                text="&lt;p>Once your content is created, Adobe Campaign gives you a single place to manage and automate all your email, ads, and campaigns. With access to your audience profiles and analytics, you can drive better customer engagement.&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://www.adobe.com/lu_en/marketing/campaign.html&quot;>Explore Adobe Campaign&lt;/a>&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                        </item_2>
+                        <item_1598563203002
+                            cq:panelTitle="Personalization"
+                            jcr:lastModified="{Date}2020-08-27T23:21:19.778+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemlab/oneweb/components/text"
+                            text="&lt;p>Making every experience relevant and personal is the sign of an experience business. Adobe Target is a personalization engine that lets you test and optimize with machine learning across mobile apps and the web.&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://www.adobe.com/lu_en/marketing/target.html&quot;>Explore&amp;nbsp;Adobe Target&lt;/a>&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </tabs>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

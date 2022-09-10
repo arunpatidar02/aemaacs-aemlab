@@ -33,7 +33,7 @@ public class GetChildNodeServlet extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 2598426539166789516L;
 	private static final Logger LOGGER = LoggerFactory.getLogger(GetChildNodeServlet.class);
-	private static final String PAGE_PATH = "/content/aemlab/language-masters/en/";
+	private static final String PAGE_PATH = "/content/aemlab/oneweb/language-masters/en/";
 
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp) throws IOException {

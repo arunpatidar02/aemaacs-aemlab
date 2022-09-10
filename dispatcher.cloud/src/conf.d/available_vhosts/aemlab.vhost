@@ -48,9 +48,9 @@ Include conf.d/variables/custom.vars
 		Require all granted
 	</Directory>
 	<LocationMatch />
-		ErrorDocument 404 /content/aemlab/errorpages/404.html
-		ErrorDocument 403 /content/aemlab/errorpages/403.html
-		ErrorDocument 500 /content/aemlab/errorpages/500.html
+		ErrorDocument 404 /content/aemlab/oneweb/errorpages/404.html
+		ErrorDocument 403 /content/aemlab/oneweb/errorpages/403.html
+		ErrorDocument 500 /content/aemlab/oneweb/errorpages/500.html
 	</LocationMatch>
 	<IfModule disp_apache2.c>
 		# Enabled to allow rewrites to take affect and not be ignored by the dispatcher module

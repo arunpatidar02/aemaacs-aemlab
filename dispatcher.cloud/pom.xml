@@ -8,7 +8,7 @@
   <!-- ====================================================================== -->
   <parent>
     <groupId>com.community.aemlab</groupId>
-    <artifactId>aemlab</artifactId>
+    <artifactId>oneweb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>

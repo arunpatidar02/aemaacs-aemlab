@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 		Constants.SERVICE_DESCRIPTION + "=Demo to listen event on page modification ",
 		EventConstants.EVENT_TOPIC + "=org/apache/sling/api/resource/Resource/ADDED",
 		EventConstants.EVENT_TOPIC + "=org/apache/sling/api/resource/Resource/CHANGED",
-		EventConstants.EVENT_FILTER + "=(path=/content/aemlab/us/*/jcr:content)" })
+		EventConstants.EVENT_FILTER + "=(path=/content/aemlab/oneweb/us/*/jcr:content)" })
 public class PageEvent implements EventHandler {
 
 	private static final Logger LOG = LoggerFactory.getLogger(PageEvent.class);

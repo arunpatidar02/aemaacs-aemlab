@@ -23,6 +23,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.utils.AEMLABConstants;
+import com.community.aemlab.oneweb.core.services.constants.OneWebConstants;
 
 /**
  * @author arunpatidar02
@@ -56,7 +57,7 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 	private void sampleSubserviceSession(PrintWriter pw) {
 		Session session = null;
 		Map<String, Object> paramMap = new HashMap<>();
-		paramMap.put(ResourceResolverFactory.SUBSERVICE, AEMLABConstants.AEMLAB_SUBSERVICE_READ);
+		paramMap.put(ResourceResolverFactory.SUBSERVICE, OneWebConstants.ONEWEB_SUBSERVICE_READ);
 		try (ResourceResolver resourceResolver = resourceFactory.getServiceResourceResolver(paramMap)) {
 			LOGGER.trace("User id inside {}", resourceResolver.getUserID());
 			session = resourceResolver.adaptTo(Session.class);
@@ -74,7 +75,7 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 	private void sampleJCRSession(PrintWriter pw) {
 		Session session = null;
 		try {
-			session = repository.loginService(AEMLABConstants.AEMLAB_SUBSERVICE_READ, null);
+			session = repository.loginService(OneWebConstants.ONEWEB_SUBSERVICE_READ, null);
 			LOGGER.trace("User id inside {}", session.getUserID());
 			// Business logic
 			pw.println("Session User from loginService is - " + session.getUserID());

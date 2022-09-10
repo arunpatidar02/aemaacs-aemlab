@@ -1,0 +1,40 @@
+
+- user_config:
+   - al-oneweb-service-write-user:
+       - isMemberOf:
+         isSystemUser: true
+         name: al-oneweb-service-write-user 
+         path: /home/users/system/aemlab/oneweb
+
+   - al-oneweb-service-read-user:
+       - isMemberOf:
+         isSystemUser: true 
+         name: al-oneweb-service-read-user
+         path: /home/users/system/aemlab/oneweb
+
+- ace_config:
+  - al-oneweb-service-write-user:
+    - path: /content/aemlab/oneweb
+      permission: allow
+      actions: read,modify,create,delete
+
+    - path: /content/usergenerated
+      permission: allow
+      actions: read,modify,create,delete
+
+    - path: /etc
+      permission: allow
+      actions: read
+
+  - al-oneweb-service-read-user:
+    - path: /content/aemlab/oneweb
+      permission: allow
+      actions: read
+
+    - path: /content/usergenerated/aemlab/oneweb
+      permission: allow
+      actions: read
+
+    - path: /etc
+      permission: allow
+      actions: read

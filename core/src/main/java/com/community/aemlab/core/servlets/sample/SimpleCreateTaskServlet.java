@@ -27,7 +27,7 @@ public class SimpleCreateTaskServlet extends SlingSafeMethodsServlet {
 	private static final String TASK_TYPE = "Notification";
 
 	private static final String TASK_NAME = "Demo Task";
-	private static final String TASK_CONTENTPATH = "/content/aemlab/en?showCustom=true";
+	private static final String TASK_CONTENTPATH = "/content/aemlab/oneweb/en?showCustom=true";
 	private static final String TASK_DESCRIPTION = "Demo Task Description";
 	private static final String TASK_INSTRUCTIONS = "Demo Task instruction";
 	private static final String TASK_ASSIGNEE = "admin";

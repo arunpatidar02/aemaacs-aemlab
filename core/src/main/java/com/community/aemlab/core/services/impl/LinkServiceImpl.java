@@ -102,7 +102,7 @@ public class LinkServiceImpl implements LinkService {
 			pathInfoSelectors = selectors;
 		}
 		if (StringUtils.isEmpty(pathInfoSuffix)) {
-			pathInfoSuffix = AEMLABConstants.FORWARD_SLASH + suffix;
+			pathInfoSuffix = suffix;
 		}
 
 		// Apply Sling Mappings
@@ -138,18 +138,18 @@ public class LinkServiceImpl implements LinkService {
 	private String buildLink(String selectors, String extension, String suffix, String resourcePath) {
 		final StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append(resourcePath);
-		if (StringUtils.isNotEmpty(selectors)) {
+		if (StringUtils.isNotBlank(selectors)) {
 			stringBuilder.append(AEMLABConstants.DOT);
 			stringBuilder.append(selectors);
 		}
-		if (StringUtils.isNotEmpty(extension)) {
+		if (StringUtils.isNotBlank(extension)) {
 			stringBuilder.append(AEMLABConstants.DOT);
 			stringBuilder.append(extension);
 		} else {
 			stringBuilder.append(AEMLABConstants.EXTENSION_HTML);
 		}
-		if (StringUtils.isNotEmpty(suffix)) {
-			stringBuilder.append(suffix);
+		if (StringUtils.isNotBlank(suffix)) {
+			stringBuilder.append(AEMLABConstants.FORWARD_SLASH + suffix);
 		}
 		return stringBuilder.toString();
 	}
@@ -159,7 +159,7 @@ public class LinkServiceImpl implements LinkService {
 	}
 
 	private boolean isRewriteLinkRequired(String link) {
-		return StringUtils.isNotEmpty(link) && StringUtils.startsWith(link, AEMLABConstants.FORWARD_SLASH)
+		return StringUtils.isNotBlank(link) && StringUtils.startsWith(link, AEMLABConstants.FORWARD_SLASH)
 				&& !StringUtils.startsWith(link, AEMLABConstants.DOUBLE_SLASH);
 	}
 

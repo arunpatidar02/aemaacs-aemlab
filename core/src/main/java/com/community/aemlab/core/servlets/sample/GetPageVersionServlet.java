@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.utils.AEMLABConstants;
+import com.community.aemlab.oneweb.core.services.constants.OneWebConstants;
 
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Get Page Version Servlet",
 		"sling.servlet.methods=" + HttpConstants.METHOD_GET, "sling.servlet.paths=" + "/bin/page/getVersion" })
@@ -36,7 +37,7 @@ public class GetPageVersionServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
-		String qs = "/content/aemlab/us/en/jcr:content";
+		String qs = "/content/aemlab/oneweb/oneweb/us/en/jcr:content";
 		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
 		try {
@@ -66,7 +67,7 @@ public class GetPageVersionServlet extends SlingSafeMethodsServlet {
 	public Session getJCRSession() {
 		Session session = null;
 		try {
-			session = repository.loginService(AEMLABConstants.AEMLAB_SUBSERVICE_READ, null);
+			session = repository.loginService(OneWebConstants.ONEWEB_SUBSERVICE_READ, null);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 			LOGGER.error("getJCRSession : Unable to Login : ", e1);

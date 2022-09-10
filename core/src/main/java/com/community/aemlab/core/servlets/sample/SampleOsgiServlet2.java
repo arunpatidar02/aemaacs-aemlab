@@ -58,7 +58,7 @@ public class SampleOsgiServlet2 extends SlingSafeMethodsServlet {
 		boolean enabled() default true;
 
 		@AttributeDefinition(name = "sling.servlet.resourceTypes", description = "Servlet ResourceTypes ", type = AttributeType.STRING)
-		String[] sling_servlet_resourceTypes() default { "aemlab/components/title", "aemlab/components/image" };
+		String[] sling_servlet_resourceTypes() default { "aemlab/oneweb/components/title", "aemlab/oneweb/components/image" };
 
 		@AttributeDefinition(name = ServletResolverConstants.SLING_SERVLET_EXTENSIONS, description = "Servlet Extension", type = AttributeType.STRING)
 		String[] sling_servlet_extensions() default { "txt" };

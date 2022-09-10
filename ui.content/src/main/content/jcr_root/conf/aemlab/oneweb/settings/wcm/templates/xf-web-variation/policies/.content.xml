@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:policy="aemlab/oneweb/components/page/policy"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="aemlab/oneweb/components/container/policy_xf_root"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <aemlab jcr:primaryType="nt:unstructured">
+            	<oneweb jcr:primaryType="nt:unstructured">
+	             	<components jcr:primaryType="nt:unstructured">
+	                    <title
+	                        cq:policy="aemlab/oneweb/components/title/policy_title"
+	                        jcr:primaryType="nt:unstructured"
+	                        sling:resourceType="wcm/core/components/policies/mapping"/>
+	                    <text
+	                        cq:policy="aemlab/oneweb/components/text/policy_text"
+	                        jcr:primaryType="nt:unstructured"
+	                        sling:resourceType="wcm/core/components/policies/mapping"/>
+	                    <teaser
+	                        cq:policy="aemlab/oneweb/components/teaser/policy_teaser"
+	                        jcr:primaryType="nt:unstructured"
+	                        sling:resourceType="wcm/core/components/policies/mapping"/>
+	                    <download
+	                        cq:policy="aemlab/oneweb/components/download/policy_download"
+	                        jcr:primaryType="nt:unstructured"
+	                        sling:resourceType="wcm/core/components/policies/mapping"/>
+	                    <image
+	                        cq:policy="aemlab/oneweb/components/image/policy_image"
+	                        jcr:primaryType="nt:unstructured"
+	                        sling:resourceType="wcm/core/components/policies/mapping"/>
+	                    <button
+	                        cq:policy="aemlab/oneweb/components/button/policy_button"
+	                        jcr:primaryType="nt:unstructured"
+	                        sling:resourceType="wcm/core/components/policies/mapping"/>
+	                </components>
+    			</oneweb>
+            </aemlab>
+        </root>
+    </jcr:content>
+</jcr:root>

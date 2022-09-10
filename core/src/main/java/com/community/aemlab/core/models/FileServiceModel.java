@@ -14,7 +14,7 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.FrameworkUtil;
 import org.osgi.framework.ServiceReference;
 
-import com.community.aemlab.core.services.FileService;
+import com.community.aemlab.core.services.sample.FileService;
 
 /**
  * @author arunpatidar02

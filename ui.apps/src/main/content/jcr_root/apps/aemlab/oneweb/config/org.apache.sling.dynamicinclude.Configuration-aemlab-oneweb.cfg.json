@@ -1,0 +1,10 @@
+{
+  "include-filter.config.enabled":true,
+  "include-filter.config.extension":"html",
+  "include-filter.config.add_comment":true,
+  "include-filter.config.resource-types":[
+    "aemlab/oneweb/concept/components/sdi-example"
+  ],
+  "include-filter.config.rewrite":true,
+  "include-filter.config.path":"/content/aemlab/oneweb"
+}

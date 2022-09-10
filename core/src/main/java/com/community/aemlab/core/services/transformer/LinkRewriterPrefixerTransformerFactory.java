@@ -22,11 +22,11 @@ import org.xml.sax.helpers.AttributesImpl;
 
 import com.adobe.acs.commons.rewriter.ContentHandlerBasedTransformer;
 import com.community.aemlab.core.conf.SiteConfiguration;
-import com.community.aemlab.core.services.CAConfigurationService;
-import com.community.aemlab.core.services.EnvironmentTypeProvider;
-import com.community.aemlab.core.services.impl.CAConfigurationServiceImpl;
 import com.community.aemlab.core.utils.AEMLABConstants;
 import com.community.aemlab.core.utils.PathHelper;
+import com.community.aemlab.oneweb.core.services.CAConfigurationService;
+import com.community.aemlab.oneweb.core.services.EnvironmentTypeProvider;
+import com.community.aemlab.oneweb.core.services.impl.CAConfigurationServiceImpl;
 import com.day.text.Text;
 
 /**

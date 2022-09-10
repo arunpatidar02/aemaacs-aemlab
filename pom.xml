@@ -2,12 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-                    <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.community.aemlab</groupId>
-    <artifactId>aemlab</artifactId>
+    <artifactId>oneweb</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <description>AEM Lab</description>
+    <name>AEMLab OneWeb</name>
+    <description>AEMLab OneWeb Parent POM</description>
 
     <modules>
         <module>all</module>
@@ -15,7 +16,7 @@
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
         <module>ui.content</module>
-        <module>aemlab.acl</module>
+        <module>ui.acl</module>
         <module>dispatcher.cloud</module>
     </modules>
 
@@ -28,11 +29,11 @@
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
         <vault.password>admin</vault.password>
-        <core.wcm.components.version>2.20.6</core.wcm.components.version>
+        <core.wcm.components.version>2.20.8</core.wcm.components.version>
         <bnd.version>5.0.0</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aem.sdk.api>2022.7.8005.20220711T194049Z-220600</aem.sdk.api>
+        <aem.sdk.api>2022.9.8630.20220905T184657Z-220800</aem.sdk.api>
         <componentGroupName>aemlab</componentGroupName>
         <acs.commons.version>5.3.2</acs.commons.version>
         <accesscontroltool.version>3.0.4</accesscontroltool.version>

@@ -1,0 +1,7 @@
+{
+  "user.mapping":[
+    "aemlab.core:aemlabService=[aemlab-service-user]",
+    "aemlab.core:al-oneweb-service-read=[al-oneweb-service-read-user]",
+    "aemlab.core:al-oneweb-service-write=[al-oneweb-service-write-user]"
+  ]
+}

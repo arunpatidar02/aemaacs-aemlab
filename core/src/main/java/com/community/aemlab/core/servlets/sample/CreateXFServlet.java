@@ -36,12 +36,12 @@ public class CreateXFServlet extends SlingSafeMethodsServlet {
 			ResourceResolver resourceResolver = req.getResourceResolver();
 			Session session = resourceResolver.adaptTo(Session.class);
 			PageManager pm = req.getResourceResolver().adaptTo(PageManager.class);
-			Page page = pm.create("/content/experience-fragments/aemlab/language-masters/en/site", "import-page",
+			Page page = pm.create("/content/experience-fragments/aemlab/oneweb/language-masters/en/site", "import-page",
 					"/libs/cq/experience-fragments/components/experiencefragment/template", "Import", true);
 
 			//create master
 			Page masterPage=pm.create(page.getPath(), "master",
-					"/conf/aemlab/settings/wcm/templates/xf-web-variation", page.getTitle(), true);
+					"/conf/aemlab/oneweb/settings/wcm/templates/xf-web-variation", page.getTitle(), true);
 			Node masterNode = masterPage.getContentResource().adaptTo(Node.class);
 			masterNode.setProperty("cq:xfVariantType", "web");
 			masterNode.setProperty("cq:xfMasterVariation", true);

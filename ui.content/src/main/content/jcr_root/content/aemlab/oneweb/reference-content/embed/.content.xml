@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/aemlab/oneweb/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Embed"
+        sling:resourceType="aemlab/oneweb/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemlab/oneweb/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemlab/oneweb/components/container">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemlab/oneweb/components/container"
+                    layout="responsiveGrid">
+                    <title
+                        jcr:created="{Date}2020-08-27T23:05:44.334+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:07:26.201+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Embed - Youtube"
+                        sling:resourceType="aemlab/oneweb/components/title"/>
+                    <embed
+                        jcr:created="{Date}2020-08-27T23:05:37.498+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:07:09.785+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/embed"
+                        embeddableResourceType="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                        type="embeddable"
+                        youtubeVideoId="ABj0yh-c_1U"/>
+                    <title_1855511819
+                        jcr:created="{Date}2020-08-27T23:07:33.818+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:07:42.395+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Embed - HTML"
+                        sling:resourceType="aemlab/oneweb/components/title"/>
+                    <embed_367006767
+                        jcr:created="{Date}2020-08-27T23:07:47.834+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:08:55.879+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/embed"
+                        html="&lt;h1>Header 1&lt;/h1>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;strong>Pellentesque habitant morbi tristique&lt;/strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. &lt;em>Aenean ultricies mi vitae est.&lt;/em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, &lt;code>commodo vitae&lt;/code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. &lt;a href=&quot;#&quot;>Donec non enim&lt;/a> in turpis pulvinar facilisis. Ut felis.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;h2>Header Level 2&lt;/h2>&#xd;&#xa;&#xd;&#xa;&lt;ol>&#xd;&#xa;   &lt;li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li>&#xd;&#xa;   &lt;li>Aliquam tincidunt mauris eu risus.&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&#xd;&#xa;&lt;blockquote>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.&lt;/p>&lt;/blockquote>&#xd;&#xa;&#xd;&#xa;&lt;h3>Header Level 3&lt;/h3>&#xd;&#xa;&#xd;&#xa;&lt;ul>&#xd;&#xa;   &lt;li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li>&#xd;&#xa;   &lt;li>Aliquam tincidunt mauris eu risus.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&#xd;&#xa;&lt;pre>&lt;code>&#xd;&#xa;#header h1 a {&#xd;&#xa;  display: block;&#xd;&#xa;  width: 300px;&#xd;&#xa;  height: 80px;&#xd;&#xa;}&#xd;&#xa;&lt;/code>&lt;/pre>"
+                        type="html"/>
+                    <title_948977528
+                        jcr:created="{Date}2020-08-27T23:09:19.488+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:09:30.416+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Embed - Url"
+                        sling:resourceType="aemlab/oneweb/components/title"/>
+                    <embed_960913333
+                        jcr:created="{Date}2020-08-27T23:09:13.530+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-27T23:15:11.270+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/embed"
+                        type="url"
+                        url="https://www.youtube.com/watch?v=ABj0yh-c_1U"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

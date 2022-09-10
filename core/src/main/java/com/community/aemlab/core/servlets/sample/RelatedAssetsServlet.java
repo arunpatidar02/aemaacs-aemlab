@@ -31,8 +31,8 @@ public class RelatedAssetsServlet extends SlingSafeMethodsServlet {
 		response.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 		try {
 			AssetManager assetMgr = request.getResourceResolver().adaptTo(AssetManager.class);
-			String parentAsset = "/content/dam/aemlab/banners/banner-1.png";
-			String childAsset = "/content/dam/aemlab/images/banner-1.png/asset.jpg";
+			String parentAsset = "/content/dam/aemlab/oneweb/banners/banner-1.png";
+			String childAsset = "/content/dam/aemlab/oneweb/images/banner-1.png/asset.jpg";
 			if (assetMgr.assetExists(parentAsset) && assetMgr.assetExists(childAsset)) {
 				Asset asset = assetMgr.getAsset(parentAsset);
 				asset.addRelation("derived", childAsset);

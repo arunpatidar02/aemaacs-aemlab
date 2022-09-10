@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/aemlab/oneweb/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Reference Content"
+        sling:sitemapRoot="{Boolean}true"
+        sling:resourceType="aemlab/oneweb/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aemlab/oneweb/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aemlab/oneweb/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemlab/oneweb/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemlab/oneweb/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/text"
+                        text="&lt;h2>What is Lorem Ipsum?&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Why do we use it?&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <text_copy
+                        cq:styleIds="[1597240839112]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/text"
+                        text="&lt;h2>What is Lorem Ipsum?&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Why do we use it?&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <button
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="buttontext"
+                        sling:resourceType="aemlab/oneweb/components/button"
+                        link="#"/>
+                    <button_copy
+                        cq:styleIds="[1597597827789]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="buttontext"
+                        sling:resourceType="aemlab/oneweb/components/button"
+                        link="#"/>
+                    <button_copy_1591889682
+                        cq:styleIds="[1597597830841,1597597803606]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="buttontext"
+                        sling:resourceType="aemlab/oneweb/components/button"
+                        link="#"/>
+                    <tabs
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/tabs">
+                        <item_1
+                            cq:panelTitle="Tab 1"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Tab 1"
+                            sling:resourceType="aemlab/oneweb/components/container"
+                            layout="responsiveGrid">
+                            <text_copy_copy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aemlab/oneweb/components/text"
+                                text="&lt;h2>What is Lorem Ipsum?&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Why do we use it?&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Praesent scelerisque augue sed mi tempor rutrum.&lt;/li>&#xd;&#xa;&lt;li>Praesent gravida ipsum et malesuada dignissim.&lt;/li>&#xd;&#xa;&lt;li>Curabitur aliquam lorem ac ligula hendrerit rutrum.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                                textIsRich="true"/>
+                        </item_1>
+                        <item_2
+                            cq:panelTitle="Tab 2"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Tab 2"
+                            sling:resourceType="aemlab/oneweb/components/container"
+                            layout="responsiveGrid">
+                            <text_copy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aemlab/oneweb/components/text"
+                                text="&lt;h2>What is Lorem Ipsum?&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Why do we use it?&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                        </item_2>
+                    </tabs>
+                    <accordion
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/accordion">
+                        <item_1
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Item 1"
+                            sling:resourceType="aemlab/oneweb/components/container"
+                            layout="responsiveGrid">
+                            <text_copy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aemlab/oneweb/components/text"
+                                text="&lt;h2>What is Lorem Ipsum?&lt;/h2>&#xd;&#xa;&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;&lt;h2>Why do we use it?&lt;/h2>&#xd;&#xa;&lt;p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                                textIsRich="true"/>
+                        </item_1>
+                        <item_2
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Item 2"
+                            sling:resourceType="aemlab/oneweb/components/container"
+                            layout="responsiveGrid"/>
+                    </accordion>
+                    <carousel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/carousel"
+                        autopauseDisabled="false"
+                        autoplay="false"
+                        delay="5000">
+                        <item_1597262548470
+                            cq:panelTitle="item1"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemlab/oneweb/components/container">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aemlab/oneweb/components/image"
+                                displayPopupTitle="true"
+                                fileReference="/content/dam/aemlab/oneweb/banners/banner-2.png"
+                                isDecorative="true"
+                                titleValueFromDAM="true"/>
+                        </item_1597262548470>
+                        <item_1597262552321
+                            cq:panelTitle="item2"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemlab/oneweb/components/container">
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="lorel ipcghfjh jhjjkhh kljlkjkl jklhkll"
+                                sling:resourceType="aemlab/oneweb/components/image"
+                                displayPopupTitle="false"
+                                fileReference="/content/dam/aemlab/oneweb/banners/banner-1.png"
+                                isDecorative="true"
+                                titleValueFromDAM="false"/>
+                        </item_1597262552321>
+                    </carousel>
+                    <teaser
+                        jcr:description="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header"
+                        sling:resourceType="aemlab/oneweb/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/aemlab/oneweb/svg/stats-dots.svg"
+                        pretitle="CMS"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/acc"
+                                text="BTN1"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/campaigns"
+                                text="BUTTONS"/>
+                        </actions>
+                    </teaser>
+                    <text_1668349001
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/text"
+                        text="&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; border=&quot;1&quot;>&#xd;&#xa;&lt;tbody>&lt;tr>&lt;th>Product&lt;/th>&#xd;&#xa;&lt;th>Description&lt;/th>&#xd;&#xa;&lt;th>More info&lt;/th>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td>Content management&lt;/td>&#xd;&#xa;&lt;td>As channels have multiplied, you have to create thousands of pieces of copy and art. Experience Manager helps you manage it all in a fluid and dynamic way, so you can keep up with every screen and platform.&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;https://www.adobe.com/au/marketing-cloud/experience-manager.html&quot;>Explore Adobe Experience Manager&lt;/a>&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td>Campaign execution&lt;/td>&#xd;&#xa;&lt;td>Once your content is created, Adobe Campaign gives you a single place to manage and automate all your email, ads, and campaigns. With access to your audience profiles and analytics, you can drive better customer engagement.&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;https://www.adobe.com/au/marketing/campaign.html&quot;>Explore Adobe Campaign&lt;/a>&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td>Personalization&lt;/td>&#xd;&#xa;&lt;td>Making every experience relevant and personal is the sign of an experience business. Adobe Target is a personalization engine that lets you test and optimize with machine learning across mobile apps and the web.&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;http://www.adobe.com/au/marketing-cloud/target.html&quot;>Explore&amp;nbsp;Adobe Target&lt;/a>&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td>Marketo Engage&lt;/td>&#xd;&#xa;&lt;td>From lead management to B2B and account-based marketing,&amp;nbsp;Marketo Engage provides marketing agility at every touchpoint. Transform customer experiences and power engagement from consideration to conversion and beyond.&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;https://www.adobe.com/au/marketing/marketo.html&quot;>Explore Marketo Engage&lt;/a>&lt;/td>&#xd;&#xa;&lt;/tr>&lt;/tbody>&lt;/table>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h3>End-to-end digital marketing.&lt;/h3>&#xd;&#xa;&lt;p>If you’re tired of scraping together digital hacks to deliver on your marketing plan, you’re in luck. Adobe Marketing Cloud is a single, unified platform to deliver on everything you’ve promised.&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                    <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/form/container"
+                        action="/content/usergenerated/aemlab/oneweb/reference-content/cq-gen1597268009902/"
+                        actionType="foundation/components/form/actions/store">
+                        <text
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Name"
+                            sling:resourceType="aemlab/oneweb/components/form/text"
+                            helpMessage="First name and last name"
+                            name="name"
+                            required="true"
+                            requiredMessage="Please fill the name"
+                            rows="2"
+                            type="text"/>
+                        <options
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Hobbies"
+                            sling:resourceType="aemlab/oneweb/components/form/options"
+                            helpMessage="Radio"
+                            name="hobbies"
+                            source="local"
+                            type="checkbox">
+                            <items jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Option1"
+                                    value="opt1"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    selected="false"
+                                    text="Option2"
+                                    value="opt2"/>
+                            </items>
+                        </options>
+                        <button
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Submit"
+                            sling:resourceType="aemlab/oneweb/components/form/button"
+                            name="submit"
+                            type="submit"/>
+                    </container>
+                    <container_1105693260
+                        cq:styleIds="[1597598851801]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/container"
+                        backgroundColor="#D4D5C8"
+                        layout="simple">
+                        <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemlab/oneweb/components/text"
+                            text="&lt;ul>&#xd;&#xa;&lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/li>&#xd;&#xa;&lt;li>Donec imperdiet dui at sapien blandit tristique.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Nullam et erat semper, vestibulum nibh ut, maximus odio.&lt;/li>&#xd;&#xa;&lt;li>In ac est ut turpis lobortis vehicula.&lt;/li>&#xd;&#xa;&lt;li>Vestibulum vitae arcu sed arcu vehicula interdum.&lt;/li>&#xd;&#xa;&lt;li>Maecenas sollicitudin nisi ut urna porta, et gravida nisl mollis.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Maecenas eget felis auctor, euismod sem et, convallis eros.&lt;/li>&#xd;&#xa;&lt;li>Donec a mauris accumsan, ultricies leo in, congue magna.&lt;/li>&#xd;&#xa;&lt;li>Aliquam quis mauris bibendum, laoreet leo sed, placerat urna.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemlab/oneweb/components/title"
+                            type="h2"/>
+                        <text_1199930529
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemlab/oneweb/components/text"
+                            text="&lt;p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;quot;de Finibus Bonorum et Malorum&amp;quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;quot;Lorem ipsum dolor sit amet..&amp;quot;, comes from a line in section 1.10.32.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </container_1105693260>
+                    <separator
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/separator"/>
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemlab/oneweb/components/image"
+                        altValueFromDAM="true"
+                        displayPopupTitle="true"
+                        fileReference="/content/dam/aemlab/oneweb/banners/banner-3.png"
+                        isDecorative="false"
+                        titleValueFromDAM="true"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

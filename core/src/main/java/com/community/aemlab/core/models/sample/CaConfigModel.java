@@ -12,8 +12,8 @@ import org.apache.sling.models.annotations.Model;
 //import org.apache.sling.models.caconfig.annotations.ContextAwareConfiguration;
 import org.slf4j.Logger;
 
-import com.community.aemlab.core.conf.GoToTopCaConfig;
-import com.community.aemlab.core.services.CAConfigurationService;
+import com.community.aemlab.oneweb.core.conf.GoToTopCaConfig;
+import com.community.aemlab.oneweb.core.services.CAConfigurationService;
 import com.day.cq.wcm.api.Page;
 
 /**

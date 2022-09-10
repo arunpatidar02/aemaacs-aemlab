@@ -7,7 +7,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.community.aemlab</groupId>
-        <artifactId>aemlab</artifactId>
+        <artifactId>oneweb</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -15,9 +15,9 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aemlab.ui.apps.structure</artifactId>
+    <artifactId>oneweb.ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>AEM Lab - Repository Structure Package</name>
+    <name>AEMLab OneWeb - Repository Structure Package</name>
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.
@@ -49,6 +49,7 @@
                         <filter><root>/apps/settings</root></filter>
 
                     </filters>
+                    <group>AEMLab</group>
                 </configuration>
             </plugin>
         </plugins>

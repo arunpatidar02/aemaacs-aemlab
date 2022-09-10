@@ -1,0 +1,13 @@
+<sly data-sly-use.gtt="com.community.aemlab.oneweb.core.models.GoToTop"></sly>
+<sly data-sly-test.show="${gtt.enabled}" />
+<sly data-sly-call="${emptytemplate @isConfig=gtt.isConfig}" />
+<button
+	class="c-gtt js-gtt no-print"
+	id="c-gtt${resource.path.hashCode}"
+	aria-label="${gtt.title}"
+	data-sly-test="${show}">
+</button>
+
+<template data-sly-template.emptytemplate="${@ isConfig}">
+    <div data-sly-test="${wcmmode.edit && !isConfig}" class="cq-placeholder no-config-cac" style="text-align:center">${'No configuration defined for Go-to-Top button'}</div>
+</template>

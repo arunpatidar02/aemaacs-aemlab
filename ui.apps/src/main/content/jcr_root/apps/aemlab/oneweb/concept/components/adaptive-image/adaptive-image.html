@@ -1,0 +1,22 @@
+<div data-sly-use.imageObj="com.community.aemlab.oneweb.core.models.AdaptiveImageModel"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${imageObj.title || imageObj.imageSrc}"
+     class="cmp-adaptive-image">
+    <h3 class="cmp-adaptive-image__title cmp-adaptive-image__title_${imageObj.titleStyle}" data-sly-test.title="${imageObj.title}">${title}</h3>
+    <div class="cmp-adaptive-image__image-wrapper">
+	    <!-- This does not work because the adaptive servlet is not resolving the image-->
+	    <picture class="cmp-adaptive-image__picture">
+	         <img class="cmp-adaptive-image__image" data-sly-test.image="${imageObj.imageSrc}" 
+	              src="${image}"
+				  srcset = ${imageObj.imageSrcset}
+	              alt="${title}" 
+	              title="${title}" />
+	     </picture>
+	     
+	     <div data-sly-resource="${'image' @ resourceType='aemlab/oneweb/components/image', wcmmode='disabled'}"
+	    		data-sly-unwrap="${wcmmode.disabled}"></div>
+    </div>
+</div>
+
+
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-adaptive-image'}"></sly>

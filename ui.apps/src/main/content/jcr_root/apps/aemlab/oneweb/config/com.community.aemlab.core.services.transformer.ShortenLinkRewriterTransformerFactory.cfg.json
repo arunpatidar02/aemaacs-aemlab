@@ -1,0 +1,13 @@
+{
+  "shorteningHeaderName":"Shorten-Links",
+   "getRegularExpressions":["/content/aemlab/oneweb/.*"],
+ 	"getAttributesForRewriting":[
+    "a:href;data-page-source;data-url;data-request",
+    "input:value,button:data-request;data-search",
+    "form:action;data-href",
+    "li:data-href",
+    "meta:content",
+    "option:value",
+    "link:href"
+  ]
+}
