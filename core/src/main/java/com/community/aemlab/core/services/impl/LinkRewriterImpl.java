@@ -1,4 +1,4 @@
-package com.community.aemlab.oneweb.core.services.impl;
+package com.community.aemlab.core.services.impl;
 
 import java.util.Collections;
 import java.util.Map;
@@ -17,11 +17,11 @@ import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.services.transformer.LinkRewriterPrefixerTransformerFactory.LinkRewriterPrefixerTransformer;
 import com.community.aemlab.core.conf.SiteConfiguration;
+import com.community.aemlab.core.services.LinkRewriter;
 import com.community.aemlab.core.services.transformer.ShortenLinkRewriterTransformer;
 import com.community.aemlab.core.services.transformer.ShortenLinkRewriterTransformerFactoryConfig;
 import com.community.aemlab.core.utils.ShortenLinkUtil;
 import com.community.aemlab.oneweb.core.services.EnvironmentTypeProvider;
-import com.community.aemlab.oneweb.core.services.LinkRewriter;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.components.ComponentContext;
 import com.day.cq.wcm.commons.WCMUtils;

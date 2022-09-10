@@ -1,4 +1,4 @@
-package com.community.aemlab.oneweb.core.services;
+package com.community.aemlab.core.services;
 
 import org.apache.sling.api.resource.ResourceResolver;
 

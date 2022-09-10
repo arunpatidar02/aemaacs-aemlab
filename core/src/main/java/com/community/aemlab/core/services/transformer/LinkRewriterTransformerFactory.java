@@ -26,7 +26,7 @@ import org.xml.sax.helpers.AttributesImpl;
 
 import com.adobe.acs.commons.rewriter.ContentHandlerBasedTransformer;
 import com.adobe.acs.commons.util.ParameterUtil;
-import com.community.aemlab.oneweb.core.services.LinkService;
+import com.community.aemlab.core.services.LinkService;
 
 /**
  *
