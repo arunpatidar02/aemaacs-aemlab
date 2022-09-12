@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:mixinTypes="[mix:referenceable]"
+<jcr:root xmlns:Iptc4xmpCore="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
     jcr:primaryType="dam:Asset"
-    jcr:uuid="7e3cd465-2aae-4656-a171-0dc6943d0271">
+    jcr:uuid="817f03dc-7403-4ce8-99c1-540bc2effc5e">
     <jcr:content
+        cq:name="content.png"
+        cq:parentPath="/content/dam/aemlab/oneweb/system"
+        cq:versionComment="cq5dam.cropped.0.0.839.1464.png"
         dam:assetState="processed"
-        jcr:lastModified="{Date}2020-08-18T21:27:55.958+02:00"
+        jcr:lastModified="{Date}2022-09-12T15:33:54.925+02:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}32"
-            dam:extracted="{Date}2020-08-18T21:27:54.853+02:00"
+            dam:extracted="{Date}2022-09-12T15:33:54.717+02:00"
             dam:Fileformat="PNG"
             dam:MIMEtype="image/png"
             dam:Numberofimages="{Long}1"
             dam:Numberoftextualcomments="{Long}0"
-            dam:Physicalheightindpi="{Long}120"
-            dam:Physicalheightininches="{Decimal}7.017274856567383"
-            dam:Physicalwidthindpi="{Long}120"
-            dam:Physicalwidthininches="{Decimal}11.542667388916016"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
             dam:Progressive="no"
-            dam:sha1="356230a99506bf346d31e8d5c88579fd7a083b3f"
-            dam:size="{Long}100914"
+            dam:sha1="a3972789c66904dd6d137fe70eb6d0988b07a857"
+            dam:size="{Long}129007"
+            dc:description="Content Page Template thumbnail"
             dc:format="image/png"
+            dc:title="Content Page Template thumbnail"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
-            tiff:ImageLength="{Long}842"
-            tiff:ImageWidth="{Long}1385"/>
+            tiff:ImageLength="{Long}1463"
+            tiff:ImageWidth="{Long}839"
+            imageMap="">
+            <Iptc4xmpCore:CreatorContactInfo jcr:primaryType="nt:unstructured"/>
+        </metadata>
         <related jcr:primaryType="nt:unstructured"/>
     </jcr:content>
 </jcr:root>
