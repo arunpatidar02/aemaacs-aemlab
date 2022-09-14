@@ -10,30 +10,6 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <title2
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title"/>
-                    <branding
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/branding"/>
-                    <htmlid
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/htmlid"/>
-                    <moretitles
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles"/>
-                    <onofftime
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/onofftime"/>
-                    <vanityurl
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/vanityurl"/>
                     <title
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Title and Tags"
@@ -73,6 +49,26 @@
                                 path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/basic/items/column/items/title/items/charset"/>
                         </items>
                     </title>
+                    <branding
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/branding"/>
+                    <htmlid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/htmlid"/>
+                    <moretitles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles"/>
+                    <onofftime
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/onofftime"/>
+                    <vanityurl
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/core/wcm/components/page/v3/page/cq:dialog/content/items/tabs/items/basic/items/column/items/vanityurl"/>
                 </items>
             </column>
         </items>
