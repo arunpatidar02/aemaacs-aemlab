@@ -653,6 +653,12 @@ Bundle-DocURL:
 			    <artifactId>jsr305</artifactId>
 			    <version>3.0.2</version>
 			</dependency>
+			<dependency>
+                <groupId>org.jetbrains</groupId>
+                <artifactId>annotations</artifactId>
+                <version>17.0.0</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

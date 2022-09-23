@@ -1,0 +1,24 @@
+<div data-sly-use.ceObj="com.community.aemlab.core.models.concept.ChildEditorExample"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-panelcontainer="${wcmmode.edit && 'ce'}"
+     id="${ceObj.id}"
+     class="cmp-ce"
+     data-cmp-is="ce"
+     data-placeholder-text="${wcmmode.edit && 'Please drag CE components here' @ i18n}">
+    <ol data-sly-test="${ceObj.items && ceObj.items.size > 0}"
+        data-sly-list.item="${ceObj.items}"
+        class="cmp-ce__itemlist">
+        <sly data-sly-test.isActive="${item.name == ceObj.activeItem}"/>
+        <li role="item"
+            id="${item.id}-item"
+            class="cmp-ce__item${isActive ? ' cmp-ce__item--active' : ''}"
+            data-cmp-hook-ce="ce">${item.title}</li>
+    </ol>
+    <div data-sly-repeat.item="${ceObj.items}"
+         data-sly-resource="${item.name @ decorationTagName='div'}"
+         id="${item.id}-itempanel"
+         class="cmp-ce__itempanel${item.name == ceObj.activeItem ? ' cmp-ce__itempanel--active' : ''}"
+         data-cmp-hook-ce="itempanel"></div>
+    <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar', appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+         data-sly-test="${(wcmmode.edit || wcmmode.preview) && ceObj.items.size < 1}"></sly>
+</div>
