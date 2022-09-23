@@ -1,0 +1,18 @@
+.cmp-ce__itempanel.cmp-ce__itempanel--active {
+    display: block !important;
+}
+
+.cmp-ce__itempanel {
+    display: none;
+}
+
+.cmp-ce__item{
+    display: inline-block;
+    background: #0174a9;
+    color: #fff;
+    padding-inline: 1rem;   
+}
+
+.cmp-ce__item:hover{
+    cursor: pointer;
+}
