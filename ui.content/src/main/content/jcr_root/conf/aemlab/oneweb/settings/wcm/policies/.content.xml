@@ -481,7 +481,7 @@
 	                    jcr:primaryType="nt:unstructured"
 	                    jcr:title="Embed"
 	                    sling:resourceType="wcm/core/components/policy/policy"
-	                    allowedEmbeddables="core/wcm/components/embed/v1/embed/embeddable/youtube"
+	                    allowedEmbeddables="[core/wcm/components/embed/v1/embed/embeddable/youtube,aemlab/oneweb/components/embed/embeddable/iframe]"
 	                    embeddablesDisabled="false"
 	                    htmlDisabled="false"
 	                    urlDisabled="false">
