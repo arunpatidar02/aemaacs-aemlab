@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+	xmlns:cq="http://www.day.com/jcr/cq/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	jcr:primaryType="nt:unstructured"
+	sling:resourceType="granite/ui/components/coral/foundation/container">
+	<items jcr:primaryType="nt:unstructured">
+		<path 
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+			fieldDescription="URL of the linked Page" 
+			fieldLabel="URL"
+			name="./path" 
+			rootPath="/content/aemlab" />
+		<title 
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+			fieldDescription="Iframe Title" 
+			fieldLabel="Iframe Title"
+			name="./title" />
+		<height 
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+			fieldDescription="Enter the iframe height (px)" 
+			fieldLabel="Height"
+			name="./height" />
+		<width 
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+			fieldDescription="Width of the Iframe (px)" 
+			fieldLabel="Width"
+			name="./width" />
+		<scrolling 
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="granite/ui/components/coral/foundation/form/select"
+			fieldDescription="The scrolling attribute specifies whether or not to display scrollbars in an iframe"
+			fieldLabel="Scrolling" 
+			name="./scrolling">
+			<items 
+				jcr:primaryType="nt:unstructured">
+				<yes 
+					jcr:primaryType="nt:unstructured" 
+					text="Yes" 
+					value="yes" />
+				<no 
+					jcr:primaryType="nt:unstructured" 
+					text="No" 
+					value="no" />
+			</items>
+		</scrolling>
+	</items>
+	<granite:data 
+		jcr:primaryType="nt:unstructured"
+		cmp-embed-dialog-edit-embeddableoptions="true"
+		cmp-embed-dialog-edit-showhidetargetvalue="aemlab/oneweb/components/embed/embeddable/iframe" />
+</jcr:root>
