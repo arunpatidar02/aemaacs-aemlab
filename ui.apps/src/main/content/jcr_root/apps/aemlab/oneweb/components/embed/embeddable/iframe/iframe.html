@@ -1,5 +1,4 @@
 <sly data-sly-use.iframe="com.community.aemlab.oneweb.core.models.IframeModel"
-     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
      data-sly-test.hasContent="${iframe.path}">
         <iframe class="cmp-embed__iframe"
                 height="${iframe.height || 'auto' @ context='scriptString'}"
@@ -10,4 +9,3 @@
                 frameborder="0">
         </iframe>
 </sly>
-<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-embed__iframe'}"></sly>
