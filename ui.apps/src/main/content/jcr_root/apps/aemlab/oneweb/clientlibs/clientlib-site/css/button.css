@@ -1,8 +1,6 @@
 .button{
-    padding: 0 26px;
     min-width: 150px;
     text-align: center;
-    padding: 1rem 0;
 }
 
 .cmp-button {
@@ -43,7 +41,6 @@
 
 .button.cmp-button--sm .cmp-button{
     height: 30px;
-    font-size: 11px;
     line-height: 27px;
     min-width: 0;
     font-size:0.6rem;

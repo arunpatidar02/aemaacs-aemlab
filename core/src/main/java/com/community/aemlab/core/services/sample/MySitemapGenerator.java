@@ -4,6 +4,7 @@ import java.util.Calendar;
 import java.util.Optional;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.sitemap.SitemapException;
 import org.apache.sling.sitemap.builder.Sitemap;
 import org.apache.sling.sitemap.builder.Url;
@@ -36,12 +37,22 @@ public class MySitemapGenerator extends ResourceTreeSitemapGenerator {
 		final String location = this.externalizer.externalize(resource);
 		final Url url = sitemap.addUrl(location);
 		final Calendar lastmod = Optional.ofNullable(page.getLastModified())
-				.orElse(page.getContentResource().getValueMap().get(JcrConstants.JCR_CREATED, Calendar.class));
+				.orElse(getValueMap(page).get(JcrConstants.JCR_CREATED, Calendar.class));
 		if (lastmod != null) {
 			url.setLastModified(lastmod.toInstant());
 			url.setPriority(2);
 
 		}
 		LOGGER.debug("Added the {} to Extended Sitemap", url);
+	}
+
+	
+	/**
+	 * @param page
+	 * @return ValueMap
+	 */
+	public ValueMap getValueMap(final Page page) {
+	    Optional<Resource> contentResource = Optional.ofNullable(page.getContentResource());
+	    return contentResource.map(Resource::getValueMap).orElse(ValueMap.EMPTY);
 	}
 }

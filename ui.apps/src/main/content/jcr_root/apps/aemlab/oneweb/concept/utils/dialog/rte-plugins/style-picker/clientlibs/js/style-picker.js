@@ -213,7 +213,7 @@
         CUI.rte.templates['dlg-' + DIALOG] = CUI.rte.Templates['dlg-' + DIALOG] = Handlebars.compile(html);
 
     }
-}(jQuery, window.CUI, jQuery(document)));
+}(jQuery, window.CUI));
 
 
 // RTE StylePicker Plugin Popover code
@@ -319,6 +319,6 @@
             message.data[STYLE] = style;
         }
 
-        parent.postMessage(message), "*";
+        parent.postMessage(message, "*");
     }
 })(jQuery, jQuery(document));

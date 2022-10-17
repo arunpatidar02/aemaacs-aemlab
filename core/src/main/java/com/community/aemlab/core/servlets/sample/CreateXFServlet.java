@@ -29,23 +29,25 @@ public class CreateXFServlet extends SlingSafeMethodsServlet {
 	@Override
 	protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
 			throws ServletException, IOException {
-		
+
 		resp.setContentType(AEMLABConstants.CONTENTTYPE_TXT_HTML);
 
-		try {
-			ResourceResolver resourceResolver = req.getResourceResolver();
+		try (ResourceResolver resourceResolver = req.getResourceResolver();) {
 			Session session = resourceResolver.adaptTo(Session.class);
 			PageManager pm = req.getResourceResolver().adaptTo(PageManager.class);
 			Page page = pm.create("/content/experience-fragments/aemlab/oneweb/language-masters/en/site", "import-page",
 					"/libs/cq/experience-fragments/components/experiencefragment/template", "Import", true);
 
-			//create master
-			Page masterPage=pm.create(page.getPath(), "master",
+			// create master
+			Page masterPage = pm.create(page.getPath(), "master",
 					"/conf/aemlab/oneweb/settings/wcm/templates/xf-web-variation", page.getTitle(), true);
 			Node masterNode = masterPage.getContentResource().adaptTo(Node.class);
-			masterNode.setProperty("cq:xfVariantType", "web");
-			masterNode.setProperty("cq:xfMasterVariation", true);
-			
+
+			if (masterNode != null) {
+				masterNode.setProperty("cq:xfVariantType", "web");
+				masterNode.setProperty("cq:xfMasterVariation", true);
+			}
+
 			session.save();
 
 			resp.getWriter().write("XF is created");

@@ -15,14 +15,16 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.text.StringEscapeUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
+import org.apache.sling.jcr.resource.JcrResourceConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.day.cq.commons.jcr.JcrConstants;
 import com.day.cq.wcm.api.components.ComponentContext;
 import com.day.cq.wcm.commons.WCMUtils;
 import com.google.gson.Gson;
@@ -38,8 +40,8 @@ public class WebcomponentDynamicFilter implements Filter {
 	private static final String EQUAL = "=";
 	private static final char QUOT = '"';
 	private static final String DATA_JSON = "dataJSON";
-	private List<String> excludedPropList = Arrays.asList("jcr:primaryType", "jcr:createdBy", "jcr:lastModifiedBy",
-			"jcr:created", "jcr:lastModified", "sling:resourceType");
+	private List<String> excludedPropList = Arrays.asList(JcrConstants.JCR_PRIMARYTYPE, JcrConstants.JCR_CREATED_BY, JcrConstants.JCR_LAST_MODIFIED_BY,
+			 JcrConstants.JCR_CREATED, JcrConstants.JCR_LASTMODIFIED, JcrResourceConstants.SLING_RESOURCE_TYPE_PROPERTY);
 
 	@Override
 	public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain filterChain)

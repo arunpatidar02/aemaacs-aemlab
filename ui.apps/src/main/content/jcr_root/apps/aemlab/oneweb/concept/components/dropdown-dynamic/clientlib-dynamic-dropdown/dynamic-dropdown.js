@@ -7,6 +7,7 @@
     const contentSubTypeDataSourceUri =
         "/apps/aemlab/oneweb/concept/utils/dialog/contentsubytpe.json";
 
+
     $document.on("foundation-contentloaded", function (e) {
         setSubTypeDropdown(true);
     });
@@ -20,7 +21,7 @@
         const contentSubType = document.querySelector(contentSubTypeSelector);
 
         if (contentType && contentSubType) {
-            var url =contentSubTypeDataSourceUri +"?type=" +contentType.value +"&ck=" +Math.random();
+            var url =contentSubTypeDataSourceUri +"?type=" +contentType.value;
             $.get(url, function (data) {
                 updateSubTypeDropdownField(preSelect, data);
             });

@@ -80,7 +80,6 @@ public class SeesionInServletWithSubservice extends SlingSafeMethodsServlet {
 			// Business logic
 			pw.println("Session User from loginService is - " + session.getUserID());
 		} catch (Exception e1) {
-			e1.printStackTrace();
 			LOGGER.error("sampleJCRSession : Unable to Login : ", e1);
 		} finally {
 			closeSession(session);

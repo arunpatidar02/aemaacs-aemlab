@@ -11,6 +11,8 @@ import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.services.sample.FileService;
 
@@ -26,6 +28,7 @@ import com.community.aemlab.core.services.sample.FileService;
 public class FactConfigTestServlet extends SlingSafeMethodsServlet {
 
 	private static final long serialVersionUID = 2598426539166789516L;
+	private static final Logger LOGGER = LoggerFactory.getLogger(FactConfigTestServlet.class);
 
 	@Reference(target = "(file.type=xml)")
 	transient FileService fs1;
@@ -41,7 +44,7 @@ public class FactConfigTestServlet extends SlingSafeMethodsServlet {
 			resp.getWriter().write("<br>" + fs2.getFileData());
 			resp.getWriter().close();
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 	}
 }

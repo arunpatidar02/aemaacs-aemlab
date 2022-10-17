@@ -246,7 +246,7 @@
         CUI.rte.templates['dlg-' + DIALOG] = CUI.rte.Templates['dlg-' + DIALOG] = Handlebars.compile(html);
     }
 
-}(jQuery, window.CUI, jQuery(document)));
+}(jQuery, window.CUI));
 
 
 

@@ -39,7 +39,7 @@
 #aemlab-header #header-logo-center p a{
     font-size:2rem;
     color:#026491;
-    font-family:CustomFont;
+    font-family: CustomFont, Arial, Helvetica, sans-serif;
 }
 
 

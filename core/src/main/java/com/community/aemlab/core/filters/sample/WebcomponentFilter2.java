@@ -80,13 +80,14 @@ public class WebcomponentFilter2 implements Filter {
 	@ObjectClassDefinition(name = "Annotation Demo Filter - OSGi", description = "Sample Filter config")
 	public @interface Configuration {
 
-		@AttributeDefinition(name = "sling.filter.scope", description = "Filter scope e.g. "
+		@AttributeDefinition(name = EngineConstants.SLING_FILTER_SCOPE, description = "Filter scope e.g. "
 				+ EngineConstants.FILTER_SCOPE_INCLUDE + ", " + EngineConstants.FILTER_SCOPE_COMPONENT
 				+ " etc. A filter is ignored if you set an invalid sling.filter.scope. To disable a this filter use an invalid sling.filter.scope, for instance DISABLED.", type = AttributeType.STRING)
 		String[] sling_filter_scope() default "DISABLED";
 
 		@AttributeDefinition(name = "sling.filter.resourceTypes", description = "Filter ResourceTypes ", type = AttributeType.STRING)
-		String[] sling_filter_resourceTypes() default { "aemlab/oneweb/components/text", "aemlab/oneweb/components/breadcrumb" };
+		String[] sling_filter_resourceTypes() default { "aemlab/oneweb/components/text",
+				"aemlab/oneweb/components/breadcrumb" };
 
 	}
 

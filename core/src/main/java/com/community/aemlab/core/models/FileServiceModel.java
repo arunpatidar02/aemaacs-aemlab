@@ -13,6 +13,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.FrameworkUtil;
 import org.osgi.framework.ServiceReference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.community.aemlab.core.services.sample.FileService;
 
@@ -30,6 +32,8 @@ public class FileServiceModel {
 	private String fileData1 = "";
 	private String fileData2 = "";
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(FileServiceModel.class);
+
 	@PostConstruct
 	protected void init() {
 		BundleContext bundleContext = FrameworkUtil.getBundle(FileServiceModel.class).getBundleContext();
@@ -44,7 +48,7 @@ public class FileServiceModel {
 				}
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 
 	}

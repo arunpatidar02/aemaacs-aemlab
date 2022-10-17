@@ -2,7 +2,7 @@ package com.community.aemlab.core.listeners.sample;
 
 import java.util.List;
 
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.sling.api.resource.observation.ResourceChange;
 import org.apache.sling.api.resource.observation.ResourceChangeListener;
 import org.osgi.service.component.annotations.Activate;
@@ -12,6 +12,8 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.day.cq.commons.jcr.JcrConstants;
 
 /**
  * @author arunpatidar02
@@ -30,7 +32,8 @@ public class SampleResourceChangeListener implements ResourceChangeListener {
 
 	@Activate
 	protected void activate(SampleResourceChangeListener.Config configValues) {
-		LOGGER.trace("Config values={}", ArrayUtils.toString(configValues.resource_paths()));
+		String config = ArrayUtils.toString(configValues.resource_paths());
+		LOGGER.trace("Config values={}", config);
 	}
 
 	/**
@@ -43,10 +46,10 @@ public class SampleResourceChangeListener implements ResourceChangeListener {
 		String[] resource_paths() default { "/content/aemlab/oneweb/dam/import", "/content/aemlab/oneweb/import" };
 
 		@AttributeDefinition(name = "Changes", description = "ResourceChangeListener Changes property")
-		String[] resource_change_types() default { "ADDED","CHANGED" };
+		String[] resource_change_types() default { "ADDED", "CHANGED" };
 
 		@AttributeDefinition(name = "Properties", description = "ResourceChangeListener PropertyNamesHint property")
-		String[] resource_property_names_hint() default { "jcr:lastModified" };
+		String[] resource_property_names_hint() default { JcrConstants.JCR_LASTMODIFIED };
 	}
 
 }

@@ -69,7 +69,6 @@ public class GetPageVersionServlet extends SlingSafeMethodsServlet {
 		try {
 			session = repository.loginService(OneWebConstants.ONEWEB_SUBSERVICE_READ, null);
 		} catch (Exception e1) {
-			e1.printStackTrace();
 			LOGGER.error("getJCRSession : Unable to Login : ", e1);
 		}
 		return session;

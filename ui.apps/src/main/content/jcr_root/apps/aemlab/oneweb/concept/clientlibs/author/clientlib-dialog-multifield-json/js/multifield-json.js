@@ -114,7 +114,7 @@
                     if($fileBrowser){
                         $input.parents(SELECTORS.FIELUPLOAD_FIELD).addClass(CONST.IS_FILLED);
                         $input.siblings(SELECTORS.FIELUPLOAD_THUMBNAIL).find(SELECTORS.FIELUPLOAD_EDIT_BTN).removeAttr(CONST.DISABLED)
-                        $input.siblings(SELECTORS.FIELUPLOAD_THUMBNAIL).find(SELECTORS.FIELUPLOAD_THUMBNAIL_IMG).html('<img class="cq-dd-image" src="'+inputValue+CONST.FIELUPLOAD_THUMBNAIL_IMG_RENDITION+'?ch_ck="'+Math.random()+' alt="">');
+                        $input.siblings(SELECTORS.FIELUPLOAD_THUMBNAIL).find(SELECTORS.FIELUPLOAD_THUMBNAIL_IMG).html('<img class="cq-dd-image" src="'+inputValue+CONST.FIELUPLOAD_THUMBNAIL_IMG_RENDITION +' alt="">');
                     }
                    
 

@@ -42,7 +42,6 @@ public class SimpleGetGroup extends SlingSafeMethodsServlet {
 			response.getWriter().close();
 
 		} catch (Exception e) {
-			e.printStackTrace();
 			LOGGER.error(e.getMessage());
 		}
 

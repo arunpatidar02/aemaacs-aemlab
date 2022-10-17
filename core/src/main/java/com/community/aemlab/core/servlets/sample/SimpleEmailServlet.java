@@ -83,7 +83,6 @@ public class SimpleEmailServlet extends SlingSafeMethodsServlet {
 			LOGGER.trace("email sent");
 			pw.write("email sent");
 		} catch (Exception e) {
-			e.printStackTrace();
 			LOGGER.error("Error while sending an email", e);
 			resp.getWriter().write(e.getMessage());
 		}
