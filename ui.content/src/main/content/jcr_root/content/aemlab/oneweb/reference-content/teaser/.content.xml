@@ -95,6 +95,7 @@
                             <item0
                                 jcr:primaryType="nt:unstructured"
                                 link="#"
+                                type="action-link-secondary"
                                 text="CTA1"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"

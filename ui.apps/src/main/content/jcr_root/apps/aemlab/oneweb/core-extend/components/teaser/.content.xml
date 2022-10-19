@@ -3,6 +3,5 @@
     xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Component"
     jcr:title="Teaser"
-    sling:resourceSuperType="aemlab/oneweb/core-extend/components/teaser"
-    componentGroup="AEM Lab - Content"
-    imageDelegate="aemlab/oneweb/components/image"/>
+    sling:resourceSuperType="core/wcm/components/teaser/v2/teaser"
+    componentGroup=".hidden"/>

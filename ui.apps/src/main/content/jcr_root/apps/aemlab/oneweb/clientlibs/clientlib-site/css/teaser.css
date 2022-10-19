@@ -43,5 +43,7 @@ a.cmp-teaser__action-link {
 
 a.cmp-teaser__action-link:hover {
     background: #0174a9;
-    color: #fff
+    color: #fff;
+    transform: scale(1.1)
 }
+
