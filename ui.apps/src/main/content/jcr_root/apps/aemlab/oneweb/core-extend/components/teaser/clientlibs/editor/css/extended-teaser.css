@@ -1,0 +1,13 @@
+.cmp-teaser__editor-multifield_actions .cmp-teaser__editor-action{
+    display: block;
+}
+
+.cmp-teaser__editor-multifield_actions .cmp-teaser__editor-action .cmp-teaser__editor-actionField-linkUrl.coral-Form-field {
+    width: 100%;
+}
+
+.cmp-teaser__editor-multifield_actions .cmp-teaser__editor-action .cmp-teaser__editor-actionField-linkTarget.coral-Form-field, 
+.cmp-teaser__editor-multifield_actions .cmp-teaser__editor-action .cmp-teaser__editor-actionField-linkText.coral-Form-field {
+    width: 100%;
+    margin-left: 0;
+}

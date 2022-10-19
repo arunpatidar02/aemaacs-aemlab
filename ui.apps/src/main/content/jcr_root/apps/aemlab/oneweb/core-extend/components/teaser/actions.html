@@ -1,0 +1,6 @@
+<sly data-sly-template.actions="${@ teaser}">
+    <sly data-sly-test.customActions="${teaser.customActions}" />
+    <div class="cmp-teaser__action-container" data-sly-test="${teaser.actionsEnabled}" data-sly-list="${teaser.actions}" data-sly-use.actionTemplate="action.html">
+    <sly data-sly-call="${actionTemplate.action @ action=item, customAction=customActions[itemList.index]}"></sly>
+    </div>
+</sly>
