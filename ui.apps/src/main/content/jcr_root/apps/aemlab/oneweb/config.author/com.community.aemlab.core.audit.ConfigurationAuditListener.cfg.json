@@ -1,0 +1,5 @@
+{
+    "enabled":false,
+    "resource.change.types" : ["ADDED", "CHANGED"],
+    "resource.paths" : ["/conf/aemlab/oneweb"]
+  }
