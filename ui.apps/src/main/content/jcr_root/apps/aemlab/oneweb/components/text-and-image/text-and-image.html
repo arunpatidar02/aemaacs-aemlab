@@ -1,0 +1,10 @@
+<div id="cmp-text_and_image${resource.path.hashCode}"
+    class="cmp-text_and_image">
+		<div class="cmp-text_and_image__title" data-sly-resource="${'title' @ resourceType='aemlab/oneweb/components/title'}"></div>
+		<div class="cmp-text_and_image__textimageWrapper">
+			<sly data-sly-set.imagePosition="${properties.imagePosition}"></sly>
+			<div data-sly-test="${imagePosition == 'left'}" class="cmp-text_and_image__image" data-sly-resource="${'image' @ resourceType='aemlab/oneweb/components/image'}"></div>
+			<div class="cmp-text_and_image__text cmp-text_and_image__text--${imagePosition}" data-sly-resource="${'text' @ resourceType='aemlab/oneweb/components/text'}"></div>
+			<div data-sly-test="${imagePosition == 'right'}" class="cmp-text_and_image__image cmp-text_and_image__image--right" data-sly-resource="${'image' @ resourceType='aemlab/oneweb/components/image'}"></div>
+		</div>
+</div>

@@ -1,0 +1,16 @@
+.cmp-text_and_image__textimageWrapper{
+    display:flex;
+    padding: 1rem 0;
+}
+.cmp-text_and_image__textimageWrapper .cmp-text_and_image__text,
+.cmp-text_and_image__textimageWrapper .cmp-text_and_image__image{
+    width:50%;
+    max-width:50%;
+    padding: 1rem;
+}
+
+.cmp-text_and_image__textimageWrapper .cmp-text_and_image__text--none{
+    width:100%;
+    max-width:100%;
+    
+}
