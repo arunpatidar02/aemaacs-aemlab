@@ -1,8 +1,19 @@
 .cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-draggable.cq-droptarget > div[data-type="Editable"] {
   border: 2px dashed #3dc5596b;
 }
-.cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-droptarget,
-.cq-Overlay.cq-Overlay--component.cq-droptarget.cq-Overlay--placeholder {
+.cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-droptarget{
   border: 1px solid #0174a978;
+}
+
+.cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-draggable.cq-droptarget > div.cq-Overlay--container {
+  border: 0.75px ridge rgba(128, 128, 128, 0.705);
+}
+
+.cq-Overlay.cq-Overlay--component.cq-droptarget.cq-Overlay--placeholder,
+.cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-draggable.cq-droptarget > div.cq-Overlay--placeholder{
+  border: 2px solid #0174a978;
+  color: #0174a9;
+  font-weight: 600;
+  font-size: 1.25rem;
 } 
 
