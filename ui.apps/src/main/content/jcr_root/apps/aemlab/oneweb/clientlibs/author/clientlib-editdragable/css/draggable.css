@@ -1,6 +1,8 @@
 .cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-draggable.cq-droptarget > div[data-type="Editable"] {
   border: 2px dashed #3dc5596b;
 }
-.cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-draggable.cq-droptarget {
+.cq-Overlay.cq-Overlay--component.cq-Overlay--container.cq-droptarget,
+.cq-Overlay.cq-Overlay--component.cq-droptarget.cq-Overlay--placeholder {
   border: 1px solid #0174a978;
-}
+} 
+

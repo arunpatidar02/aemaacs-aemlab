@@ -533,3 +533,8 @@ main {
     margin-inline:  5rem;
     max-width: 2000px;
 }
+
+.cmp-container--main-content .cq-Editable-dom--container{
+    margin-block: 0.5rem;
+  }
+  
