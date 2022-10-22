@@ -528,3 +528,8 @@ input[type="submit"]:focus {
     font-weight: normal;
     src: local('CustomFont'), url('../../clientlib-site/resources/fonts/Austria.ttf') format('truetype');
   }
+
+main {
+    margin-inline:  5rem;
+    max-width: 2000px;
+}

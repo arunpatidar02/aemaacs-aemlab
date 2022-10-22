@@ -18,7 +18,7 @@
                     <text_and_image
                         sling:resourceType="aemlab/oneweb/components/text-and-image"
                         imagePosition="left"
-                        layout="responsiveGrid">
+                        jcr:primaryType="nt:unstructured">
                         <title
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="aemlab/oneweb/components/title"/>
