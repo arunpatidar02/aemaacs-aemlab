@@ -29,6 +29,7 @@
     cursor: pointer;
     background-color: #0174a9;
     opacity: 1;
+    border: 2px solid #ff9800;
 }
 
 .c-gtt:active {
