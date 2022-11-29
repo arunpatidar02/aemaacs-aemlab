@@ -38,6 +38,94 @@
                                                     <styleformat
                                                         jcr:primaryType="nt:unstructured"
                                                         features="*"/>
+                                                    <undo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <spellcheck
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <findreplace
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <styles
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*">
+                                                        <styles 
+                                                        	jcr:primaryType="cq:WidgetCollection">
+	                                                        <lead jcr:primaryType="nt:unstructured"
+	                                                        	text="Lead"
+	                                                        	cssName="cmp-txt__lead"/>
+	                                                        <small jcr:primaryType="nt:unstructured"
+	                                                        	text="Small Text"
+	                                                        	cssName="cmp-txt__sm"/>
+	                                                     </styles>
+                                                    </styles>
+                                                    <subsuperscript
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <image
+                                                        jcr:primaryType="nt:unstructured"
+                                                        features="*"/>
+                                                    <format jcr:primaryType="nt:unstructured" 
+                                                    		features="*" />
+                                                    <links  jcr:primaryType="nt:unstructured" 
+                                                    		features="*" />
+                                                    <paraformat jcr:primaryType="nt:unstructured" features="*">
+											            <formats jcr:primaryType="nt:unstructured">
+											                <default_h2 
+											                		jcr:primaryType="nt:unstructured" 
+											                		description="Heading 2" 
+											                		tag="h2" />
+											                <default_h3 
+											                		jcr:primaryType="nt:unstructured" 
+											                		description="Heading 3" 
+											                		tag="h3" />
+											                <default_h4 
+											                		jcr:primaryType="nt:unstructured" 
+											                		description="Heading 4" 
+											                		tag="h4" />
+											                <default_blockquote 
+											                		jcr:primaryType="nt:unstructured" 
+											                		description="Quote" 
+											                		tag="blockquote" />
+											                <default_pre 
+											                		jcr:primaryType="nt:unstructured" 
+											                		description="Preformatted" 
+											                		tag="pre" />
+											            </formats>
+											        </paraformat>
+                                                    <justify  
+                                                    		jcr:primaryType="nt:unstructured" 
+                                                    		features="*" />
+                                                    <table  
+                                                    		jcr:primaryType="nt:unstructured" 
+                                                    		features="*">
+                                                    		<hiddenHeaderConfig 
+                                                    			jcr:primaryType="nt:unstructured" 
+                                                    			hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden" 
+                                                    			hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing"/>
+                                                    </table>
+                                                    <misctools
+                                                    		features="*"  
+                                                    		jcr:primaryType="nt:unstructured">
+                                                    		<specialCharsConfig jcr:primaryType="nt:unstructured">
+                                                    			<chars jcr:primaryType="nt:unstructured">
+                                                    				<default_copyright entity="&amp;copy;" name="copyright" jcr:primaryType="nt:unstructured"/>
+                                                    				<default_euro 
+                                                    					entity="&amp;euro;" 
+                                                    					name="euro" 
+                                                    					jcr:primaryType="nt:unstructured"/>
+                                                    				<default_registered 
+                                                    					entity="&amp;reg;" 
+                                                    					name="registered" 
+                                                    					jcr:primaryType="nt:unstructured"/>
+                                                    				<default_trademark 
+                                                    					entity="&amp;trade;" 
+                                                    					name="trademark" 
+                                                    					jcr:primaryType="nt:unstructured"/>
+                                                    			</chars>
+                                                    		</specialCharsConfig>
+                                                    </misctools>
                                                  </rtePlugins>
                                                  <uiSettings jcr:primaryType="nt:unstructured">
                                                     <cui jcr:primaryType="nt:unstructured">
@@ -57,11 +145,15 @@
                                                                   jcr:primaryType="nt:unstructured"
                                                                   items="paraformat:getFormats:paraformat-pulldown"
                                                                   ref="paraformat"/>
+                                                                <styles
+                                                                  jcr:primaryType="nt:unstructured"
+                                                                  items="styles:getStyles:styles-pulldown"
+                                                                  ref="styles"/>
                                                             </popovers>
                                                         </inline>
                                                         <dialogFullScreen
                                                           jcr:primaryType="nt:unstructured"
-                                                          toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps,,colorformat#colorPicker,styleformat#styles]">
+                                                          toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps,colorformat#colorPicker,styleformat#styles]">
                                                           <popovers jcr:primaryType="nt:unstructured">
                                                             <paraformat
                                                               jcr:primaryType="nt:unstructured"
