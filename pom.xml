@@ -37,7 +37,7 @@
         <componentGroupName>aemlab</componentGroupName>
         <acs.commons.version>5.3.2</acs.commons.version>
         <accesscontroltool.version>3.0.4</accesscontroltool.version>
-        <aem.groovy.console.version>17.0.0</aem.groovy.console.version>
+        <aem.aecu.version>LATEST</aem.aecu.version>
         <cac.editor.version>1.12.0</cac.editor.version>
     </properties>
 
@@ -620,12 +620,12 @@ Bundle-DocURL:
                 <version>${accesscontroltool.version}</version>
                 <type>zip</type>
             </dependency>
-            <!-- See: https://github.com/CID15/aem-groovy-console -->
+            <!-- See: https://github.com/valtech/aem-easy-content-upgrade -->
             <dependency>
-	            <groupId>org.cid15.aem.groovy.console</groupId>
-	            <artifactId>aem-groovy-console-all</artifactId>
+	            <groupId>de.valtech.aecu</groupId>
+	            <artifactId>aecu.complete.cloud</artifactId>
 	            <type>zip</type>
-	            <version>${aem.groovy.console.version}</version>
+	            <version>${aem.aecu.version}</version>
 	        </dependency>
 	        <!-- https://github.com/wcm-io/io.wcm.caconfig.editor -->
 	         <dependency>

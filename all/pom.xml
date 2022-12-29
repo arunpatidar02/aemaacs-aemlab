@@ -36,6 +36,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.community.aemlab</group>
+                    <allowIndexDefinitions>true</allowIndexDefinitions>
                     <embeddeds>
                         <embedded>
                             <groupId>com.community.aemlab</groupId>
@@ -69,8 +70,8 @@
                             <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
                         <embedded>
-                            <groupId>org.cid15.aem.groovy.console</groupId>
-	            			<artifactId>aem-groovy-console-all</artifactId>
+                            <groupId>de.valtech.aecu</groupId>
+	            			<artifactId>aecu.complete.cloud</artifactId>
             				<type>zip</type>
                             <target>/apps/aemlab-vendor-packages/install</target>
                         </embedded>
@@ -95,15 +96,6 @@
                     </embeddeds>
                     <subPackages></subPackages>
                     <group>AEMLab</group>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.day.jcr.vault</groupId>
-                <artifactId>content-package-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <verbose>true</verbose>
-                    <failOnError>true</failOnError>
                 </configuration>
             </plugin>
             <plugin>
@@ -227,8 +219,8 @@
             <type>zip</type>
         </dependency>
         <dependency>
-            <groupId>org.cid15.aem.groovy.console</groupId>
-	        <artifactId>aem-groovy-console-all</artifactId>
+            <groupId>de.valtech.aecu</groupId>
+	        <artifactId>aecu.complete.cloud</artifactId>
             <type>zip</type>
         </dependency>
         <dependency>
