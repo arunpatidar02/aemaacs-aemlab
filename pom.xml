@@ -620,7 +620,7 @@ Bundle-DocURL:
                 <version>${accesscontroltool.version}</version>
                 <type>zip</type>
             </dependency>
-            <!-- See: https://github.com/valtech/aem-easy-content-upgrade -->
+            <!-- Groovy Console via aem-easy-content-upgrade, See: https://github.com/valtech/aem-easy-content-upgrade -->
             <dependency>
 	            <groupId>de.valtech.aecu</groupId>
 	            <artifactId>aecu.complete.cloud</artifactId>
