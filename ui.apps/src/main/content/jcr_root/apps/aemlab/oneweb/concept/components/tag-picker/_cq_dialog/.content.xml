@@ -34,11 +34,11 @@
                                                 fieldDescription="Browse pathfield"
                                                 fieldLabel="Tag Picker 1"
                                                 name="./tag"
-                                                validation="[tag-namespace-validator]"
+                                                validation="tag-namespace-validator"
                                                 rootPath="/content/cq:tags">
                                                 <granite:data
                                                     jcr:primaryType="nt:unstructured"
-                                                    validRoots="[default,experience-fragments]"/>
+                                                    validRoots="default,experience-fragments"/>
                                             </tagfield>
                                             <tagfield2
                                                 jcr:primaryType="nt:unstructured"
@@ -46,12 +46,12 @@
                                                 fieldDescription="Browse pathfield"
                                                 fieldLabel="Tag Picker - Multiple"
                                                 name="./tag2"
-                                                validation="[tag-namespace-validator]"
+                                                validation="tag-namespace-validator"
                                                 multiple="{Boolean}true"
                                                 rootPath="/content/cq:tags">
                                                 <granite:data
                                                     jcr:primaryType="nt:unstructured"
-                                                    validRoots="[default,experience-fragments]"/>
+                                                    validRoots="default,experience-fragments"/>
                                             </tagfield2>
                                             <tagfield3
                                                 jcr:primaryType="nt:unstructured"
