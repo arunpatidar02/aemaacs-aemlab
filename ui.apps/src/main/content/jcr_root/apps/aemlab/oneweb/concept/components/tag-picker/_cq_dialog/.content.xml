@@ -38,7 +38,7 @@
                                                 rootPath="/content/cq:tags">
                                                 <granite:data
                                                     jcr:primaryType="nt:unstructured"
-                                                    validRoots="default,experience-fragments"/>
+                                                    validNamespaces="default,experience-fragments"/>
                                             </tagfield>
                                             <tagfield2
                                                 jcr:primaryType="nt:unstructured"
@@ -51,7 +51,7 @@
                                                 rootPath="/content/cq:tags">
                                                 <granite:data
                                                     jcr:primaryType="nt:unstructured"
-                                                    validRoots="default,experience-fragments"/>
+                                                    validNamespaces="default,experience-fragments"/>
                                             </tagfield2>
                                             <tagfield3
                                                 jcr:primaryType="nt:unstructured"

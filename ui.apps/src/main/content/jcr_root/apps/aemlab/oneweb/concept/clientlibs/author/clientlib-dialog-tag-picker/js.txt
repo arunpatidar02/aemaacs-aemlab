@@ -1,2 +1,2 @@
 #base=js
-tag-picker-root-validation.js
+tag-picker-ns-validation.js

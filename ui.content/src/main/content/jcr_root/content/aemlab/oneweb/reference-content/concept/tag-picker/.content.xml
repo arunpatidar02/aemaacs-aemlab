@@ -19,7 +19,7 @@
                     <tag-picker
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemlab/oneweb/concept/components/tag-picker"
-                        tag="/content/dam/aemlab/oneweb/banners/banner-1.png"
+                        tag="workflow:system"
                         tag2="[experience-fragments:variation/web,experience-fragments:variation/facebook,experience-fragments:variation/pinterest]"
                         tag3="experience-fragments:variation/facebook"/>
                 </container>
