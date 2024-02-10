@@ -6,12 +6,10 @@
     const FORM_SELECTOR = '.cq-Dialog form.cq-dialog';
   
     $(document).on("foundation-contentloaded", function () {
-      console.log('loaded');
   
       const dialogForm = document.querySelector(FORM_SELECTOR);
       const contentPath = dialogForm.action;
       const parentPath = getContainerPath(contentPath);
-      console.log(parentPath);
   
       fetchParentResourceType(parentPath)
         .then(type => {
