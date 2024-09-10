@@ -1,0 +1,28 @@
+{
+    "runmodes-configs": {
+        "dev": [
+            {
+                "ph_caconfig_gotoTopCtaEnabled": "true",
+                "ph_caconfig_refPublishDomain": "https://www.dev.aemlab-ref.com"
+            }
+        ],
+        "qa": [
+            {
+                "ph_caconfig_gotoTopCtaEnabled": "true",
+                "ph_caconfig_refPublishDomain": "https://www.qa.aemlab-ref.com"
+            }
+        ],
+        "stage": [
+            {
+                "ph_caconfig_gotoTopCtaEnabled": "false",
+                "ph_caconfig_refPublishDomain": "https://www.aemlab-ref.com"
+            }
+        ],
+        "prod": [
+            {
+                "ph_caconfig_gotoTopCtaEnabled": "false",
+                "ph_caconfig_refPublishDomain": "https://www.aemlab-ref.com"
+            }
+        ]
+    }
+}

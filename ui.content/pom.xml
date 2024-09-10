@@ -34,12 +34,86 @@
     <packaging>content-package</packaging>
     <name>AEMLab OneWeb - UI content</name>
     <description>UI content package for AEMLab OneWeb</description>
+    
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T  P R O P E R T I E S                                     -->
+    <!-- ====================================================================== -->
+ 
+    <properties>
+    	<env.ENV_TYPE>dev</env.ENV_TYPE>
+    	<env.GROOVY_LOG_LEVEL>INFO</env.GROOVY_LOG_LEVEL>
+    	<replacement.script.path>${project.basedir}/src/main/resources/script</replacement.script.path>
+    	<replacement.script.name>replace-cac-placeholder.groovy</replacement.script.name>
+    	<replacement.script.config>aemlab_config.json</replacement.script.config>
+    </properties>
+    
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->
     <!-- ====================================================================== -->
     <build>
         <plugins>
+			<!-- ====================================================================== -->
+            <!-- G R O O V Y   P L U G I N S                                            -->
+            <!-- ====================================================================== -->
+            <plugin>
+				<groupId>org.codehaus.gmaven</groupId>
+				<artifactId>groovy-maven-plugin</artifactId>
+				<version>2.1.1</version>
+				<executions>
+					<execution>
+						<id>cac-placeholder-replace</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+						<configuration>
+							<properties>
+								<env>${env.ENV_TYPE}</env>
+								<configData>${replacement.script.path}/${replacement.script.config}</configData>
+								<logLevel>${env.GROOVY_LOG_LEVEL}</logLevel>
+								<baseDir>${project.basedir}</baseDir>
+							</properties>
+                            <source>${replacement.script.path}/${replacement.script.name}</source>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+					<dependency>
+						<groupId>org.apache.groovy</groupId>
+                        <artifactId>groovy-all</artifactId>
+                        <version>4.0.22</version>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            
+            <!-- Copy files from the 'src' directory to the 'target' directory for replacement.-->
+            <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-resources-plugin</artifactId>
+	            <executions>
+	                <execution>
+	                    <id>copy-jcrroot-to-target</id>
+	                    <phase>process-resources</phase>
+	                    <goals>
+	                        <goal>copy-resources</goal>
+	                    </goals>
+	                    <configuration>
+	                        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+	                        <resources>
+	                            <resource>
+	                                <directory>src/main/content/jcr_root</directory>
+	                                <includes>
+	                                    <include>**/*</include> <!-- Copy all files -->
+	                                </includes>
+	                            </resource>
+	                        </resources>
+	                    </configuration>
+	                </execution>
+	            </executions>
+	        </plugin>
+
             <!-- ====================================================================== -->
             <!-- V A U L T   P A C K A G E   P L U G I N S                              -->
             <!-- ====================================================================== -->
@@ -51,6 +125,8 @@
                     <group>com.community.aemlab</group>
                     <name>oneweb.ui.content</name>
                     <packageType>content</packageType>
+                    <jcrRootSourceDirectory>${project.build.outputDirectory}</jcrRootSourceDirectory>
+                    <excludes>*groovy</excludes>
                     <accessControlHandling>merge</accessControlHandling>
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
@@ -63,15 +139,6 @@
                         </dependency>
                     </dependencies>
                     <group>AEMLab</group>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.day.jcr.vault</groupId>
-                <artifactId>content-package-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <verbose>true</verbose>
-                    <failOnError>true</failOnError>
                 </configuration>
             </plugin>
         </plugins>

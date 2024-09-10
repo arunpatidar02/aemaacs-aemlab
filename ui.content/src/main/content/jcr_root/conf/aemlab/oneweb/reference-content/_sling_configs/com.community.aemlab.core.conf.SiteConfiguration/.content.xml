@@ -3,5 +3,5 @@
     jcr:primaryType="sling:Folder"
     sling:configPropertyInherit="{Boolean}true"
     useFullyQualifiedURLsInLinks="{Boolean}true"
-	publishDomain="https://www.aemlab-ref.com"	
+	publishDomain="${ph_caconfig_refPublishDomain}"	
 	numberOfSegmentsToCutOff="{Long}4"/>
