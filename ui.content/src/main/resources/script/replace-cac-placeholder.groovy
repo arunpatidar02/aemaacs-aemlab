@@ -12,6 +12,7 @@ decorativeLog("Groovy Execution STARTED")
 final Boolean dryRun = false
 final String module = "/ui.content"
 def placeholderPattern = /\$\{ph_caconfig_[^}]+\}/
+logMessagePrefix = "[GROOVY]"
 
 
 /* Configured Properties */
@@ -20,15 +21,16 @@ String logLevel = properties.get("logLevel")
 String runMode = properties.get("env")
 String dataFilePath = properties.get("configData")
 
-final String targetDir = basedir + (basedir.contains(module) ? "" : module) + "/target/classes/conf/aemlab"
-
 
 /* Execution Context */
 def successList = []
 def failedList = []
 
+
+currentLogLevel = logLevel!=null ? logLevel.toInteger() : 1;
+
 /* Log Run Mode */
-def startMessage = "Execution mode : ${dryRun ? 'dryRun' : 'Replacement'}"
+def startMessage = "Execution mode : ${dryRun ? 'dryRun' : 'Replacement'}, LOG LEVEL : ${messageLevel(currentLogLevel)} \n"
 log.info(startMessage)
 
 /* Load JSON Data */
@@ -37,32 +39,33 @@ def jsonData = jsonSlurper.parse(new File(dataFilePath))
 def configData = jsonData['runmodes-configs'][runMode]?.get(0)
 
 if (!configData) {
-    log.warn("Error: No configuration found for run mode: ${runMode}")
+    logging("Error: No configuration found for run mode: ${runMode}", 3)
     System.exit(1)
 }
 
-log.info("Target Folder for replacement: ${targetDir}")
+final String targetDir = basedir + (basedir.contains(module) ? "" : module) + "/target/classes/conf/aemlab"
+logging("Target Folder for replacement: ${targetDir}")
 
 // Check if the target directory exists
 def dir = new File(targetDir)
 if (!dir.exists() || !dir.isDirectory()) {
-    log.warn("Directory does not exist: ${targetDir}")
+    logging("Directory does not exist: ${targetDir}", 3)
     return
 }
 
-log.info("Traversing files ")
+logging("Traversing files")
 dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.xml/) { File xmlFile ->
     def originalContent = xmlFile.text
     def updatedContent = originalContent
     def missingPlaceholders = []
-	log.debug(xmlFile.path)
+	logging(xmlFile.path, 1)
 
 	/* Find and Replace Placeholders */
     Matcher matcher = Pattern.compile(/\$\{ph_caconfig_[^}]+\}/).matcher(originalContent)
     while (matcher.find()) {
         def placeholder = matcher.group()
         def placeholderKey = placeholder.replaceAll(/[\$\{\}]/, '')
-		log.debug("$placeholderKey : ${configData[placeholderKey]}")
+		logging("$placeholderKey : ${configData[placeholderKey]}", 1)
 
         if (configData.containsKey(placeholderKey)) {
             updatedContent = updatedContent.replace(placeholder, configData[placeholderKey])
@@ -76,13 +79,13 @@ dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.xml/) { File xmlFile ->
         if (!dryRun) {
             Files.write(xmlFile.toPath(), updatedContent.bytes)
         }
-        log.debug("Updated placeholders in file: ${xmlFile.path}")
+        logging("Updated placeholders in file: ${xmlFile.path}", 1)
         successList << xmlFile.path
     }
 
     /* Log Missing Placeholders */
     if (missingPlaceholders) {
-        log.debug("Missing placeholders in ${xmlFile.path}: ${missingPlaceholders.join(', ')}")
+        logging("Missing placeholders in ${xmlFile.path}: ${missingPlaceholders.join(', ')}", 3)
         failedList << xmlFile.path
     }
 }
@@ -99,6 +102,9 @@ decorativeLog("Groovy Execution END")
  ************************************ Generic functions *****************************
  ************************************************************************************/
 
+/**
+ * Simple logging function based on (e.g. org.slf4j.Logger)
+ */
 
 /* Decorative Logging */
 def decorativeLog(message) {
@@ -109,7 +115,36 @@ def decorativeLog(message) {
 
 /* Log Results */
 def logResults(title, list) {
-    log.info("\n${title}")
-    list.sort().each { log.info("\t${it}") }
+    logging("${title}")
+    list.sort().each { logging("\t${it}") }
+}
+
+/* Default Logging */
+def logging(message) {
+	 logging(message, 2)
+}
+
+/* Logging with indentation */
+def logging(message, level) {
+	if (level >= currentLogLevel) {
+		log.info("${logMessagePrefix}[${messageLevel(level)}] ${message}")
+	}
+}
+
+/* Log Levels */
+def messageLevel(level){
+	switch(level) {
+		case 0: level == 0;
+			return "TRACE";
+		case 1: level == 1;
+			return "DEBUG";
+        case 2: level == 2;
+			return "INFO";
+		case 3: level == 3;
+			return "WARN";
+		default:
+			return "INFO";
+
+	}
 }
 

@@ -41,7 +41,7 @@
  
     <properties>
     	<env.ENV_TYPE>dev</env.ENV_TYPE>
-    	<env.GROOVY_LOG_LEVEL>INFO</env.GROOVY_LOG_LEVEL>
+    	<env.GROOVY_LOG_LEVEL>2</env.GROOVY_LOG_LEVEL>
     	<replacement.script.path>${project.basedir}/src/main/resources/script</replacement.script.path>
     	<replacement.script.name>replace-cac-placeholder.groovy</replacement.script.name>
     	<replacement.script.config>aemlab_config.json</replacement.script.config>
