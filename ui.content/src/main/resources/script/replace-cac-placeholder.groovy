@@ -14,24 +14,20 @@ final String module = "/ui.content"
 def placeholderPattern = /\$\{ph_caconfig_[^}]+\}/
 logMessagePrefix = "[GROOVY]"
 
-
-
 /* Configured Properties */
 String basedir = properties.get("baseDir")
 String logLevel = properties.get("logLevel")
 String runMode = properties.get("env")
 String dataFilePath = properties.get("configData")
 
-
 /* Execution Context */
 def successList = []
 def failedList = []
 
-
-currentLogLevel = logLevel!=null ? logLevel.toInteger() : 1;
+currentLogLevel = logLevel != null ? logLevel.toInteger() : 1
 
 /* Log Run Mode */
-def startMessage = "Execution mode : ${dryRun ? 'dryRun' : 'Replacement'}, LOG LEVEL : ${messageLevel(currentLogLevel)} \n"
+def startMessage = "Execution mode: ${dryRun ? 'dryRun' : 'Replacement'}, LOG LEVEL: ${messageLevel(currentLogLevel)}\n"
 log.info(startMessage)
 
 /* Load JSON Data */
@@ -59,14 +55,14 @@ dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.xml/) { File xmlFile ->
     def originalContent = xmlFile.text
     def updatedContent = originalContent
     def missingPlaceholders = []
-	logging(xmlFile.path, 1)
+    logging(xmlFile.path, 1)
 
-	/* Find and Replace Placeholders */
-    Matcher matcher = Pattern.compile(/\$\{ph_caconfig_[^}]+\}/).matcher(originalContent)
+    /* Find and Replace Placeholders */
+    Matcher matcher = Pattern.compile(placeholderPattern).matcher(originalContent)
     while (matcher.find()) {
         def placeholder = matcher.group()
         def placeholderKey = placeholder.replaceAll(/[\$\{\}]/, '')
-		logging("$placeholderKey : ${configData[placeholderKey]}", 1)
+        logging("$placeholderKey: ${configData[placeholderKey]}", 1)
 
         if (configData.containsKey(placeholderKey)) {
             updatedContent = updatedContent.replace(placeholder, configData[placeholderKey])
@@ -91,29 +87,21 @@ dir.traverse(type: FileType.FILES, nameFilter: ~/.*\.xml/) { File xmlFile ->
     }
 }
 
-
 /* Log Results */
 logResults("Successfully replaced placeholders:", successList)
 logResults("Failed to replace placeholders:", failedList)
 
-
 decorativeLog("Groovy Execution END")
-
 
 /************************************************************************************
  ************************************ Generic functions *****************************
  ************************************************************************************/
-
-/**
- * Simple logging function based on (e.g. org.slf4j.Logger)
- */
 
 /* Decorative Logging */
 def decorativeLog(message) {
     def border = "#".multiply(90)
     def colorReset = "\u001B[0m"
     def colorGreen = "\u001B[32m"
-    
     
     log.info("\n${border}")
     log.info("${colorGreen}#".padRight(20) + "\t${message}\t" + "#".padLeft(20) + colorReset)
@@ -123,9 +111,8 @@ def decorativeLog(message) {
 // Logs results with title and sorted list
 def logResults(title, list) {
     logging(title)
-    list.sort().each { logging("\t${it}") }
+    list.sort().each { log.info("\t\t\t${it}") }
 }
-
 
 // Logging with specified indentation and log level
 def logging(message, level = 2) {
@@ -157,7 +144,7 @@ def logging(message, level = 2) {
 
 // Returns the log level label based on the level number
 def messageLevel(level) {
-    switch(level) {
+    switch (level) {
         case 0: return "TRACE"
         case 1: return "DEBUG"
         case 3: return "WARN"
