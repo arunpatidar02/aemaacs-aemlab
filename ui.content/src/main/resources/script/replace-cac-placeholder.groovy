@@ -98,6 +98,7 @@ logResults("Failed to replace placeholders:", failedList)
 
 decorativeLog("Groovy Execution END")
 
+
 /************************************************************************************
  ************************************ Generic functions *****************************
  ************************************************************************************/
@@ -108,43 +109,36 @@ decorativeLog("Groovy Execution END")
 
 /* Decorative Logging */
 def decorativeLog(message) {
-    log.info("\n##########################################################################################")
-    log.info("####################\t${message}\t####################")
-    log.info("##########################################################################################\n")
+    def border = "#".multiply(90)
+    def colorReset = "\u001B[0m"
+    def colorCyan = "\u001B[36m"
+    def colorYellow = "\u001B[33m"
+    
+    log.info("\n${colorCyan}${border}${colorReset}")
+    log.info("${colorYellow}#".padRight(20) + "\t${message}\t" + "#".padLeft(20) + colorReset)
+    log.info("${colorCyan}${border}${colorReset}\n")
 }
 
-/* Log Results */
+// Logs results with title and sorted list
 def logResults(title, list) {
-    logging("${title}")
+    logging(title)
     list.sort().each { logging("\t${it}") }
 }
 
-/* Default Logging */
-def logging(message) {
-	 logging(message, 2)
+
+// Logging with specified indentation and log level
+def logging(message, level = 2) {
+    if (level >= currentLogLevel) {
+        log.info("${logMessagePrefix}[${messageLevel(level)}] ${message}")
+    }
 }
 
-/* Logging with indentation */
-def logging(message, level) {
-	if (level >= currentLogLevel) {
-		log.info("${logMessagePrefix}[${messageLevel(level)}] ${message}")
-	}
+// Returns the log level label based on the level number
+def messageLevel(level) {
+    switch(level) {
+        case 0: return "TRACE"
+        case 1: return "DEBUG"
+        case 3: return "WARN"
+        default: return "INFO" // Default to INFO for unrecognized levels
+    }
 }
-
-/* Log Levels */
-def messageLevel(level){
-	switch(level) {
-		case 0: level == 0;
-			return "TRACE";
-		case 1: level == 1;
-			return "DEBUG";
-        case 2: level == 2;
-			return "INFO";
-		case 3: level == 3;
-			return "WARN";
-		default:
-			return "INFO";
-
-	}
-}
-
