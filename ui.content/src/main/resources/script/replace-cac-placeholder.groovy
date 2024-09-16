@@ -15,6 +15,7 @@ def placeholderPattern = /\$\{ph_caconfig_[^}]+\}/
 logMessagePrefix = "[GROOVY]"
 
 
+
 /* Configured Properties */
 String basedir = properties.get("baseDir")
 String logLevel = properties.get("logLevel")
@@ -111,12 +112,12 @@ decorativeLog("Groovy Execution END")
 def decorativeLog(message) {
     def border = "#".multiply(90)
     def colorReset = "\u001B[0m"
-    def colorCyan = "\u001B[36m"
-    def colorYellow = "\u001B[33m"
+    def colorGreen = "\u001B[32m"
     
-    log.info("\n${colorCyan}${border}${colorReset}")
-    log.info("${colorYellow}#".padRight(20) + "\t${message}\t" + "#".padLeft(20) + colorReset)
-    log.info("${colorCyan}${border}${colorReset}\n")
+    
+    log.info("\n${border}")
+    log.info("${colorGreen}#".padRight(20) + "\t${message}\t" + "#".padLeft(20) + colorReset)
+    log.info("${border}\n")
 }
 
 // Logs results with title and sorted list
@@ -128,8 +129,29 @@ def logResults(title, list) {
 
 // Logging with specified indentation and log level
 def logging(message, level = 2) {
+    def colorReset = "\u001B[0m"
+    def colorBlue = "\u001B[34m"    // Blue for INFO
+    def colorYellow = "\u001B[33m"  // Yellow for WARN
+    def colorCyan = "\u001B[36m"    // Cyan for DEBUG
+    
+    def logColor = ""
+    
+    switch (level) {
+        case 1: // DEBUG level
+            logColor = colorCyan
+            break
+        case 2: // INFO level
+            logColor = colorBlue
+            break
+        case 3: // WARN level
+            logColor = colorYellow
+            break
+        default: // Default INFO level
+            logColor = colorBlue
+            break
+    }
     if (level >= currentLogLevel) {
-        log.info("${logMessagePrefix}[${messageLevel(level)}] ${message}")
+        log.info("${logColor}${logMessagePrefix}[${messageLevel(level)}]${colorReset} ${message}")
     }
 }
 
